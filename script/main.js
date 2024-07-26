@@ -290,7 +290,14 @@ const animationTimeline = () => {
         rotation: 90
       },
       "+=1"
-    );
+    )
+    // Add animation for the gift button
+    .from(".gift-button", 0.7, {
+      opacity: 0,
+      y: 50,
+      scale: 0.5,
+      ease: Elastic.easeOut.config(1, 0.5)
+    });
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
