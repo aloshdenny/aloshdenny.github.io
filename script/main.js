@@ -297,6 +297,11 @@ const animationTimeline = () => {
       y: 50,
       scale: 0.5,
       ease: Elastic.easeOut.config(1, 0.5)
+    })
+    .to(".gift-button", 0.3, {
+      opacity: 1,
+      visibility: "visible",
+      pointerEvents: "auto", // Make the button clickable
     });
 
   // tl.seek("currentStep");
@@ -305,3 +310,15 @@ const animationTimeline = () => {
 
 // Run fetch and animation in sequence
 fetchData();
+
+// Add event listener for the gift button
+document.addEventListener('DOMContentLoaded', (event) => {
+  const giftButton = document.querySelector('.gift-button');
+  if (giftButton) {
+    giftButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = giftButton.getAttribute('href');
+      window.open(href, '_blank');
+    });
+  }
+});
