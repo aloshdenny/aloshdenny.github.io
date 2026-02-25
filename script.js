@@ -355,6 +355,62 @@ function openGameModal() {
   }
 }
 
+// --- Shake to Open Game (Mobile) ---
+let lastShakeTime = 0;
+let shakeProgress = 0;
+
+function initShakeDetection() {
+  if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+    // iOS 13+ requires permission
+    // We can't request it without a user gesture, so we'll attach it to the first click
+    document.addEventListener('click', function requestPermission() {
+      DeviceMotionEvent.requestPermission()
+        .then(response => {
+          if (response === 'granted') {
+            window.addEventListener('devicemotion', handleMotion);
+          }
+        })
+        .catch(console.error);
+      document.removeEventListener('click', requestPermission);
+    }, { once: true });
+  } else {
+    // Non-iOS or older iOS
+    window.addEventListener('devicemotion', handleMotion);
+  }
+}
+
+function handleMotion(event) {
+  const acceleration = event.accelerationIncludingGravity;
+  if (!acceleration) return;
+
+  const x = acceleration.x;
+  const y = acceleration.y;
+  const z = acceleration.z;
+
+  const totalAccel = Math.sqrt(x * x + y * y + z * z);
+  const threshold = 25; // Sensitivity threshold
+  const now = Date.now();
+
+  if (totalAccel > threshold && now - lastShakeTime > 500) {
+    shakeProgress++;
+    lastShakeTime = now;
+
+    if (shakeProgress >= 2) {
+      openGameModal();
+      shakeProgress = 0;
+    }
+
+    // Reset progress if second shake doesn't happen within 2 seconds
+    setTimeout(() => {
+      if (Date.now() - lastShakeTime > 1500) shakeProgress = 0;
+    }, 2000);
+  }
+}
+
+if (config.isMobile) {
+  initShakeDetection();
+}
+
 // --- Flappy Alosh Game ---
 const gameModal = document.getElementById('game-modal');
 const canvas = document.getElementById('game-canvas');
