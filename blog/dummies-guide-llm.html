@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+    data-auto-appearance="false"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>The Complete Dummies’ Guide to LLMs &middot; Alosh Denny</title>
+  <meta name="title" content="The Complete Dummies’ Guide to LLMs &middot; Alosh Denny" />
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2024-10-03_the-complete-dummies--guide-to-llms-cc4c6b906ae0/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.a1eaa2a21af50684cf4725e164e4df2a3b725fb05284f18aa8773df8b8440b6c408faeffdfd5c24ed3caac40f5864d9e0fd5530948626f5b0ef13e8542004b52.css"
+    integrity="sha512-oeqiohr1BoTPRyXhZOTfKjtyX7BShPGKqHc9&#43;LhEC2xAj67/39XCTtPKrED1hk2eD9VTCUhib1sO8T6FQgBLUg==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
+    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/%20apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/%20favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/%20favicon-16x16.png" />
+  <link rel="manifest" href="/%20site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2024-10-03_the-complete-dummies--guide-to-llms-cc4c6b906ae0/">
+  <meta property="og:site_name" content="Alosh Denny">
+  <meta property="og:title" content="The Complete Dummies’ Guide to LLMs">
+  <meta property="og:description" content="Large Language Models (LLMs) have been the buzz since 2021. One of the most popular ones being ChatGPT, followed by Gemini and then Claude…
+The Complete Dummies’ Guide to LLMs # Large Language Models (LLMs) have been the buzz since 2021. One of the most popular ones being ChatGPT, followed by Gemini and then Claude. But these are just the tip of the iceberg. LLMs have revolutionized natural language processing and artificial intelligence. However, the field is rife with complex terminology that can be daunting for newcomers. This guide aims to demystify key concepts and jargon related to LLMs, making the subject more accessible to a wider audience.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-03T00:00:00+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Complete Dummies’ Guide to LLMs">
+  <meta name="twitter:description" content="Large Language Models (LLMs) have been the buzz since 2021. One of the most popular ones being ChatGPT, followed by Gemini and then Claude…
+The Complete Dummies’ Guide to LLMs # Large Language Models (LLMs) have been the buzz since 2021. One of the most popular ones being ChatGPT, followed by Gemini and then Claude. But these are just the tip of the iceberg. LLMs have revolutionized natural language processing and artificial intelligence. However, the field is rife with complex terminology that can be daunting for newcomers. This guide aims to demystify key concepts and jargon related to LLMs, making the subject more accessible to a wider audience.">
+
+  
+  
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "The Complete Dummies’ Guide to LLMs",
+    "headline": "The Complete Dummies’ Guide to LLMs",
+    
+    "abstract": "\u003cp\u003eLarge Language Models (LLMs) have been the buzz since 2021. One of the most popular ones being ChatGPT, followed by Gemini and then Claude…\u003c\/p\u003e\n\u003chr\u003e\n\n\u003ch3 class=\u0022relative group\u0022\u003eThe Complete Dummies’ Guide to LLMs \n    \u003cdiv id=\u0022the-complete-dummies-guide-tollms\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#the-complete-dummies-guide-tollms\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cp\u003eLarge Language Models (LLMs) have been the buzz since 2021. One of the most popular ones being ChatGPT, followed by Gemini and then Claude. But these are just the tip of the iceberg. LLMs have revolutionized natural language processing and artificial intelligence. However, the field is rife with complex terminology that can be daunting for newcomers. This guide aims to demystify key concepts and jargon related to LLMs, making the subject more accessible to a wider audience.\u003c\/p\u003e",
+    "inLanguage": "en",
+    "url" : "http:\/\/localhost:1313\/posts\/2024-10-03_the-complete-dummies--guide-to-llms-cc4c6b906ae0\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Alosh Denny"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-10-03T00:00:00\u002b00:00",
+    "datePublished": "2024-10-03T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-10-03T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "8595"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Alosh Denny" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://github.com/aloshdenny" rel="me" />
+  
+  
+  
+  
+  <link href="https://linkedin.com/in/aloshdenny" rel="me" />
+  
+  
+  
+  
+  <link href="https://medium.com/@aloshdenny" rel="me" />
+  
+  
+  
+  
+  <link href="https://www.researchgate.net/profile/Alosh-Denny" rel="me" />
+  
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  <meta name="theme-color" />
+  
+  
+</head><body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-12 md:px-16 lg:px-24 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+        <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+            href="#main-content"><span
+                class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+    </div>
+    
+    
+    <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            <div class="flex flex-col">
+                <a href="/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Alosh Denny</a>
+                
+            </div>
+
+        </nav>
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/#about"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="About me">
+        About
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+
+
+            
+            
+
+        </nav>
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+
+            
+            
+
+        </div>
+    </div>
+    <div class="-my-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                            
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+                        </span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/#about"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="About me">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+    
+    <div class="relative flex flex-col grow">
+        <main id="main-content" class="grow">
+            
+
+
+<article>
+    
+    
+    
+    
+    
+    
+ 
+
+
+
+    
+    
+
+    <header id="single_header" class="mt-5 max-w-full">
+        
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/index.html"
+      >Alosh Denny</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/#blog"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/2024-10-03_the-complete-dummies--guide-to-llms-cc4c6b906ae0/"
+      >The Complete Dummies’ Guide to LLMs</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+        
+        <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+            The Complete Dummies’ Guide to LLMs
+        </h1>
+        <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+            
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-03T00:00:00&#43;00:00">3 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>8595 words</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        
+        
+        
+        
+        
+
+        
+
+        
+
+        
+        
+        
+<div class="flex author">
+  
+  <div class="place-self-center">
+    
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      Author
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      Alosh Denny
+    </div>
+    
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="mailto:aloshdenny@gmail.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/aloshdenny"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://linkedin.com/in/aloshdenny"
+          target="_blank"
+          aria-label="Linkedin"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://medium.com/@aloshdenny"
+          target="_blank"
+          aria-label="Medium"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://www.researchgate.net/profile/Alosh-Denny"
+          target="_blank"
+          aria-label="Researchgate"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50-14.2-9.2-10.6-25.3-33.3-42.2-63.6-8.9 0-14.7 0-21.4-.6v46.4c0 23.5 6 21.2 25.8 23.9v8.1c-6.9-.3-23.1-.8-35.6-.8-13.1 0-26.1.6-33.6.8v-8.1c15.5-2.9 22-1.3 22-23.9V225c0-22.6-6.4-21-22-23.9V193c25.8 1 53.1-.6 70.9-.6 31.7 0 55.9 14.4 55.9 45.6 0 21.1-16.7 42.2-39.2 47.5 13.6 24.2 30 45.6 42.2 58.9 7.2 7.8 17.2 14.7 27.2 14.7v7.3zm22.9-135c-23.3 0-32.2-15.7-32.2-32.2V167c0-12.2 8.8-30.4 34-30.4s30.4 17.9 30.4 17.9l-10.7 7.2s-5.5-12.5-19.7-12.5c-7.9 0-19.7 7.3-19.7 19.7v26.8c0 13.4 6.6 23.3 17.9 23.3 14.1 0 21.5-10.9 21.5-26.8h-17.9v-10.7h30.4c0 20.5 4.7 49.9-34 49.9zm-116.5 44.7c-9.4 0-13.6-.3-20-.8v-69.7c6.4-.6 15-.6 22.5-.6 23.3 0 37.2 12.2 37.2 34.5 0 21.9-15 36.6-39.7 36.6z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+        
+
+        
+
+        
+        <div class="mb-5"></div>
+        
+
+        
+
+    </header>
+
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+
+         <div
+            class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+            <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+                 <details open id="TOCView" class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#the-complete-dummies-guide-tollms">The Complete Dummies’ Guide to LLMs</a></li>
+        <li><a href="#table-ofcontents">Table of Contents</a></li>
+        <li><a href="#a-brief-overview-of-llms-and-their-importance">A Brief Overview of LLMs and their importance</a></li>
+        <li><a href="#demystifying-llm-terminology">Demystifying LLM Terminology</a></li>
+        <li><a href="#how-llmslearn">How LLMs Learn</a></li>
+        <li><a href="#transformers-101">Transformers 101</a></li>
+        <li><a href="#you-just-want-attention-understanding-attention-mechanisms-in-transformers">You Just Want Attention: Understanding Attention Mechanisms in Transformers</a>
+          <ul>
+            <li><a href="#why-all-the-fuss-about-attention">Why All the Fuss About Attention?</a></li>
+            <li><a href="#brief-history-of-attention">Brief history of Attention</a></li>
+            <li><a href="#remember-about-our-encoder-and-decoderfriends">Remember about our encoder and decoder friends?</a></li>
+            <li><a href="#how-attention-works">How Attention Works</a></li>
+          </ul>
+        </li>
+        <li><a href="#lets-compare">Let’s compare:</a>
+          <ul>
+            <li><a href="#encoder">Encoder</a></li>
+            <li><a href="#decoder">Decoder</a></li>
+          </ul>
+        </li>
+        <li><a href="#training-and-inference">Training and Inference</a>
+          <ul>
+            <li><a href="#what-happens-during-training">What Happens During Training?</a></li>
+          </ul>
+        </li>
+        <li><a href="#fine-tuning">Fine-tuning</a>
+          <ul>
+            <li><a href="#what-is-fine-tuning">What is fine-tuning?</a></li>
+            <li><a href="#why-fine-tune"><strong>Why fine-tune?</strong></a></li>
+            <li><a href="#standard-tuning-full-fine-tuning">Standard Tuning: Full Fine-tuning</a></li>
+            <li><a href="#drop-d-tuning-partial-fine-tuning">Drop D Tuning: Partial Fine-tuning</a></li>
+          </ul>
+        </li>
+        <li><a href="#advanced-fine-tuning-techniques">Advanced Fine-tuning Techniques</a>
+          <ul>
+            <li><a href="#pruning-trimming-theexcess">Pruning: Trimming the Excess</a></li>
+            <li><a href="#transfer-learning">Transfer Learning</a></li>
+            <li><a href="#distillation-knowledge-transfer-for-efficiency">Distillation: Knowledge Transfer for Efficiency</a></li>
+            <li><a href="#prefix-tuning">Prefix Tuning</a></li>
+            <li><a href="#lora-low-rank-adaptation">LoRA: Low Rank Adaptation</a></li>
+            <li><a href="#qlora-quantized-lora">QLoRA: Quantized LoRA</a></li>
+            <li><a href="#choosing-between-lora-andqlora">Choosing between LoRA and QLoRA:</a></li>
+            <li><a href="#prompt-engineering">Prompt Engineering</a></li>
+            <li><a href="#zero-shot-one-shot-and-few-shotlearning">Zero-Shot, One-Shot and Few-Shot Learning</a></li>
+            <li><a href="#how-few-shot-learningworks">How Few-Shot Learning Works</a></li>
+            <li><a href="#reinforcement-learning-through-human-feedbackrlhf">Reinforcement Learning through Human Feedback (RLHF)</a></li>
+            <li><a href="#how-rlhf-actuallyworks">How RLHF Actually Works</a></li>
+            <li><a href="#components-ofrlhf">Components of RLHF</a></li>
+          </ul>
+        </li>
+        <li><a href="#model-initialization-hot-cold-or-frozenstart">Model Initialization: Hot, Cold or Frozen Start?</a>
+          <ul>
+            <li><a href="#the-thermal-spectrum-of-startingmodels">The Thermal Spectrum of Starting Models</a></li>
+          </ul>
+        </li>
+        <li><a href="#quantization">Quantization</a>
+          <ul>
+            <li><a href="#why-quantization">Why Quantization</a></li>
+          </ul>
+        </li>
+        <li><a href="#a-brief-survey-on-quantization-techniques">A Brief Survey on Quantization Techniques</a>
+          <ul>
+            <li><a href="#quantization-aware-trainingqat">Quantization Aware Training (QAT)</a></li>
+            <li><a href="#post-training-quantization">Post-Training Quantization</a></li>
+          </ul>
+        </li>
+        <li><a href="#advanced-quantization-techniques">Advanced Quantization Techniques</a>
+          <ul>
+            <li><a href="#fp16int8int4"><strong>FP16/INT8/INT4</strong></a></li>
+            <li><a href="#gptq"><strong>GPTQ</strong></a></li>
+            <li><a href="#ggml-gguf"><strong>GGML | GGUF</strong></a></li>
+            <li><a href="#gptq-vsggml"><strong>GPTQ vs GGML</strong></a></li>
+            <li><a href="#awq">AWQ</a></li>
+          </ul>
+        </li>
+        <li><a href="#inference-and-training-arithmetic">Inference and Training Arithmetic</a>
+          <ul>
+            <li><a href="#kv-cache">KV cache</a></li>
+            <li><a href="#capacity">Capacity</a></li>
+            <li><a href="#alright-heres-the-punchline"><strong>Alright, here’s the punchline:</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#llm-pollution">LLM Pollution</a></li>
+        <li><a href="#conclusion-putting-it-alltogether">Conclusion: Putting It All Together</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#the-complete-dummies-guide-tollms">The Complete Dummies’ Guide to LLMs</a></li>
+        <li><a href="#table-ofcontents">Table of Contents</a></li>
+        <li><a href="#a-brief-overview-of-llms-and-their-importance">A Brief Overview of LLMs and their importance</a></li>
+        <li><a href="#demystifying-llm-terminology">Demystifying LLM Terminology</a></li>
+        <li><a href="#how-llmslearn">How LLMs Learn</a></li>
+        <li><a href="#transformers-101">Transformers 101</a></li>
+        <li><a href="#you-just-want-attention-understanding-attention-mechanisms-in-transformers">You Just Want Attention: Understanding Attention Mechanisms in Transformers</a>
+          <ul>
+            <li><a href="#why-all-the-fuss-about-attention">Why All the Fuss About Attention?</a></li>
+            <li><a href="#brief-history-of-attention">Brief history of Attention</a></li>
+            <li><a href="#remember-about-our-encoder-and-decoderfriends">Remember about our encoder and decoder friends?</a></li>
+            <li><a href="#how-attention-works">How Attention Works</a></li>
+          </ul>
+        </li>
+        <li><a href="#lets-compare">Let’s compare:</a>
+          <ul>
+            <li><a href="#encoder">Encoder</a></li>
+            <li><a href="#decoder">Decoder</a></li>
+          </ul>
+        </li>
+        <li><a href="#training-and-inference">Training and Inference</a>
+          <ul>
+            <li><a href="#what-happens-during-training">What Happens During Training?</a></li>
+          </ul>
+        </li>
+        <li><a href="#fine-tuning">Fine-tuning</a>
+          <ul>
+            <li><a href="#what-is-fine-tuning">What is fine-tuning?</a></li>
+            <li><a href="#why-fine-tune"><strong>Why fine-tune?</strong></a></li>
+            <li><a href="#standard-tuning-full-fine-tuning">Standard Tuning: Full Fine-tuning</a></li>
+            <li><a href="#drop-d-tuning-partial-fine-tuning">Drop D Tuning: Partial Fine-tuning</a></li>
+          </ul>
+        </li>
+        <li><a href="#advanced-fine-tuning-techniques">Advanced Fine-tuning Techniques</a>
+          <ul>
+            <li><a href="#pruning-trimming-theexcess">Pruning: Trimming the Excess</a></li>
+            <li><a href="#transfer-learning">Transfer Learning</a></li>
+            <li><a href="#distillation-knowledge-transfer-for-efficiency">Distillation: Knowledge Transfer for Efficiency</a></li>
+            <li><a href="#prefix-tuning">Prefix Tuning</a></li>
+            <li><a href="#lora-low-rank-adaptation">LoRA: Low Rank Adaptation</a></li>
+            <li><a href="#qlora-quantized-lora">QLoRA: Quantized LoRA</a></li>
+            <li><a href="#choosing-between-lora-andqlora">Choosing between LoRA and QLoRA:</a></li>
+            <li><a href="#prompt-engineering">Prompt Engineering</a></li>
+            <li><a href="#zero-shot-one-shot-and-few-shotlearning">Zero-Shot, One-Shot and Few-Shot Learning</a></li>
+            <li><a href="#how-few-shot-learningworks">How Few-Shot Learning Works</a></li>
+            <li><a href="#reinforcement-learning-through-human-feedbackrlhf">Reinforcement Learning through Human Feedback (RLHF)</a></li>
+            <li><a href="#how-rlhf-actuallyworks">How RLHF Actually Works</a></li>
+            <li><a href="#components-ofrlhf">Components of RLHF</a></li>
+          </ul>
+        </li>
+        <li><a href="#model-initialization-hot-cold-or-frozenstart">Model Initialization: Hot, Cold or Frozen Start?</a>
+          <ul>
+            <li><a href="#the-thermal-spectrum-of-startingmodels">The Thermal Spectrum of Starting Models</a></li>
+          </ul>
+        </li>
+        <li><a href="#quantization">Quantization</a>
+          <ul>
+            <li><a href="#why-quantization">Why Quantization</a></li>
+          </ul>
+        </li>
+        <li><a href="#a-brief-survey-on-quantization-techniques">A Brief Survey on Quantization Techniques</a>
+          <ul>
+            <li><a href="#quantization-aware-trainingqat">Quantization Aware Training (QAT)</a></li>
+            <li><a href="#post-training-quantization">Post-Training Quantization</a></li>
+          </ul>
+        </li>
+        <li><a href="#advanced-quantization-techniques">Advanced Quantization Techniques</a>
+          <ul>
+            <li><a href="#fp16int8int4"><strong>FP16/INT8/INT4</strong></a></li>
+            <li><a href="#gptq"><strong>GPTQ</strong></a></li>
+            <li><a href="#ggml-gguf"><strong>GGML | GGUF</strong></a></li>
+            <li><a href="#gptq-vsggml"><strong>GPTQ vs GGML</strong></a></li>
+            <li><a href="#awq">AWQ</a></li>
+          </ul>
+        </li>
+        <li><a href="#inference-and-training-arithmetic">Inference and Training Arithmetic</a>
+          <ul>
+            <li><a href="#kv-cache">KV cache</a></li>
+            <li><a href="#capacity">Capacity</a></li>
+            <li><a href="#alright-heres-the-punchline"><strong>Alright, here’s the punchline:</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#llm-pollution">LLM Pollution</a></li>
+        <li><a href="#conclusion-putting-it-alltogether">Conclusion: Putting It All Together</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = decodeURIComponent(e.attr('id'));
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+           
+            $(e).removeClass('active').siblings('ul').hide();
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active');
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+         
+          $toc.find('a').parent('li').find('ul').hide();
+        
+        onScroll();
+      });
+    }
+  })();
+
+</script>
+   </div>
+            </div>
+            
+
+            <div class="min-w-0 min-h-0 grow">
+
+                
+
+
+                <div class="article-content max-w-full mb-20">
+                    <p>Large Language Models (LLMs) have been the buzz since 2021. One of the most popular ones being ChatGPT, followed by Gemini and then Claude…</p>
+<hr>
+
+<h3 class="relative group">The Complete Dummies’ Guide to LLMs 
+    <div id="the-complete-dummies-guide-tollms" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#the-complete-dummies-guide-tollms" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Large Language Models (LLMs) have been the buzz since 2021. One of the most popular ones being ChatGPT, followed by Gemini and then Claude. But these are just the tip of the iceberg. LLMs have revolutionized natural language processing and artificial intelligence. However, the field is rife with complex terminology that can be daunting for newcomers. This guide aims to demystify key concepts and jargon related to LLMs, making the subject more accessible to a wider audience.</p>
+<figure id="4baf" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*eyIc4FRTbVeqcdPZSL3FDg.jpeg" class="graf-image" data-image-id="1*eyIc4FRTbVeqcdPZSL3FDg.jpeg" data-width="1024" data-height="1024" />
+</figure>
+<p>This article is best read with a foundational level of knowledge on machine learning, backpropagation and computational mathematics.</p>
+
+<h3 class="relative group">Table of Contents 
+    <div id="table-ofcontents" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#table-ofcontents" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ol>
+<li><span id="de9e">A Brief overview of LLMs and their importance</span></li>
+<li><span id="865a">Demystifying LLM terminology</span></li>
+<li><span id="c2e9">How LLMs learn</span></li>
+<li><span id="5a40">Transformers 101</span></li>
+<li><span id="13d6">You Just Want Attention</span></li>
+<li><span id="0d83">Training and Inference</span></li>
+<li><span id="96fc">Finetuning</span></li>
+<li><span id="5071">Advanced Finetuning Techniques</span></li>
+<li><span id="57e8">Model Initialization</span></li>
+<li><span id="b256">Quantization</span></li>
+<li><span id="cb89">A Brief Survey on Quantization Techniques</span></li>
+<li><span id="1800">Advanced Quantization Techniques</span></li>
+<li><span id="7dd0">Inference and Training Arithmetic</span></li>
+<li><span id="3c65">LLM Pollution</span></li>
+<li><span id="d88f">Conclusion: Putting it all together</span></li>
+</ol>
+
+<h3 class="relative group">A Brief Overview of LLMs and their importance 
+    <div id="a-brief-overview-of-llms-and-their-importance" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#a-brief-overview-of-llms-and-their-importance" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Language Model Models (LLMs) have gained immense popularity in recent years due to their ability to generate human-like text. These sophisticated algorithms, developed using deep learning techniques, have found a wide range of applications in various fields.</p>
+<figure id="694a" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*AKvu67bysFtCvncJ.jpg" class="graf-image" data-image-id="0*AKvu67bysFtCvncJ.jpg" data-width="400" data-height="400" />
+</figure>
+<p>LLMs are essentially very, very deep neural networks (DNNs). For those of you don’t know what a deep (or even a neural network is), check <a href="https://medium.com/@Coursesteach/deep-learning-part-1-86757cf5a0c3" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@Coursesteach/deep-learning-part-1-86757cf5a0c3" target="_blank">this article out</a>.</p>
+<p>DNNs are known for their ability to capture latent (hidden) information, sequences and/or patterns within large data. Deep neural networks are particularly useful in computer vision and language modelling tasks, where a regular statistical algorithm may fail to fit to larger data.</p>
+<p>Going back again, a very deep NN with the right architecture to learn latent representations within text data is what basically an LLM does. And this is quite important in the real world, where text-based tasks such as conventional business, conversation and translation require mass automation. LLMs had found their initial footing here.</p>
+<figure id="5552" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*-JdRkEKzLLVMvBTH.png" class="graf-image" data-image-id="0*-JdRkEKzLLVMvBTH.png" data-width="495" data-height="373" />
+</figure>
+<p>It has been a few years since LLM has taken over the internet. Now everyone can communicate with their own LLMs through ChatGPT, Gemini, etc.</p>
+<p>Now, you can even personalize your own LLM for your needs.</p>
+<figure id="0044" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*m1ZnBbLSpXPLZQaTDOFu2A.jpeg" class="graf-image" data-image-id="1*m1ZnBbLSpXPLZQaTDOFu2A.jpeg" data-width="2400" data-height="1320" />
+<figcaption>Samantha from Her. Gosh, I want this ;)</figcaption>
+</figure>
+<p>But later on that part ;)</p>
+
+<h3 class="relative group">Demystifying LLM Terminology 
+    <div id="demystifying-llm-terminology" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#demystifying-llm-terminology" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<figure id="9ebf" class="graf graf--figure graf-after--h3">
+<img src="https://cdn-images-1.medium.com/max/800/1*sakWpoAkWKfI49SJshhJYw.png" class="graf-image" data-image-id="1*sakWpoAkWKfI49SJshhJYw.png" data-width="969" data-height="480" />
+<figcaption>I was in the same spot a couple years back</figcaption>
+</figure>
+<p>You may have heard terms such as agents, few shot learning, finetuning, GPTs, hallucination, RAG, hybrid search, training, inference, blah blah blah. If you haven’t, dont’t fret.</p>
+<p>Let’s cover a lot more than few concepts:</p>
+<p><strong>0. Foundational Models:</strong></p>
+<p>The gods of Generative AI. The Stanford Institute for Human-Centered Artificial Intelligence’s (HAI) Center for Research on Foundation Models (CRFM) coined the term “foundation model” in August 2021 to mean “any model that is trained on broad data (generally using self-supervision at scale) that can be adapted (e.g., fine-tuned) to a wide range of downstream tasks”.</p>
+<figure id="374f" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*5RyC1xDvbhB1Rp1S8IXVng.png" class="graf-image" data-image-id="1*5RyC1xDvbhB1Rp1S8IXVng.png" data-width="980" data-height="484" />
+</figure>
+<p>In a nutshell, large foundation models such as Microsoft Florence (Vision), OpenAI’s GPT (coming up), CLIP (image captioning), Diffusion (Image Generation) have been retrained countless times on different data to meet different needs, but their core architecture and learned representation stay more or less the same, making it easier to build newer models from these gods.</p>
+<p><strong>1. GPTs:</strong></p>
+<figure id="74cf" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*ZMNJtDUqHXV3T9Ni" class="graf-image" data-image-id="0*ZMNJtDUqHXV3T9Ni" data-width="640" data-height="394" />
+</figure>
+<p>Abbreviation for ‘Generative Pre-Trained Transformer’. These are a class of LLMs that are built on the transformer architecture, a type of very deep DNN that has been proven to perform remarkably well on long range sequences.</p>
+<p><strong>2. Agents:</strong></p>
+<figure id="88b5" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*Drpb78ZpJCprX5t0.jpg" class="graf-image" data-image-id="0*Drpb78ZpJCprX5t0.jpg" data-width="1400" data-height="700" />
+</figure>
+<p>LLM agents are advanced AI systems designed for creating complex text that needs sequential reasoning. They can think ahead, remember past conversations, and use different tools to adjust their responses based on the situation and style needed. You can deploy a crew of agents specialized for automating a task, for instance, managing your emails, attending your calls while away, digging up research material, etc. <a href="https://www.crewai.com/" class="markup--anchor markup--p-anchor" data-href="https://www.crewai.com/" rel="noopener" target="_blank">CrewAI</a> has a well-developed suite for Agentic AI.</p>
+<p><strong>3. Hallucination:</strong></p>
+<figure id="b254" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*_pFeAwHTKDZm_XdLJVUGWw.jpeg" class="graf-image" data-image-id="1*_pFeAwHTKDZm_XdLJVUGWw.jpeg" data-width="750" data-height="500" />
+<figcaption>How the turn tables</figcaption>
+</figure>
+<p>Yes, it’s LLMs making up stuff just like we do when giddy. Hallucinations in LLMs refer to the generation of content that is irrelevant, made-up, or inconsistent with the input data. This problem leads to incorrect information, challenging the trust placed in these models. Wanna try? Go ahead and ask Gemini or ChatGPT something that is partially true and after a couple of prompts, it should start hallucinating ;)</p>
+<p><strong>4. Retrieval Augmented Generation (RAG):</strong></p>
+<p>One step closer to your personal AI, RAG is an easy and popular way to use your own data by providing it as part of the prompt with which you query the LLM model. The name stands as you would retrieve the relevant data and use it as augmented context for the LLM. Instead of relying solely on knowledge derived from the training data, a RAG workflow pulls relevant information and connects static LLMs with real-time data retrieval.</p>
+<figure id="b384" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*MpxUSbrh112xyTpX.png" class="graf-image" data-image-id="0*MpxUSbrh112xyTpX.png" data-width="875" data-height="489" />
+</figure>
+<p>A RAG workflow consists of the User, the LLM and a Vector Database (VDB). The VDB can be modified and updated however well you want the LLM to refer to ‘your’ factual information. Pinecone, Chroma and Weaviate are renowned cloud-based VDBs for integrating into your RAG workflow.</p>
+<figure id="d01f" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*pKrKxT5Urz_bgTyFTt5E4w.png" class="graf-image" data-image-id="1*pKrKxT5Urz_bgTyFTt5E4w.png" data-width="800" data-height="528" />
+</figure>
+<p>If you’ve ever encountered the above messages while playing around, it’s because Web-based RAG wasn’t a feature yet. Now almost all LLM giants implement a RAG pipeline with access to the internet to stay up to date.</p>
+<p><strong>5. Hybrid Search:</strong></p>
+<figure id="43dc" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*dyUYUblSvjFuVuCX.png" class="graf-image" data-image-id="0*dyUYUblSvjFuVuCX.png" data-width="1250" data-height="625" />
+</figure>
+<p>It’s a cross between semantic search and RAG. Dumbing it down, it is a combination of keyword search and neural networks.</p>
+<p>A relatively old idea that you could <strong>take the best from both worlds — keyword-based old school search </strong>— sparse retrieval algorithms like <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf" class="markup--anchor markup--p-anchor" data-href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf" rel="noopener ugc nofollow noopener" target="_blank">tf-idf</a> or search industry standard <a href="https://en.wikipedia.org/wiki/Okapi_BM25" class="markup--anchor markup--p-anchor" data-href="https://en.wikipedia.org/wiki/Okapi_BM25" rel="noopener ugc nofollow noopener" target="_blank">BM25</a> — <strong>and modern</strong> semantic or <strong>vector search and combine it in one retrieval result.</strong><br>
+The only trick here is to properly combine the retrieved results with different similarity scores — this problem is usually solved with the help of the <a href="https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf" class="markup--anchor markup--p-anchor" data-href="https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf" rel="noopener ugc nofollow noopener" target="_blank">Reciprocal Rank Fusion</a> algorithm, reranking the retrieved results for the final output.</p>
+<p>Algolia and Cohere are pretty well-known hybrid search engines.</p>
+<p><strong>6. Prompt Engineering:</strong></p>
+<figure id="2d2c" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*H7q2xvYmRx3i8jV6" class="graf-image" data-image-id="0*H7q2xvYmRx3i8jV6" data-width="640" data-height="345" />
+</figure>
+<p>It is the process of crafting, refining, and optimizing the input prompts given to an LLM in order to achieve desired outputs. Prompt engineering plays a crucial role in determining the performance and behavior of models like those based on the GPT architecture.</p>
+<p>If you’re a seasoned ChatGPT user, you would be knowing well that it requires a lot more than small talk to get things done. Unofficially, everyone is a prompt engineer!</p>
+<p><strong>7. Upstream and Downstream Tasks:</strong></p>
+<p>In the world of Large Language Models, we often talk about upstream and downstream tasks. But what do these aquatic-sounding terms actually mean? Let’s dive in!</p>
+<figure id="2d21" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*z0NzCq_O8q478E45.png" class="graf-image" data-image-id="0*z0NzCq_O8q478E45.png" data-width="671" data-height="271" />
+</figure>
+<p>Imagine an LLM as a mighty river of knowledge. Upstream tasks are like the mountain springs and tributaries that feed this river. These are the fundamental tasks that help the model learn general language understanding and generation. Examples include:</p>
+<ul>
+<li><span id="2814">Next word prediction</span></li>
+<li><span id="4b22">Masked language modeling</span></li>
+<li><span id="c047">Sentence completion</span></li>
+</ul>
+<p>These tasks are the heavy lifters, shaping the riverbed and determining the flow of the AI river.</p>
+<p>Downstream tasks are like the various activities you can do once the river is flowing strong. These are specific applications or fine-tuned uses of the pre-trained model. Examples include:</p>
+<ul>
+<li><span id="da25">Sentiment analysis</span></li>
+<li><span id="1fa4">Named entity recognition</span></li>
+<li><span id="0ac0">Text summarization</span></li>
+</ul>
+<p><strong>8. Transfer Learning</strong></p>
+<figure id="19eb" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*31UbUQ-LAhRc2Zee.jpeg" class="graf-image" data-image-id="0*31UbUQ-LAhRc2Zee.jpeg" data-width="568" data-height="335" />
+</figure>
+<p>Training an LLM model is a huge, costly and painful task (I’m gonna give you the gore details later on). Transfer learning popped into the picture when researchers realized you could attain almost the same accuracy, precision and capabilities of the parent model with little to no loss by transferring its knowledge to a smaller daughter model.</p>
+<p>YOLO is a family of Computer Vision, Detection and Segmentation models that are initially trained on a huge number of classes and even huger datasets (we’re talking hundreds of gigabytes here). But regular folk may not need the entire model for their usecase. Perhaps you need to just detect a cat or dog for a project, or maybe a new object that is not in the parent model. YOLO has transfer learned its parameters to smaller variants for ease-of-use and deployment.</p>
+<figure id="a3d6" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*RyrlhJ0D3QcEFQUn.png" class="graf-image" data-image-id="0*RyrlhJ0D3QcEFQUn.png" data-width="560" data-height="370" />
+</figure>
+<p>That’s it for now. We still have a lot more to tour!</p>
+
+<h3 class="relative group">How LLMs Learn 
+    <div id="how-llmslearn" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#how-llmslearn" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Large Language Models (LLMs) are like digital sponges that have devoured entire libraries. But how exactly do these binary marvels acquire their knowledge? Let’s break it down.</p>
+<p>1. The Data Buffet</p>
+<figure id="8ef5" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*baN895J4gDl1QAVh" class="graf-image" data-image-id="0*baN895J4gDl1QAVh" data-width="640" data-height="660" />
+</figure>
+<p>Imagine a massive, all-you-can-eat buffet of text. LLMs start their journey by ingesting enormous amounts of text data from various sources:</p>
+<p>- Books</p>
+<ul>
+<li>Websites</li>
+<li>Articles</li>
+<li>Social media posts</li>
+<li>And pretty much anything else written by humans</li>
+</ul>
+<p>2. Pattern Recognition: The Digital Sherlock</p>
+<p>As LLMs consume this data, they’re not just memorizing; they’re detecting patterns. They become experts at recognizing:</p>
+<p>- How words are typically used together</p>
+<ul>
+<li>Common sentence structures</li>
+<li>Context-dependent meanings</li>
+</ul>
+<figure id="b41d" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*PN5GK6hhSe4u_SxB5B0yuQ.png" class="graf-image" data-image-id="1*PN5GK6hhSe4u_SxB5B0yuQ.png" data-width="802" data-height="710" />
+</figure>
+<p>Internally, it’s all just simple matrix multiplication happening billions of times per second, updating each parameter in the network. It’s pretty much modelled after how the brain learns. Hot mess really.</p>
+<p>3. The Magic of Neural Networks</p>
+<figure id="b129" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*mwpfnuGPD_FQZ6hV" class="graf-image" data-image-id="0*mwpfnuGPD_FQZ6hV" data-width="452" data-height="287" />
+</figure>
+<p>Under the hood, LLMs use complex neural networks, typically based on the Transformer architecture. These networks consist of:</p>
+<p>- Input layers: Where the text goes in</p>
+<ul>
+<li>Hidden layers: Where the magic happens</li>
+<li>Output layers: Where predictions come out</li>
+</ul>
+<p>As the model processes more data, it adjusts the strengths of connections between these layers, fine-tuning its understanding.</p>
+<p>4. Training Objectives: The Guessing Game</p>
+<p>LLMs often learn through what’s called “unsupervised learning.” A common technique is “masked language modeling,” where:</p>
+<figure id="5e68" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*Wpm5X7kf6CZrAWuI7WyYqw.png" class="graf-image" data-image-id="1*Wpm5X7kf6CZrAWuI7WyYqw.png" data-width="793" data-height="410" />
+</figure>
+<p>1. The model is shown a sentence with some words masked out<br>
+2. It tries to predict the masked words<br>
+3. It checks its guesses against the actual words<br>
+4. It adjusts its internal connections based on how well it did</p>
+<p>It’s like filling in blanks in a giant, cosmic Mad Libs game!</p>
+<p>5. Iteration and Optimization</p>
+<p>Learning for an LLM is an iterative process. It goes through the data multiple times (called epochs), each time:</p>
+<p>- Making predictions</p>
+<ul>
+<li>Calculating how far off it was (loss function)</li>
+<li>Adjusting its internal parameters to do better next time (backpropagation)</li>
+</ul>
+<figure id="1f83" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*EPPjJ-W7AqloqELAlOJm8w.png" class="graf-image" data-image-id="1*EPPjJ-W7AqloqELAlOJm8w.png" data-width="1198" data-height="862" />
+</figure>
+<p>This process continues until the model’s performance stops improving significantly.</p>
+<p>6. The Never-Ending Quest</p>
+<p>Even after initial training, many LLMs continue to learn through fine-tuning on specific tasks or datasets. It’s like sending a language graduate to a specialized finishing school.</p>
+<figure id="f33c" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*I5_uqvo4-nTvT7dNWWaF4g.gif" class="graf-image" data-image-id="1*I5_uqvo4-nTvT7dNWWaF4g.gif" data-width="600" data-height="338" />
+</figure>
+<p>In essence, LLMs learn by consuming vast amounts of text, playing prediction games with themselves, and constantly fine-tuning their understanding based on their successes and failures. It’s a bit like how humans learn language, just at a much, much larger scale and speed!</p>
+
+<h3 class="relative group">Transformers 101 
+    <div id="transformers-101" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#transformers-101" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<figure id="1281" class="graf graf--figure graf-after--h3">
+<img src="https://cdn-images-1.medium.com/max/800/0*1YcqptdcswWaz0cR.jpeg" class="graf-image" data-image-id="0*1YcqptdcswWaz0cR.jpeg" data-width="499" data-height="691" />
+</figure>
+<p>Transformers are the architectural backbone of modern Large Language Models. Introduced in the 2017 paper “<a href="https://arxiv.org/abs/1706.03762" class="markup--anchor markup--p-anchor" data-href="https://arxiv.org/abs/1706.03762" rel="noopener" target="_blank">Attention Is All You Need</a>,” they revolutionized natural language processing. Think of Transformers as the secret sauce that makes your AI assistant sound so smart!</p>
+<p><strong>The Building Blocks</strong></p>
+<figure id="3c1e" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*17GBRzmDkXZM2w6su94O_Q.png" class="graf-image" data-image-id="1*17GBRzmDkXZM2w6su94O_Q.png" data-width="1280" data-height="709" />
+</figure>
+<p>Imagine Transformers as a high-tech assembly line for processing language. The ingredients are fed in, i.e. structured prompts, and the product is spat out, i.e. structured responses. Here are the key components:</p>
+<p>1. Input Embedding</p>
+<ul>
+<li>Converts words into number vectors</li>
+<li>Like translating human language into “machine-speak”</li>
+</ul>
+<p>2. Positional Encoding</p>
+<ul>
+<li>Adds information about word order</li>
+<li>Because in “Dog bites man” and “Man bites dog,” order matters!</li>
+</ul>
+<p>3. Multi-Head Attention</p>
+<ul>
+<li>The “pay attention” mechanism, something we’ll talk about later</li>
+<li>Allows the model to focus on different parts of the input simultaneously</li>
+<li>Like having multiple readers, each focusing on different aspects of a text</li>
+</ul>
+<p>4. Feed-Forward Neural Networks</p>
+<ul>
+<li>Processes the attention output</li>
+<li>Adds depth to the model’s understanding</li>
+</ul>
+<p>5. Layer Normalization and Residual Connections</p>
+<ul>
+<li>Keeps the signal from getting too wild</li>
+<li>Helps information flow smoothly through the model</li>
+</ul>
+<p><strong>The Transformer Dance: Encoding and Decoding</strong></p>
+<p>Transformers typically have two main parts:</p>
+<p>1. <em>Encoder</em>: Processes the input<br>
+ — Like a super-efficient reader, understanding the context</p>
+<p>2. <em>Decoder</em>: Generates the output<br>
+ — Like a talented writer, crafting responses based on the encoder’s understanding</p>
+<p>Some models, like BERT, use only the encoder, while others, like GPT, use only the decoder. Full Transformer models use both.</p>
+<p><strong>The Secret Sauce: Self-Attention</strong></p>
+<p>The real magic of Transformers lies in their self-attention mechanism. Here’s how it works:</p>
+<p>1. For each word, create three vectors: Query, Key, and Value<br>
+2. Calculate attention scores between the Query and all Keys<br>
+3. Use these scores to create a weighted sum of Values</p>
+<p>It’s like each word asking, “How relevant are you to me?” to every other word in the sentence.</p>
+<p>And we are diving deep into attention in the next section.</p>
+
+<h3 class="relative group">You Just Want Attention: Understanding Attention Mechanisms in Transformers 
+    <div id="you-just-want-attention-understanding-attention-mechanisms-in-transformers" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#you-just-want-attention-understanding-attention-mechanisms-in-transformers" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group">Why All the Fuss About Attention? 
+    <div id="why-all-the-fuss-about-attention" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#why-all-the-fuss-about-attention" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<figure id="650c" class="graf graf--figure graf-after--h4">
+<img src="https://cdn-images-1.medium.com/max/800/1*Dd6lnnep9hhzJQ_pM9mwWA.png" class="graf-image" data-image-id="1*Dd6lnnep9hhzJQ_pM9mwWA.png" data-width="649" data-height="619" />
+</figure>
+<p>In the world of Large Language Models, attention isn’t just a catchy Puth song — it’s the secret sauce that makes these models so powerful. Attention mechanisms allow models to focus on relevant parts of the input when producing output. It’s like having a super-smart reader who knows exactly which parts of a text are important for answering a question.</p>
+
+<h4 class="relative group">Brief history of Attention 
+    <div id="brief-history-of-attention" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#brief-history-of-attention" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<blockquote>
+<p>Memory is <strong>attention through time</strong>. ~ Alex Graves 2020</p>
+</blockquote>
+<p>The attention mechanism emerged naturally from problems that deal with <strong>time-varying data (sequences)</strong>. So, since we are dealing with “sequences”, let’s formulate the problem in terms of machine learning first. Attention became popular in the general task of dealing with sequences.</p>
+<p>Before attention and transformers, Sequence to Sequence (<strong>Seq2Seq</strong>) worked pretty much like this:</p>
+<figure id="81ee" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*D_BxfoZWvQLuK9-4n-SKTg.png" class="graf-image" data-image-id="1*D_BxfoZWvQLuK9-4n-SKTg.png" data-width="1261" data-height="238" />
+</figure>
+<p>The elements of the sequence x1, x2, y1​, y2​, etc. are usually called <strong>tokens</strong>. They can be literally anything. For instance, text representations, pixels, or even images in the case of videos.</p>
+<p>OK. So why do we use such models?</p>
+<blockquote>
+<p>The goal is to transform an input sequence (source) to a new one (target).</p>
+</blockquote>
+<p>The two sequences can be of the same or arbitrary length.</p>
+<p>In case you are wondering, recurrent neural networks (<strong>RNNs</strong>) dominated this category of tasks. The reason is simple: <strong>we liked to treat sequences sequentially</strong>. Sounds obvious and optimal? <a href="https://coursera.pxf.io/AoYYeN" class="markup--anchor markup--p-anchor" data-href="https://coursera.pxf.io/AoYYeN" rel="noopener" target="_blank">Transformers</a> proved us it’s not!</p>
+
+<h4 class="relative group">Remember about our encoder and decoder friends? 
+    <div id="remember-about-our-encoder-and-decoderfriends" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#remember-about-our-encoder-and-decoderfriends" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>The <strong>encoder</strong> and <strong>decoder</strong> are nothing more than stacked RNN layers, such as <a href="https://theaisummer.com/understanding-lstm/" class="markup--anchor markup--p-anchor" data-href="https://theaisummer.com/understanding-lstm/" rel="noopener" target="_blank">LSTM’s</a>. The encoder processes the input and produces one <strong>compact representation</strong>, called <strong>z</strong>, from all the input timesteps. It can be regarded as a compressed format of the input.</p>
+<figure id="b032" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*SuMsr1iJcZC5EBOf.png" class="graf-image" data-image-id="0*SuMsr1iJcZC5EBOf.png" data-width="1121" data-height="632" />
+</figure>
+<p>On the other hand, the decoder receives the context vector <strong>z</strong> and generates the output sequence. The most common application of Seq2seq is language translation. We can think of the input sequence as the representation of a sentence in English and the output as the same sentence in French.</p>
+<figure id="b641" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*DEcWR1DR5elfCHFk.png" class="graf-image" data-image-id="0*DEcWR1DR5elfCHFk.png" data-width="1111" data-height="671" />
+</figure>
+<p>In fact, RNN-based architectures used to work very well especially with <a href="https://theaisummer.com/understanding-lstm/" class="markup--anchor markup--p-anchor" data-href="https://theaisummer.com/understanding-lstm/" rel="noopener" target="_blank">LSTM</a> and <a href="https://theaisummer.com/gru/" class="markup--anchor markup--p-anchor" data-href="https://theaisummer.com/gru/" rel="noopener" target="_blank">GRU</a> components. It was also a lot softer in terms of time and space complexity: being <strong>linearly complex.</strong></p>
+<p>The problem? It only worked effectively <strong>for small sequences</strong> (&lt;20 timesteps). A ton of issues arose with <a href="https://medium.com/@kushansharma1/vanishing-exploding-gradients-problem-1901bb2db2b2" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@kushansharma1/vanishing-exploding-gradients-problem-1901bb2db2b2" target="_blank">vanishing and exploding gradients</a>, non-parallel computation (linear complexity) and required lots of training steps (epochs).</p>
+<p>Attention was born in order to address these two things on the Seq2seq model. But how?</p>
+<blockquote>
+<p>The core idea is that the context vector z should have access to all parts of the input sequence instead of just the last one.</p>
+</blockquote>
+<p>In other words, we need to form a <strong>direct connection</strong> with each timestamp.</p>
+
+<h4 class="relative group">How Attention Works 
+    <div id="how-attention-works" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#how-attention-works" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Let’s start with why attention is getting all the hype. It’s not just a trendy buzzword — it’s the result of years of research compounding successful results. But like any groundbreaking technology, it comes with its trade-offs.</p>
+<p>Attention is a memory guzzler. With its quadratic space and time complexity, it’s like a luxury car that demands premium fuel. If Recurrent Neural Networks (RNNs) could perform just as well with their linear complexity, we might not be so obsessed with attention.</p>
+<p>Attention brings something revolutionary to the table. When you feed an input to a model with attention:</p>
+<ol>
+<li><span id="b842">It selectively focuses on the most important parts of the input</span></li>
+<li><span id="af78">It studies these parts contextually</span></li>
+<li><span id="67d7">It can easily connect distant parts of the input</span></li>
+</ol>
+
+<h3 class="relative group">Let’s compare: 
+    <div id="lets-compare" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#lets-compare" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p><strong>1. RNNs (The Old Guard)</strong>:</p>
+<ul>
+<li><span id="02dc">Process information sequentially</span></li>
+<li><span id="dcdd">Pay attention to everything equally</span></li>
+<li><span id="4252">Struggle with long-range dependencies</span></li>
+<li><span id="5efb">Like trying to remember the beginning of a long story while still reading the end</span></li>
+</ul>
+<p><strong>2. Attention Mechanisms (The New Sheriff)</strong>:</p>
+<ul>
+<li><span id="76f6">Can jump back and forth between different parts of the input</span></li>
+<li><span id="1caa">Selectively focus on what’s important</span></li>
+<li><span id="d3b9">Excel at understanding long-range context</span></li>
+<li><span id="5251">Like having a perfect memory of the entire story while reading any part</span></li>
+</ul>
+<p>Let me break this down with the help of an example:</p>
+<figure id="c855" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*z2iXmZjU8kUv0A8EcyICVw.png" class="graf-image" data-image-id="1*z2iXmZjU8kUv0A8EcyICVw.png" data-width="1180" data-height="614" />
+</figure>
+<p>A literal translation of the German sentence to English sounds weird, as we’re mapping each German word directly to its literal English counterpart without considering contextual semantics. The targeted English translation however requires a broad sense of the grammar, syntax and semantics that the German and English language carry across each other. Attention captures this inherent and latent grammar semantic by learning to attend to the most common words. In the example, notice that the words ‘mir’, ‘helfen’, ‘Satz’, etc. ie, the ones that cross positions during translation are the mappings that our model pays <strong>more attention</strong> to.</p>
+<p>Let me simplify this further with a visualization:</p>
+<figure id="d527" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*bxkL8VKvKl3ZCMjrka4mZQ.gif" class="graf-image" data-image-id="1*bxkL8VKvKl3ZCMjrka4mZQ.gif" data-width="1640" data-height="924" />
+<figcaption>Source: <a href="https://github.com/jessevig/bertviz" class="markup--anchor markup--figure-anchor" data-href="https://github.com/jessevig/bertviz" rel="noopener" target="_blank">BertViz</a></figcaption>
+</figure>
+<p>In this visualization, notice how the brightest lines connect the words that need special attention for correct translation. Words that stay in roughly the same position have weaker attention connections. Some words attend to multiple other words, showing how the context is built.</p>
+<p>All in all, the <strong>attention</strong> model learns to pay more attention to:</p>
+<ul>
+<li><span id="698a">Words that typically change position during translation</span></li>
+<li><span id="fa72">Key contextual markers that signal how the sentence structure should change</span></li>
+<li><span id="b282">Words that have multiple possible translations, choosing the right one based on context</span></li>
+</ul>
+<p>Alright, but what am I supposed to do with this attention information? Obviously train the model, but how? And what is attention generating that I can use to train the model with? Remember our short discussion on query, key and value vectors?</p>
+<figure id="3e8e" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*PNdtPg2KINh9-lhrVswa0w.png" class="graf-image" data-image-id="1*PNdtPg2KINh9-lhrVswa0w.png" data-width="1436" data-height="804" />
+</figure>
+<p>The way attention is calculated is a bit complex. Let’s dissect the Encoder part of the LLM to understand how attention works:</p>
+
+<h4 class="relative group">Encoder 
+    <div id="encoder" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#encoder" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p><strong>Step 1</strong></p>
+<p>For each input sentence fed into the encoder, we first encode it (positional encoding, remember?) and then embed it into a vector space. The input embeddings are then multiplied with 3 matrices:</p>
+<ol>
+<li><span id="d54e">Query weight matrix (Wq) x Input = Query Matrix (Q)</span></li>
+<li><span id="04c7">Key weight matrix (Wk) x Input = Key Matrix (K)</span></li>
+<li><span id="b76e">Value weight matrix (Wv) x Input = Value Matrix (V)</span></li>
+</ol>
+<p>And logically, what do these resultant matrices signify?</p>
+<ol>
+<li><span id="03bc"><strong>Query</strong> is like the question you have in mind (“Who knows about AI?”)</span></li>
+<li><span id="e767"><strong>Key</strong> is like the name tags people wear (“AI Engineer”, “Data Scientist”)</span></li>
+<li><span id="4e72"><strong>Value</strong> is the actual knowledge each person has</span></li>
+</ol>
+<p><strong>Step 2</strong></p>
+<p>The attention formula allows us to calculate the attention score:</p>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">Attention(Q, K, V) = softmax((Q * K^T) / √d_k) * V
+</code></pre><p><strong>Query</strong> and <strong>key</strong> undergo a dot product matrix multiplication to produce a score matrix. The score matrix contains the “tensor or weights” distributed to each word as per its influence on input.</p>
+<p>The weighted attention matrix does a cross-multiplication with the “<strong>value</strong>” vector to produce an output sequence. The output values indicate the placement of subjects and verbs, the flow of logic, and output arrangements.</p>
+<p>However, multiplying matrices within a neural network may cause exploding gradients and residual values. To stabilize the matrix, it’s divided by the square root of the dimension of the queries and keys.</p>
+<p><strong>Step 3</strong></p>
+<p>The softmax layer receives the attention scores and compresses them between values 0 to 1. This gives the machine learning model a more focused representation of where each word stands in the input text sequence.</p>
+<p>In the softmax layer, the higher scores are elevated, and the lower scores get depressed. The attention scores [Q*K] are multiplied with the value vector [V] to produce an output vector for each word.</p>
+<p>This is followed by residual and layer normalization, which in layman terms translates to eliminating outliers and gradient stabilization (just security checks).</p>
+<figure id="766e" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*qELgUFqvZPZ-eR3r.jpg" class="graf-image" data-image-id="0*qELgUFqvZPZ-eR3r.jpg" data-width="577" data-height="433" />
+</figure>
+<p><strong>Step 4</strong></p>
+<p>The feedforward layer receives the output vectors with embedded output values. It contains a series of neurons that take in the output and then process and translate it. As soon as the input is received, the neural network triggers the <a href="https://www.g2.com/articles/activation-function" class="markup--anchor markup--p-anchor" data-href="https://www.g2.com/articles/activation-function" rel="noopener" target="_blank"><strong>ReLU activation function</strong></a> to eliminate the “vanishing gradients” problem from the input.</p>
+<p>This gives the output a richer representation and increases the network’s predictive power. Once the output matrix is created, the encoder layer passes the information to the decoder layer.</p>
+<p>This is the attention mechanism boiling within the encoder. But what happens in the decoder?</p>
+
+<h4 class="relative group">Decoder 
+    <div id="decoder" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#decoder" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>The decoder architecture contains the same number of sublayer operations as the encoder, with a slight difference in the attention mechanism. Decoders are autoregressive, which means it only looks at previous word tokens and previous output to generate the next word.</p>
+<p>Let’s look at the steps a decoder goes through.</p>
+<ul>
+<li><span id="fd37">Positional embeddings: The decoder takes the input generated by the encoder and previous output tokens and converts them into abstract numeric representations. However, this time, it only converts words until time series t -1, with t being the current word.</span></li>
+<li><span id="5a97">Masked multi-head attention 1: To further prevent decoders from processing future tokens, it undergoes the first layer of masked attention. In this layer, attention scores for decoders are calculated and multiplied by a masked matrix that contains a value between 0 and infinity.</span></li>
+<li><span id="0cb3">Softmax layer: After multiplication, the output gets passed on to the softmax layer, which downsizes it and stabilizes the numbers. All the parts of the matrix that belonged to future words are zeroed out. The masked matrix is structured in such a way that negative infinities get multiplied only by future tokens, which are nullified by the softmax layer.</span></li>
+<li><span id="31a0">Masked multi-head attention 2: In the second masked self-attention layer, the value and keys of the encoder output are compared with the decoder output query to get the best output path.</span></li>
+<li><span id="bf32">Feedforward neural network: Between these self-attention layers, a residual feedforward network exists to identify missing gradients, eliminate residue, and train the neural network on the data.</span></li>
+<li><span id="3068">Linear classifier: The last linear classifier layer predicts the most likely next word. This occurs till the entire response is complete.</span></li>
+</ul>
+
+<h3 class="relative group">Training and Inference 
+    <div id="training-and-inference" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#training-and-inference" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Think of training and inference as two distinct phases in an LLM’s life:</p>
+<ul>
+<li><span id="c693"><strong>Training</strong>: The education phase — expensive, time-consuming, but essential</span></li>
+<li><span id="6ace"><strong>Inference</strong>: The working phase — where the model applies what it learned</span></li>
+</ul>
+<figure id="f0f3" class="graf graf--figure graf-after--li">
+<img src="https://cdn-images-1.medium.com/max/800/1*DLKBc0mEjaSGDOMT2kNOKQ.jpeg" class="graf-image" data-image-id="1*DLKBc0mEjaSGDOMT2kNOKQ.jpeg" data-width="564" data-height="500" />
+<figcaption>This is me</figcaption>
+</figure>
+
+<h4 class="relative group">What Happens During Training? 
+    <div id="what-happens-during-training" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#what-happens-during-training" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ol>
+<li><span id="eae5"><strong>Data Ingestion</strong>: The model processes massive amounts of text data, typically hundreds of gigabytes to petabytes. Example: GPT-3 trained on 45TB of compressed text!</span></li>
+<li><span id="e859"><strong>Parameter Updates</strong>: The model adjusts billions of parameters and uses backpropagation to minimize loss function as well as techniques for gradient descent optimization.</span></li>
+<li><span id="8956"><strong>Validation</strong>: Regular testing on held-out data and ensures model isn’t just memorizing (overfitting)</span></li>
+</ol>
+<p><strong>Training Requirements:</strong></p>
+<ul>
+<li>Time: Days to months</li>
+<li>Hardware: Multiple high-end GPUs/TPUs</li>
+<li>Memory: Hundreds of GB of VRAM</li>
+<li>Cost: Can run into millions of dollars</li>
+</ul>
+<figure id="bbd5" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*C2TSMnbNMQv6z58TcU0lew.jpeg" class="graf-image" data-image-id="1*C2TSMnbNMQv6z58TcU0lew.jpeg" data-width="1280" data-height="720" />
+<figcaption>this video cost me more storage installing libraries than the model itself</figcaption>
+</figure>
+<p><strong>What Happens During Inference?</strong></p>
+<ol>
+<li><span id="820b"><strong>Input Processing</strong>: Tokenization of user input and converting tokens to model’s input format.</span></li>
+<li><span id="67c3"><strong>Forward Pass:</strong> Only uses the forward path through the network without parameter updates. Much faster than training.</span></li>
+<li><span id="7e66"><strong>Output Generation</strong>: Typically uses beam search, reranking and sampling methods (more on this in RAG).</span></li>
+</ol>
+<p><strong>Inference Requirements:</strong></p>
+<ul>
+<li>Time: Milliseconds to seconds</li>
+<li>Hardware: Can run on consumer GPUs or even CPUs</li>
+<li>Memory: Can be optimized (quantization, upcoming)</li>
+<li>Cost: Fraction of training costs</li>
+</ul>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">
++------------+---------------------------+----------------------------+
+|   Aspect   |         Training          |         Inference          |
++------------+---------------------------+----------------------------+
+| Direction  | Forward + Backward        | Forward only               |
+| Memory     | High (gradients)          | Lower (no gradients)       |
+| Speed      | Slow (parameter updating) | Faster (fixed parameters)  |
+| Batch Size | Large (for stability)     | Small (for responsiveness) |
++------------+---------------------------+----------------------------+
+</code></pre><p>PS: When you initiate a conversation with ChatGPT (termed ‘initialization’), the servers at OpenAI are essentially loading the entire GPT model onto their hardware for inference. Since ChatGPT is quite large (in the range of hundreds of billions of parameters), they require large-scale compute infrastructure (distributed across multiple GPUs) just to hold a single conversation with a user. Talk about free plans!<br>
+However, whenever OpenAI releases a new model, it has a long history of training on much larger accelerated hardware. Thousands of GPUs, efficient attention mechanisms and better training data. This is where most of the funding, grants and a large portion of collected revenue go into.</p>
+
+<h3 class="relative group">Fine-tuning 
+    <div id="fine-tuning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#fine-tuning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Throughout the article, I have been throwing around this term. But what exactly is fine-tuning?</p>
+<p>Imagine you have a guitar. When it comes out of the factory, it’s built to play music (like a pre-trained model), but it needs tuning for optimal performance. Just as there are different ways to tune a guitar, there are various techniques to fine-tune a language model.</p>
+<figure id="091c" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*Wely5JKAQPtQvhW6idz3uQ.jpeg" class="graf-image" data-image-id="1*Wely5JKAQPtQvhW6idz3uQ.jpeg" data-width="661" data-height="500" />
+</figure>
+<p>I will be moving forward with this guitar analogy to keep things simple.</p>
+
+<h4 class="relative group">What is fine-tuning? 
+    <div id="what-is-fine-tuning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#what-is-fine-tuning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<figure id="c37e" class="graf graf--figure graf-after--h4">
+<img src="https://cdn-images-1.medium.com/max/800/1*aUDXIuUBAAe2Cl5MheVctw.png" class="graf-image" data-image-id="1*aUDXIuUBAAe2Cl5MheVctw.png" data-width="882" data-height="528" />
+</figure>
+<p>Fine-tuning is the process of taking a pre-trained model and adapting it to a specific task or domain. It’s like adjusting your guitar strings to play in a different key.</p>
+
+<h4 class="relative group"><strong>Why fine-tune?</strong> 
+    <div id="why-fine-tune" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#why-fine-tune" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Just like when a guitar is manufactured to play any sort of music, they can be tuned to perform better on jazz, rock or blues. This requires careful tuning of the strings and pegs by the guitarist.</p>
+<p>In the same space, LLMs understand language structure very well and are poised to respond to any text input. Just as you might tune a guitar differently, LLM behavior can be adjusted for sentiment analysis, translation, etc. Fine-tuning is easier than building and training a new model from scratch. Just like choosing to tune a guitar rather than building a new one entirely.</p>
+<p>For example, did you know that GPT-3.5 and GPT-4 are LLMs fine-tuned from a larger foundational GPT? LLaMa, the open-source LLM released by Meta, has been fine-tuned for millions of tasks, ranging from customer service to personal chatbots to even for-profit applications.</p>
+<p>Let’s look into the two approaches to fine-tuning:</p>
+
+<h4 class="relative group">Standard Tuning: Full Fine-tuning 
+    <div id="standard-tuning-full-fine-tuning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#standard-tuning-full-fine-tuning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Like tuning all strings on a guitar (E, A, D, G, B, E), full fine-tuning adjusts all layers of the model. In terms of data, this task requires a huge dataset relevant to the task it has to be specialized on. But this requires large computational resources and might not be a suitable option in the long run, owing to model adaptations.</p>
+
+<h4 class="relative group">Drop D Tuning: Partial Fine-tuning 
+    <div id="drop-d-tuning-partial-fine-tuning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#drop-d-tuning-partial-fine-tuning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Like lowering just the low E string to D, partial fine-tuning adjusts only some layers. The layers that are not involved in training are ‘frozen’ and the rest are retrained. This preserves lower-level features that the original model has learned. A better example: if you’re decent at speaking American English, it’s not that hard to catch up on British English.</p>
+
+<h3 class="relative group">Advanced Fine-tuning Techniques 
+    <div id="advanced-fine-tuning-techniques" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#advanced-fine-tuning-techniques" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Just as a guitarist might adjust their instrument for different musical styles, we can fine-tune our language models in various ways. Let’s explore advanced fine-tuning techniques through the lens of guitar tuning!</p>
+
+<h4 class="relative group">Pruning: Trimming the Excess 
+    <div id="pruning-trimming-theexcess" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#pruning-trimming-theexcess" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<figure id="22f8" class="graf graf--figure graf-after--h4">
+<img src="https://cdn-images-1.medium.com/max/800/0*8mAokkIC9JOn1VJ6.png" class="graf-image" data-image-id="0*8mAokkIC9JOn1VJ6.png" data-width="705" data-height="356" />
+</figure>
+<p>Pruning is a technique that involves removing unnecessary connections or parameters from a neural network. Basically, pruning removes the weights that don’t really matter, making the model smaller and easier to handle. This results in faster speeds and less memory usage — pretty neat, right?</p>
+<p>Imagine a guitarist tuning their guitar before a performance. The guitar has six strings, but not every string is needed for every song. Some strings might even produce unnecessary noise or overpower the melody. To make the sound cleaner and more precise, the guitarist decides to adjust or mute certain strings while playing a specific piece. Infact, Keith Richards, songwriter and guitarist for the band ‘Rolling Stones’, used a restricted string setup with only five strings instead of six!</p>
+
+<h4 class="relative group">Transfer Learning 
+    <div id="transfer-learning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#transfer-learning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Transfer learning is like teaching a general musician to specialize in guitar. They already know finger placement, reading music, and rhythm; they just need to adapt these skills to a new style.</p>
+<figure id="bbe3" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*1Eu2LWBggzSgtMvrAVny2g.jpeg" class="graf-image" data-image-id="1*1Eu2LWBggzSgtMvrAVny2g.jpeg" data-width="768" data-height="432" />
+</figure>
+<p>Similarly, in machine learning and deep learning, transfer learning involves taking a model that has already been trained on a general task and fine-tuning it for a new, more specific task. The model has already learned useful features and patterns from a large, broad dataset (like the musician’s general skills). Instead of training a new model from the ground up, we just tweak the existing model to adapt to the new problem, making the process much faster and more efficient.</p>
+<p>This way, just as the musician quickly becomes proficient at guitar, the model quickly learns to perform well on the specialized task without needing extensive retraining.</p>
+
+<h4 class="relative group">Distillation: Knowledge Transfer for Efficiency 
+    <div id="distillation-knowledge-transfer-for-efficiency" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#distillation-knowledge-transfer-for-efficiency" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Think of distillation like a guitarist teaching a student how to play complex songs. The guitarist (the larger model) knows all the advanced techniques, chords, and intricate details of the music. However, the student (the smaller model) doesn’t need to learn every single detail to perform the song well. Instead, the guitarist simplifies the lessons, focusing on the essential techniques and patterns that still capture the essence of the performance.</p>
+<figure id="5ed9" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*t7msYunL4LGVC_6Z.png" class="graf-image" data-image-id="0*t7msYunL4LGVC_6Z.png" data-width="875" data-height="525" />
+</figure>
+<p>You’ve got it now!</p>
+<p>Distillation involves training a smaller, more compact model to mimic the behavior of a larger, more complex model. By transferring knowledge from the larger model, distillation enables the creation of highly efficient models without sacrificing performance.</p>
+<p>This technique has been particularly effective in scenarios where computational resources are limited, such as deploying models on edge devices, smartphones, tablets, etc. A large language model can be distilled into a smaller model that retains most of the original model’s performance while being more lightweight and faster to execute.</p>
+
+<h4 class="relative group">Prefix Tuning 
+    <div id="prefix-tuning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#prefix-tuning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Prefix tuning adapts pre-trained language models to specific tasks without modifying the original model’s weights.</p>
+<p>Prefix tuning draws inspiration from the concept of prompting, where task instructions and examples are prepended to the input to steer the LM’s generation. However, instead of using discrete tokens, <strong>prefix tuning uses a continuous prefix vector</strong>.</p>
+<p>Prefix-tuning involves prepending a sequence of <strong>continuous task-specific vectors</strong>, called a prefix, to the input of the LM.</p>
+<p>The Transformer can attend to these <strong>prefix vectors</strong> as if they were a sequence of <strong>“virtual tokens”</strong>. Unlike prompting, the <strong>prefix vectors</strong> do not correspond to real tokens but are learned during training.</p>
+
+<h4 class="relative group">LoRA: Low Rank Adaptation 
+    <div id="lora-low-rank-adaptation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#lora-low-rank-adaptation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Now imagine adding a small device to your guitar that, when activated, changes how certain chords sound:</p>
+<ul>
+<li><span id="5fd7">The guitar’s main structure remains unchanged</span></li>
+<li><span id="8eac">The device affects only specific combinations of strings</span></li>
+<li><span id="fdf0">You can easily swap devices for different effects</span></li>
+</ul>
+<figure id="d622" class="graf graf--figure graf-after--li">
+<img src="https://cdn-images-1.medium.com/max/800/1*JBbGp4sU1zaCUfZDZCs1cA.jpeg" class="graf-image" data-image-id="1*JBbGp4sU1zaCUfZDZCs1cA.jpeg" data-width="1600" data-height="672" />
+</figure>
+<p>LoRA adds small, trainable rank decomposition matrices. These matrices are like “adapters” for the model and modifies the model’s behavior without changing most weights. So instead of retraining a subset of the model, we retrain these decomposable matrices, saving us a ton of time and compute. This make LoRA much more memory efficient than full fine-tuning.</p>
+
+<h4 class="relative group">QLoRA: Quantized LoRA 
+    <div id="qlora-quantized-lora" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#qlora-quantized-lora" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Like practicing an electric guitar without an amp:</p>
+<ul>
+<li><span id="4ecc">The guitar’s full potential is compressed</span></li>
+<li><span id="f68b">You can still learn and practice effectively</span></li>
+<li><span id="93b0">When you plug in, you get the full sound</span></li>
+</ul>
+<figure id="4558" class="graf graf--figure graf-after--li">
+<img src="https://cdn-images-1.medium.com/max/800/1*DiERVQiGg5NbYZUm7pXcIQ.png" class="graf-image" data-image-id="1*DiERVQiGg5NbYZUm7pXcIQ.png" data-width="2002" data-height="891" />
+</figure>
+<p>QLoRA takes LoRA a step further by also quantizing the weights of the LoRA adapters (smaller matrices) to lower precision (e.g., 4-bit or 8-bit instead of 16-bit). This further reduces the memory footprint and storage requirements. QLoRA is even more memory efficient than LoRA, making it ideal for resource-constrained environments.</p>
+
+<h4 class="relative group">Choosing between LoRA and QLoRA: 
+    <div id="choosing-between-lora-andqlora" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#choosing-between-lora-andqlora" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>The best choice between LoRA and QLoRA depends on your specific needs:</p>
+<ul>
+<li><span id="fd05"><strong>If memory footprint is the primary concern:</strong> QLoRA is the better choice due to its even greater memory efficiency.</span></li>
+<li><span id="729e"><strong>If fine-tuning speed is crucial:</strong> LoRA may be preferable due to its slightly faster training times.</span></li>
+<li><span id="269b"><strong>If both memory and speed are important:</strong> QLoRA offers a good balance between both.</span></li>
+</ul>
+<p>There’s a lot more variants of LoRA such as ReLoRA, SLoRA, GaLoRA, etc. But discussing them is out of the scope of this article as they require other your understanding of a few other foundational theories. If you do want to check them out, <a href="https://training.continuumlabs.ai/training/the-fine-tuning-process/parameter-efficient-fine-tuning/prefix-tuning-optimizing-continuous-prompts-for-generation" class="markup--anchor markup--p-anchor" data-href="https://training.continuumlabs.ai/training/the-fine-tuning-process/parameter-efficient-fine-tuning/prefix-tuning-optimizing-continuous-prompts-for-generation" rel="noopener" target="_blank">here</a> is a good article that explain each technique in precise detail.</p>
+
+<h4 class="relative group">Prompt Engineering 
+    <div id="prompt-engineering" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#prompt-engineering" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>The process of crafting, refining, and optimizing the input prompts given to an LLM in order to achieve desired outputs. Prompt engineering plays a crucial role in determining the performance and behavior of models like those based on the GPT architecture.</p>
+<p>Given the vast knowledge and diverse potential responses a model can generate, the way a question or instruction is phrased can lead to significantly different results. Some specific techniques in prompt engineering include:</p>
+<ul>
+<li><span id="0d93"><strong>Rephrasing:</strong> Sometimes, rewording a prompt can lead to better results. For instance, instead of asking “What is the capital of France?” one might ask, “Can you name the city that serves as the capital of France?”</span></li>
+<li><span id="e6b9"><strong>Specifying Format:</strong> For tasks where the format of the answer matters, you can specify it in the prompt. For example, “Provide an answer in bullet points” or “Write a three-sentence summary.”</span></li>
+<li><span id="9748"><strong>Leading Information:</strong> Including additional context or leading information can help in narrowing down the desired response. E.g., “Considering the economic implications, explain the impact of inflation.”</span></li>
+</ul>
+
+<h4 class="relative group">Zero-Shot, One-Shot and Few-Shot Learning 
+    <div id="zero-shot-one-shot-and-few-shotlearning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#zero-shot-one-shot-and-few-shotlearning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>These are techniques that do not strictly fall under fine-tuning, but rather more into <strong>Prompt Engineering.</strong> Here, the model adapts to new tasks by providing it with no (zero-shot), one (one-shot) or multiple (few-shot) data samples of the intended tasks.</p>
+<figure id="2a41" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*cxXLo09rtVGzqjn-sLUUMA.png" class="graf-image" data-image-id="1*cxXLo09rtVGzqjn-sLUUMA.png" data-width="1024" data-height="768" />
+</figure>
+
+<h4 class="relative group">How Few-Shot Learning Works 
+    <div id="how-few-shot-learningworks" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#how-few-shot-learningworks" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li><span id="746c">Provides the model with a few examples</span></li>
+<li><span id="697c">Model recognizes patterns in these examples</span></li>
+<li><span id="8e82">Applies these patterns to new, similar tasks</span></li>
+</ul>
+<p>This typically works on large parameter models like the GPT series or the Llama 3 70B onwards.</p>
+
+<h4 class="relative group">Reinforcement Learning through Human Feedback (RLHF) 
+    <div id="reinforcement-learning-through-human-feedbackrlhf" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reinforcement-learning-through-human-feedbackrlhf" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>If you’ve used ChatGPT quite enough, you may have noticed that you do get occasionally prompted on how you would rate it’s response. Or whether it requires an improvement. Or to make a choice on the better of the two responses.</p>
+<p>These are all inputs to an RLHF framework that will be involved in iterative fine-tuning of the base GPT later on. It’s similar to a club guitarist who plays different variations of a song, gauges the audience’s reaction, and adjusts their playing based on feedback.</p>
+
+<h4 class="relative group">How RLHF Actually Works 
+    <div id="how-rlhf-actuallyworks" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#how-rlhf-actuallyworks" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<figure id="db0d" class="graf graf--figure graf-after--h4">
+<img src="https://cdn-images-1.medium.com/max/800/1*2KczV5F2ftEtPj6ebl-aRg.jpeg" class="graf-image" data-image-id="1*2KczV5F2ftEtPj6ebl-aRg.jpeg" data-width="1440" data-height="772" />
+</figure>
+<ol>
+<li><span id="ea3b">Initial Training: Model learns basic capabilities</span></li>
+<li><span id="8fa3">Reward Modeling: Human feedback is collected. A reward model is trained to predict human preferences</span></li>
+<li><span id="0ada">Reinforcement Learning: Model is further trained using the reward model. Behaviors that align with human preferences are reinforced</span></li>
+</ol>
+
+<h4 class="relative group">Components of RLHF 
+    <div id="components-ofrlhf" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#components-ofrlhf" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ol>
+<li><span id="5c0e"><strong>Base Model</strong>: The initial pre-trained model</span></li>
+<li><span id="5fdb"><strong>Reward Model</strong>: Learns to predict human preferences</span></li>
+<li><span id="c7d6"><strong>Policy Model</strong>: The model being fine-tuned</span></li>
+<li><span id="06cf"><strong>Human Feedback</strong>: Crucial for guidance</span></li>
+</ol>
+
+<h3 class="relative group">Model Initialization: Hot, Cold or Frozen Start? 
+    <div id="model-initialization-hot-cold-or-frozenstart" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#model-initialization-hot-cold-or-frozenstart" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group">The Thermal Spectrum of Starting Models 
+    <div id="the-thermal-spectrum-of-startingmodels" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#the-thermal-spectrum-of-startingmodels" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>When it comes to initializing Large Language Models, we have three main approaches:</p>
+<ol>
+<li><span id="fff5"><strong>Cold Start</strong>: Starting from scratch. The model weights are initialized randomly, and the model is trained from ground zero with no prior knowledge utilized. Cold start is used where novel architectures have to be trained, and/or there is no existing pre-trained architecture to support the new one. Eg: GPT-4 API usage</span></li>
+<li><span id="805b"><strong>Warm/Hot Start</strong>: Beginning with pre-trained weights from an existing model, we fine-tune all layers for a domain-specific task. This is also interchangeably called transfer learning. This initialization method is useful when the model behavior has to be adapted significantly on task-specific data. Eg: BERT Fine-tuning</span></li>
+<li><span id="f4bc"><strong>Frozen Start</strong>: Using a pre-trained model with fixed parameters, we freeze almost all the model’s parameters and only train new task-specific layers. This is useful when you have limited VRAM or compute (sad GTX noises) and a very small dataset. Eg: Opensource LLM fine-tuning.</span></li>
+</ol>
+
+<h3 class="relative group">Quantization 
+    <div id="quantization" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#quantization" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<figure id="8fd7" class="graf graf--figure graf-after--h3">
+<img src="https://cdn-images-1.medium.com/max/800/1*aRYQo40BSqs90VfLwLd4RA.jpeg" class="graf-image" data-image-id="1*aRYQo40BSqs90VfLwLd4RA.jpeg" data-width="800" data-height="632" />
+</figure>
+<p>Quantization aka Compression, especially in AI models and deep learning models, typically refers to converting the model’s parameters, such as weights and biases, from floating-point numbers to integers with lower bit widths, for example, from 32-bit floating-point to 8-bit integers. In simple terms, quantization is like simplifying a detailed book written with high-level vocabulary into a concise summary or a children’s version of the story. This summary or children’s version takes up less space and is easier to communicate, but it may lose some of the details present in the original book.</p>
+
+<h4 class="relative group">Why Quantization 
+    <div id="why-quantization" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#why-quantization" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<figure id="28b3" class="graf graf--figure graf-after--h4">
+<img src="https://cdn-images-1.medium.com/max/800/1*9E-0PxU8xmSBe5vHydFgCQ.jpeg" class="graf-image" data-image-id="1*9E-0PxU8xmSBe5vHydFgCQ.jpeg" data-width="1400" data-height="788" />
+</figure>
+<p>The purpose of quantization mainly includes the following points:</p>
+<p>1. Reduced Storage Requirements: Quantized models have significantly smaller sizes, making them easier to deploy on devices with limited storage resources, such as mobile devices or embedded systems.</p>
+<p>2. Accelerated Computation: Integer operations are generally faster than floating-point operations, especially on devices without dedicated floating-point hardware support.</p>
+<p>3. Reduced Power Consumption: On certain hardware, integer operations consume less energy.</p>
+<p>There is often some loss of precision (granularity) when reducing the number of bits to represent the original parameters.</p>
+<p>To illustrate this effect, we can take any image and use only 8 colors to represent it:</p>
+<figure id="1687" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*Lh-H_RLYru9HgGJVyzXprw.jpeg" class="graf-image" data-image-id="1*Lh-H_RLYru9HgGJVyzXprw.jpeg" data-width="1456" data-height="690" />
+</figure>
+<p>Notice how the zoomed-in part seems more “grainy” than the original since we can use fewer colors to represent it.</p>
+<p>The main goal of quantization is to reduce the number of bits (colors) needed to represent the original parameters while preserving the precision of the original parameters as best as possible.</p>
+<p>However, quantization has a drawback: it can lead to a reduction in model accuracy. This is because you are representing the original floating-point numbers with lower precision, which may result in some loss of information, meaning the model’s capabilities may decrease.</p>
+<p>To balance this accuracy loss, researchers have developed various quantization strategies and techniques, which we’ll be seeing soon.</p>
+
+<h3 class="relative group">A Brief Survey on Quantization Techniques 
+    <div id="a-brief-survey-on-quantization-techniques" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#a-brief-survey-on-quantization-techniques" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Two primary machine and deep learning model quantization modes exist — PTQ and QAT. Let’s understand them both.</p>
+<figure id="780b" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*4QoyqUVpR07w0pzr2Nz7Pg.jpeg" class="graf-image" data-image-id="1*4QoyqUVpR07w0pzr2Nz7Pg.jpeg" data-width="1024" data-height="489" />
+<figcaption>PTQ (left) and QAT (right)</figcaption>
+</figure>
+
+<h4 class="relative group">Quantization Aware Training (QAT) 
+    <div id="quantization-aware-trainingqat" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#quantization-aware-trainingqat" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li><span id="6f16">We start QAT with a pre-trained model or a PTQ model. We fine tune this model using QAT. The aim here is to recover the accuracy loss that happened due to PTQ in case we took a PTQ model.</span></li>
+<li><span id="6999">The basic idea of QAT is to quantize input into lower precision depending on the weight precision of that layer. QAT also takes care of converting the output of multiplication of weights and inputs back to higher precision in case the next layer demands so. This process of converting input to lower precision and then converting output of weights and inputs back to higher precision is also called as “FakeQuant Node Insertion”. The quantization is called Fake as it quantizes and then dequantizes as well converting to the base operation.</span></li>
+</ul>
+
+<h4 class="relative group">Post-Training Quantization 
+    <div id="post-training-quantization" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#post-training-quantization" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li><span id="2e57">Post-Training Quantization (PTQ) is a technique that allows us to quantize a pre-trained model after the training process is complete, without requiring any further training or fine-tuning. The goal of PTQ is to reduce the size and computational requirements of the model by converting its weights and activations to lower precision, typically 8-bit integers, while preserving as much accuracy as possible.</span></li>
+<li><span id="c276">In PTQ, the model is first evaluated with a <strong>calibration</strong> dataset to collect statistics, which are then used to determine the optimal quantization parameters (scale and zero-point) for each layer. Unlike Quantization Aware Training (QAT), there is no need to modify the training process itself. PTQ is often faster to implement than QAT since it does not require retraining.</span></li>
+<li><span id="d76d">During inference, both the weights and activations are quantized to lower precision. However, PTQ does not simulate quantization in the training process, which can lead to some loss in accuracy, especially for models with highly sensitive layers. The method is more straightforward compared to QAT but may struggle to recover accuracy loss without additional fine-tuning, as it doesn’t learn to adjust to the quantization-induced errors.</span></li>
+</ul>
+
+<h3 class="relative group">Advanced Quantization Techniques 
+    <div id="advanced-quantization-techniques" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#advanced-quantization-techniques" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group"><strong>FP16/INT8/INT4</strong> 
+    <div id="fp16int8int4" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#fp16int8int4" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Popularly, if a model’s name doesn’t have specific identifiers like Llama-2–7b or chatglm2–6b, it generally indicates that these models are in full precision (FP32), although some may also be in half-precision (FP16). However, if the model’s name includes terms like fp16, int8, int4, such as Llama-2–7B-fp16, chatglm-6b-int8, or chatglm2–6b-int4, it suggests that these models have undergone quantization, with fp16, int8, or int4 denoting the level of quantization precision.</p>
+<figure id="84d1" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*fpN5zjqPPOq_ODWlL_DK2A.jpeg" class="graf-image" data-image-id="1*fpN5zjqPPOq_ODWlL_DK2A.jpeg" data-width="1144" data-height="856" />
+</figure>
+<p>The quantization precision ranges from high to low as follows: fp16 &gt; int8 &gt; int4. Lower quantization precision results in smaller model sizes and reduced GPU memory requirements. Still, it can also lead to decreased model performance.</p>
+
+<h4 class="relative group"><strong>GPTQ</strong> 
+    <div id="gptq" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#gptq" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>GPTQ stands for Generalized Post Training Quantization. This means once you have your pre trained LLM, you simply convert the model parameters into lower precision.</p>
+<p>GPTQ is preferred for GPU’s &amp; not CPU’s. My poor RTX 3050😅</p>
+<figure id="879e" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*qWfdnOXn70TZBQEjIlNrcQ.jpeg" class="graf-image" data-image-id="1*qWfdnOXn70TZBQEjIlNrcQ.jpeg" data-width="1200" data-height="675" />
+</figure>
+<p>GPTQ is a model quantization method that allows language models to be quantized to precision levels like INT8, INT4, INT3, or even INT2 without significant performance loss. If you come across model names on <a href="https://huggingface.co/" class="markup--anchor markup--p-anchor" data-href="https://huggingface.co/" rel="noopener" target="_blank">HuggingFace</a> with “GPTQ” in their names, such as Llama-2–13B-chat-GPTQ, it means these models have undergone GPTQ quantization. For example, consider Llama-2–13B-chat, the full-precision version of this model has a size of 26 GB, but after quantization using GPTQ to INT4 precision, the model’s size reduces to 7.26 GB.</p>
+
+<h4 class="relative group"><strong>GGML | GGUF</strong> 
+    <div id="ggml-gguf" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ggml-gguf" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>On HuggingFace, if you come across model names with “<strong>GGML</strong>,” such as Llama-2–13B-chat-GGML, it indicates that these models have undergone GGML quantization. GGML stands for Generative Graphical Models.</p>
+<p>Some GGML model names not only include “GGML” but also have suffixes like “q4,” “q4_0,” “q5,” and so on, such as Llama-2–7b-ggml-q4. In this context, “q4” refers to the GGML quantization method. Q-series quantization methods are a whole other ballgame but there’s a beautiful <a href="https://www.reddit.com/r/LocalLLaMA/comments/139yt87/notable_differences_between_q4_2_and_q5_1/" class="markup--anchor markup--p-anchor" data-href="https://www.reddit.com/r/LocalLLaMA/comments/139yt87/notable_differences_between_q4_2_and_q5_1/" rel="noopener" target="_blank">Reddit thread</a> on this, should you be curious.</p>
+<p>GPT-Generated Unified Format aka <strong>GGUF</strong> is the new version of GGML. GGUF is specially designed to store inference models and adds more data about the model so it’s easier to support multiple older and newer architectures.</p>
+
+<h4 class="relative group"><strong>GPTQ vs GGML</strong> 
+    <div id="gptq-vsggml" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#gptq-vsggml" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>GPTQ and GGML are currently the two primary methods for model quantization, but what are the differences between them? And which quantization method should you choose?</p>
+<p>Here are some key similarities and differences between the two:</p>
+<ul>
+<li><span id="dfa5">GPTQ runs faster on GPUs, while GGML runs faster on CPUs.</span></li>
+<li><span id="6aff">Models quantized with GGML tend to be slightly larger than those quantized with GPTQ at the same precision level, but their inference performance is generally comparable.</span></li>
+<li><span id="a095">Both GPTQ and GGML can be used to quantize Transformer models available on HuggingFace.</span></li>
+</ul>
+<p>Therefore, if your model runs on a GPU, it’s advisable to use GPTQ for quantization. If your model runs on a CPU, GGML is a recommended choice for quantization.</p>
+
+<h4 class="relative group">AWQ 
+    <div id="awq" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#awq" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>It stands for Activation-aware Weight Quantization</p>
+<ul>
+<li><span id="2f6a">This is meant for GPU or CPU.</span></li>
+<li><span id="1fd0">In this method, we do not quantize all weights; instead, we quantize weights that are not important for our model to retain it’s validity.</span></li>
+<li><span id="9ad5">First, the model’s activations are analyzed to determine which weights have the most significant impact on the output. Weights with minimal impact on the activations are quantized more aggressively, while those crucial to model performance are left in higher precision. This selective process minimizes the loss of accuracy commonly seen in uniform quantization methods while reducing the computational and memory demands, allowing the model to run efficiently on GPUs and CPUs.</span></li>
+</ul>
+
+<h3 class="relative group">Inference and Training Arithmetic 
+    <div id="inference-and-training-arithmetic" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#inference-and-training-arithmetic" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<figure id="9b4e" class="graf graf--figure graf-after--h3">
+<img src="https://cdn-images-1.medium.com/max/800/1*QEFkvVjmmqgigIRxYvad6A.jpeg" class="graf-image" data-image-id="1*QEFkvVjmmqgigIRxYvad6A.jpeg" data-width="1088" data-height="1088" />
+<figcaption>You don’t need a degree in mathematics for this section</figcaption>
+</figure>
+<p>Inference and training arithmetic is essential knowledge for every AIOps engineer and even non-experts. It involves straightforward math and computing resource allocation. I find this topic particularly fascinating because, although there are a limited number of factors involved, they can be creatively combined in countless ways to generate various budget strategies when planning to train an AI model.</p>
+<p>This section is a dumbed down explanation of a larger, more detailed reddit thread on Transformers. I’ll distill the basics here into mathematical equations that can be applied on a practical scale.</p>
+
+<h4 class="relative group">KV cache 
+    <div id="kv-cache" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#kv-cache" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Yeah that’s our Key (K) and Value (V) vectors in attention. During inference, the transformer performs self-attention, which requires the kv values for each item currently in the sequence (whether it was prompt/context or a generated token). These vectors are provided a matrix known as the <strong>kv cache.</strong></p>
+<p>The purpose of this is to avoid recalculations of those vectors every time we process a token. With the computed <em>k</em>,<em>v</em> values, we can save quite a bit of computation at the cost of some storage. Per token, the number of bytes we store is:</p>
+<blockquote>
+<p><em><strong>2</strong></em> × <em><strong>2</strong></em> × <em><strong>nlayers​</strong></em> × <em><strong>nheads​</strong></em> × <em><strong>dhead​</strong></em></p>
+</blockquote>
+<p>The first factor of 2 is to account for the two vectors, k<em>k</em> and v<em>v</em>. We store that per each layer, and each of those values is a <em>n</em>heads ​× <em>d</em>head​ matrix. Then multiply by 2 again for the number of bytes (we’ll assume 16-bit format).</p>
+<p>The <a href="https://en.wikipedia.org/wiki/FLOPS" class="markup--anchor markup--p-anchor" data-href="https://en.wikipedia.org/wiki/FLOPS" rel="noopener" target="_blank">flops</a> (floating points operations per second) to compute <em>k</em> and <em>v</em> for all our layers is:</p>
+<blockquote>
+<p>2 × 2 × <em>n</em>layers​ × <em>d</em>model​^2</p>
+</blockquote>
+<blockquote>
+<p><em><strong>How many flops in a matmul?</strong></em></p>
+</blockquote>
+<blockquote>
+<p><em>The computation for a matrix-vector multiplication is 2</em>mn, where m × n <em>is the dimension of the matrix and</em> n <em>is the vector</em>. <em>A matrix-matrix is</em> 2mnp, here m × n <em>and</em> n × p <em>are the two matrices.</em></p>
+</blockquote>
+<p>This means for a 52B parameter model (taking <a href="https://arxiv.org/pdf/2112.00861.pdf" class="markup--anchor markup--p-anchor" data-href="https://arxiv.org/pdf/2112.00861.pdf" rel="noopener" target="_blank">Anthropic’s</a>, where <em>dmodel</em>​=8192 and <em>nlayers</em>=64). The flops are</p>
+<blockquote>
+<p>2 × 2 × 64 × 8192^2 = 17,179,869,184 flops</p>
+</blockquote>
+<p>Say we have an <a href="https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf" class="markup--anchor markup--p-anchor" data-href="https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf" rel="noopener" target="_blank">A100 GPU</a>, which does <em>3.12^12</em> flops per second and <em>1.5^12</em> bytes per second of memory bandwidth. The following are numbers for just the kv weights and computations.</p>
+<blockquote>
+<p><em>memory = 2 × 2 × nlayers​ × dmodel​^2 ÷ 1.5^12</em></p>
+</blockquote>
+<blockquote>
+<p><em>compute = 2 × 2 × nlayers​ × dmodel​^2 ÷ 312^12</em></p>
+</blockquote>
+<blockquote>
+<p><em><strong>Flops vs Memory Boundedness</strong></em></p>
+</blockquote>
+<blockquote>
+<p><em>Flops vs memory boundedness is something we deal with a lot for transformer inference, but</em> <a href="https://horace.io/brrr_intro.html" class="markup--anchor markup--blockquote-anchor" data-href="https://horace.io/brrr_intro.html" rel="noopener" target="_blank"><em>also in deep learning optimisation in general</em></a><em>. To do the computations we do, we need to load weights which costs</em> <a href="https://en.wikipedia.org/wiki/Memory_bandwidth" class="markup--anchor markup--blockquote-anchor" data-href="https://en.wikipedia.org/wiki/Memory_bandwidth" rel="noopener" target="_blank"><em>memory bandwidth</em></a><em>. We assume (correctly, this has been very well optimised) that we can start the computations while we load the weights. Flop bound would then mean that there is time when nothing is being passed through memory, and memory bound would mean that no floperations are occuring. Nvidia uses the term</em> <a href="https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html#gpu-arch" class="markup--anchor markup--blockquote-anchor" data-href="https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html#gpu-arch" rel="noopener" target="_blank"><em>math bandwidth</em></a> <em>which I find really cute. Technically, this delineation exist per kernel but can be abstracted to exist for groups of operations.</em></p>
+</blockquote>
+<figure id="a6e1" class="graf graf--figure graf-after--blockquote">
+<img src="https://cdn-images-1.medium.com/max/800/0*MI9zg8UPJn5g2bcS.png" class="graf-image" data-image-id="0*MI9zg8UPJn5g2bcS.png" data-width="956" data-height="580" />
+</figure>
+<p>None of the model architecture matters anymore — we get a distinct ratio here of 208 given this hardware specification. This means that if we’re going to compute kv for one token, it’ll take the same amount of time to compute for up to 208 tokens! Anything below, we’re memory bandwidth bound. Above, flops bound. If we used the rest of our weights to do a full forwards pass (run the rest of the transformer) on our context, it’s also 208.</p>
+<p>For a 52B model full forwards pass, that’s <em>12 × 2 × nlayers​ × dmodel × 2 / 1.5^12 ≈ 69</em> milliseconds for up to 208 tokens (in practice, we’d use four GPUs in parallel so it would actually be ~17 milliseconds, more in following sections). If we had 416 (double) tokens in the context, then it would take twice as long, and 312 tokens would take 1.5 times as long.</p>
+<p>Sounds pretty fast right? Yep, that’s the AI horsepower of GPU💪🏻</p>
+
+<h4 class="relative group">Capacity 
+    <div id="capacity" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#capacity" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>We have a solid idea of the two things we store in our GPUs — kv cache and weights. GPU capacity does come into play for transformer inferencing performance, and we have all the understanding we need to evaluate that now!</p>
+<p>Nvidia A100 GPUs (which are generally speaking, the best bang for the buck GPUs we can get for inference) have a standard of 40GB of capacity. There are ones with 80GB and higher memory bandwidth (<em>2^12</em> instead of <em>1.5^12</em>), but you can deal with different versions with these equations later on.</p>
+<p>Given the parameter count, we can multiply by two (assuming 16-bit precision) to get bytes. So, to calculate the size of the weights for a 52B model:</p>
+<blockquote>
+<p><em>52^12 × 2 = 104^12 bytes ≈ 104GB</em></p>
+</blockquote>
+<p>Oh no! This doesn’t fit in one GPU! We’d need at least three GPUs just to have all the weights loaded in (will discuss how to do that sharding later). That leaves us <em>120 − 104 = 16GB</em> left for our kv cache. Is that enough? Back to our equation for kv cache memory per token, again with a 52B model;</p>
+<blockquote>
+<p><em>2 × nlayers × nheads​ × dhead​ × 2 × 4 × nlayers​ × nheads × dhead = 4 × 64 × 8192 = 2,097,152 bytes ≈ 0.002GB</em></p>
+</blockquote>
+<p>And then we’d do <em>16/0.002 ≈ 8000</em> tokens can fit into our kv cache with this GPU set up. For four GPUs, we’d get 4 × 16/0.002 ≈ 32000 tokens.</p>
+
+<h4 class="relative group"><strong>Alright, here’s the punchline:</strong> 
+    <div id="alright-heres-the-punchline" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#alright-heres-the-punchline" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>So, training and inference with transformers boils down to a game of “Flops vs Memory Juggling.” The KV cache is like the secret weapon you stash under your desk — saves you time but takes up space. You’re swapping storage for speed, and GPUs are your best friends in this crazy balancing act.</p>
+<p>For any monster model, it’s a lot like trying to cram an elephant into a Mini Cooper — just doesn’t fit! You’re going to need a couple more cars (GPUs) to carry all the weight. You can also simulate the same for the Llama 70B models, or even the larger GPT models (I dare you go read their whitepaper), as long as you have the variables dialled down.</p>
+<p>TL;DR: Transformers = doing a lot of math <strong>really</strong> fast, GPUs are the gym. Jst do your research on Nvidia GPU specs and you’re spot on.</p>
+
+<h3 class="relative group">LLM Pollution 
+    <div id="llm-pollution" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#llm-pollution" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>As we navigate through 2024, the AI landscape is experiencing what many experts call “LLM pollution” — an overwhelming proliferation of language models that often contribute more to noise than progress. This phenomenon has only intensified since 2023, with new models being released almost weekly, yet only a fraction finding meaningful applications or user adoption.</p>
+<figure id="e90b" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/0*1GJXc2pUcBGl-MDE" class="graf-image" data-image-id="0*1GJXc2pUcBGl-MDE" data-width="1342" data-height="900" />
+</figure>
+<p>The best example for this is Meta’s <a href="https://huggingface.co/meta-llama" class="markup--anchor markup--p-anchor" data-href="https://huggingface.co/meta-llama" rel="noopener" target="_blank">LlaMa</a> family of models. Since it’s first open-source release with LlaMa in February 2023, many individuals, organizations and communities have retrained, finetuned, quantized and released thousands if not millions of variants of these models for domain-specific usecases. The problem here is there really isn’t proper <strong>zero-to-one innovation</strong> carrying forward research in AI on improving accuracy, fidelity and reasoning capabilities of LLMs.</p>
+<p>As we move forward, the measure of success will be not how many models we can create, but how effectively we can deploy them to solve real-world problems.</p>
+
+<h3 class="relative group">Conclusion: Putting It All Together 
+    <div id="conclusion-putting-it-alltogether" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#conclusion-putting-it-alltogether" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<figure id="3476" class="graf graf--figure graf-after--h3">
+<img src="https://cdn-images-1.medium.com/max/800/0*AhTtaOr-IYL4F2sv.jpg" class="graf-image" data-image-id="0*AhTtaOr-IYL4F2sv.jpg" data-width="1079" data-height="605" />
+</figure>
+<p>Throughout this comprehensive guide, we’ve journeyed through the landscape of Large Language Models, covering essential concepts from the ground up. We explored the foundational transformer architecture, delved into attention mechanisms, and understood the critical distinction between training and inference. We examined various fine-tuning techniques like LoRA and QLoRA, investigated quantization methods from basic INT8 to advanced approaches like GPTQ and GGML, and even tackled the mathematics behind inference arithmetic and KV cache calculations. Along the way, we also addressed practical concerns like model initialization strategies and the challenge of LLM pollution in today’s AI landscape.</p>
+<p><strong>Until next time then! Thank you for taking your time reading through the article🤗</strong></p>
+<p>By <a href="https://medium.com/@aloshdenny" class="p-author h-card">Aloshdenny</a> on <a href="https://medium.com/p/cc4c6b906ae0" target="_blank">October 3, 2024</a>.</p>
+<p><a href="https://medium.com/@aloshdenny/the-complete-dummies-guide-to-llms-cc4c6b906ae0" class="p-canonical">Canonical link</a></p>
+<p>Exported from <a href="https://medium.com" target="_blank">Medium</a> on February 2, 2026.</p>
+
+                    
+                    
+                    
+        </div>
+        
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\/2024-10-03_The-Complete-Dummies--Guide-to-LLMs-cc4c6b906ae0.md"
+        var oid_likes = "likes_posts\/2024-10-03_The-Complete-Dummies--Guide-to-LLMs-cc4c6b906ae0.md"
+    </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-full print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/2024-05-25_a-developer-s-intro-to-huddle01-sdk---ideas-to-build--complete-guide--4f57c7697c44/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >A Developer’s Intro to Huddle01 SDK + Ideas to Build (Complete Guide)</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-05-25T00:00:00&#43;00:00">25 May 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/2024-10-30_exploring-india-s-ai-future-at-the-nvidia-ai-summit-2024-83d41369e721/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Exploring India’s AI Future at the NVIDIA AI Summit 2024</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-10-30T00:00:00&#43;00:00">30 October 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+            <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+        </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2026
+      Alosh Denny
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+
+    </div>
+</body>
+
+
+</html>

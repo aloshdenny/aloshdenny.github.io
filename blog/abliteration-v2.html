@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+    data-auto-appearance="false"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Unlearning Flux.1 Dev: Abliteration v2 &middot; Alosh Denny</title>
+  <meta name="title" content="Unlearning Flux.1 Dev: Abliteration v2 &middot; Alosh Denny" />
+  
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/2025-01-31_unlearning-flux-1-dev--abliteration-v2-52af88ed60b5/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.a1eaa2a21af50684cf4725e164e4df2a3b725fb05284f18aa8773df8b8440b6c408faeffdfd5c24ed3caac40f5864d9e0fd5530948626f5b0ef13e8542004b52.css"
+    integrity="sha512-oeqiohr1BoTPRyXhZOTfKjtyX7BShPGKqHc9&#43;LhEC2xAj67/39XCTtPKrED1hk2eD9VTCUhib1sO8T6FQgBLUg==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
+    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/%20apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/%20favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/%20favicon-16x16.png" />
+  <link rel="manifest" href="/%20site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/2025-01-31_unlearning-flux-1-dev--abliteration-v2-52af88ed60b5/">
+  <meta property="og:site_name" content="Alosh Denny">
+  <meta property="og:title" content="Unlearning Flux.1 Dev: Abliteration v2">
+  <meta property="og:description" content="This blog is a continuation of my previous post: Uncensoring Flux.1 Dev. The term ‘abliteration’ was introduced: a technique to uncensor…
+Unlearning Flux.1 Dev: Abliteration v2 # Source: Prisoners. Detective Loki takes out his rage on a culprit when he cannot sketch out an important piece of evidence. This blog is a continuation of my previous post: Uncensoring Flux.1 Dev. The term ‘abliteration’ was introduced: a technique to uncensor Large Language Models (LLMs). And it was a first for text-to-image generative models, as prior to this only text-to-text models could be abliterated.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-31T00:00:00+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Unlearning Flux.1 Dev: Abliteration v2">
+  <meta name="twitter:description" content="This blog is a continuation of my previous post: Uncensoring Flux.1 Dev. The term ‘abliteration’ was introduced: a technique to uncensor…
+Unlearning Flux.1 Dev: Abliteration v2 # Source: Prisoners. Detective Loki takes out his rage on a culprit when he cannot sketch out an important piece of evidence. This blog is a continuation of my previous post: Uncensoring Flux.1 Dev. The term ‘abliteration’ was introduced: a technique to uncensor Large Language Models (LLMs). And it was a first for text-to-image generative models, as prior to this only text-to-text models could be abliterated.">
+
+  
+  
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Unlearning Flux.1 Dev: Abliteration v2",
+    "headline": "Unlearning Flux.1 Dev: Abliteration v2",
+    
+    "abstract": "\u003cp\u003eThis blog is a continuation of my previous post: Uncensoring Flux.1 Dev. The term ‘abliteration’ was introduced: a technique to uncensor…\u003c\/p\u003e\n\u003chr\u003e\n\n\u003ch3 class=\u0022relative group\u0022\u003eUnlearning Flux.1 Dev: Abliteration v2 \n    \u003cdiv id=\u0022unlearning-flux1-dev-abliteration-v2\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#unlearning-flux1-dev-abliteration-v2\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cfigure id=\u002233d4\u0022 class=\u0022graf graf--figure graf-after--h3\u0022\u003e\n\u003cimg src=\u0022https:\/\/cdn-images-1.medium.com\/max\/800\/1*nmsVI0GovpPK7TDDQWCu6w.gif\u0022 class=\u0022graf-image\u0022 data-image-id=\u00221*nmsVI0GovpPK7TDDQWCu6w.gif\u0022 data-width=\u0022640\u0022 data-height=\u0022361\u0022 data-is-featured=\u0022true\u0022 \/\u003e\n\u003cfigcaption\u003eSource: Prisoners. Detective Loki takes out his rage on a culprit when he cannot sketch out an important piece of evidence.\u003c\/figcaption\u003e\n\u003c\/figure\u003e\n\u003cp\u003eThis blog is a continuation of my previous post: \u003ca href=\u0022https:\/\/medium.com\/@aloshdenny\/uncensoring-flux-1-dev-abliteration-bdeb41c68dff\u0022 class=\u0022markup--anchor markup--p-anchor\u0022 data-href=\u0022https:\/\/medium.com\/@aloshdenny\/uncensoring-flux-1-dev-abliteration-bdeb41c68dff\u0022 target=\u0022_blank\u0022\u003eUncensoring Flux.1 Dev\u003c\/a\u003e. The term ‘abliteration’ was introduced: a technique to uncensor Large Language Models (LLMs). And it was a first for text-to-image generative models, as prior to this only text-to-text models could be abliterated.\u003c\/p\u003e",
+    "inLanguage": "en",
+    "url" : "http:\/\/localhost:1313\/posts\/2025-01-31_unlearning-flux-1-dev--abliteration-v2-52af88ed60b5\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Alosh Denny"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-01-31T00:00:00\u002b00:00",
+    "datePublished": "2025-01-31T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-01-31T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2248"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Alosh Denny" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://github.com/aloshdenny" rel="me" />
+  
+  
+  
+  
+  <link href="https://linkedin.com/in/aloshdenny" rel="me" />
+  
+  
+  
+  
+  <link href="https://medium.com/@aloshdenny" rel="me" />
+  
+  
+  
+  
+  <link href="https://www.researchgate.net/profile/Alosh-Denny" rel="me" />
+  
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  <meta name="theme-color" />
+  
+  
+</head><body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-12 md:px-16 lg:px-24 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+        <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+            href="#main-content"><span
+                class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+    </div>
+    
+    
+    <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            <div class="flex flex-col">
+                <a href="/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Alosh Denny</a>
+                
+            </div>
+
+        </nav>
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/#about"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="About me">
+        About
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+
+
+            
+            
+
+        </nav>
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+
+            
+            
+
+        </div>
+    </div>
+    <div class="-my-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                            
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+                        </span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/#about"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="About me">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+    
+    <div class="relative flex flex-col grow">
+        <main id="main-content" class="grow">
+            
+
+
+<article>
+    
+    
+    
+    
+    
+    
+ 
+
+
+
+    
+    
+
+    <header id="single_header" class="mt-5 max-w-full">
+        
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/index.html"
+      >Alosh Denny</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/#blog"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/2025-01-31_unlearning-flux-1-dev--abliteration-v2-52af88ed60b5/"
+      >Unlearning Flux.1 Dev: Abliteration v2</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+        
+        <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+            Unlearning Flux.1 Dev: Abliteration v2
+        </h1>
+        <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+            
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2025-01-31T00:00:00&#43;00:00">31 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2248 words</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        
+        
+        
+        
+        
+
+        
+
+        
+
+        
+        
+        
+<div class="flex author">
+  
+  <div class="place-self-center">
+    
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      Author
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      Alosh Denny
+    </div>
+    
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="mailto:aloshdenny@gmail.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/aloshdenny"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://linkedin.com/in/aloshdenny"
+          target="_blank"
+          aria-label="Linkedin"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://medium.com/@aloshdenny"
+          target="_blank"
+          aria-label="Medium"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://www.researchgate.net/profile/Alosh-Denny"
+          target="_blank"
+          aria-label="Researchgate"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50-14.2-9.2-10.6-25.3-33.3-42.2-63.6-8.9 0-14.7 0-21.4-.6v46.4c0 23.5 6 21.2 25.8 23.9v8.1c-6.9-.3-23.1-.8-35.6-.8-13.1 0-26.1.6-33.6.8v-8.1c15.5-2.9 22-1.3 22-23.9V225c0-22.6-6.4-21-22-23.9V193c25.8 1 53.1-.6 70.9-.6 31.7 0 55.9 14.4 55.9 45.6 0 21.1-16.7 42.2-39.2 47.5 13.6 24.2 30 45.6 42.2 58.9 7.2 7.8 17.2 14.7 27.2 14.7v7.3zm22.9-135c-23.3 0-32.2-15.7-32.2-32.2V167c0-12.2 8.8-30.4 34-30.4s30.4 17.9 30.4 17.9l-10.7 7.2s-5.5-12.5-19.7-12.5c-7.9 0-19.7 7.3-19.7 19.7v26.8c0 13.4 6.6 23.3 17.9 23.3 14.1 0 21.5-10.9 21.5-26.8h-17.9v-10.7h30.4c0 20.5 4.7 49.9-34 49.9zm-116.5 44.7c-9.4 0-13.6-.3-20-.8v-69.7c6.4-.6 15-.6 22.5-.6 23.3 0 37.2 12.2 37.2 34.5 0 21.9-15 36.6-39.7 36.6z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+        
+
+        
+
+        
+        <div class="mb-5"></div>
+        
+
+        
+
+    </header>
+
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+
+         <div
+            class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+            <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+                 <details open id="TOCView" class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#unlearning-flux1-dev-abliteration-v2">Unlearning Flux.1 Dev: Abliteration v2</a></li>
+        <li><a href="#a-quick-recap-on-abliteration">A quick recap on Abliteration🔄</a>
+          <ul>
+            <li><a href="#figuring-out-what-flux-parameters-to-targetデー">Figuring out what Flux parameters to target ︻デ┳═ー</a></li>
+            <li><a href="#teaching-it-to-never-say-never">Teaching it to never say never🙅‍♂️🙅‍♀️</a></li>
+          </ul>
+        </li>
+        <li><a href="#what-is-unlearning">What is Unlearning?</a>
+          <ul>
+            <li><a href="#wait-isnt-that-the-same-thing-as-forgetting">Wait isn’t that the same thing as forgetting?</a></li>
+            <li><a href="#ok-so-why-dont-you-just-make-the-model-forgetit">OK, so why don’t you just make the model forget it?</a></li>
+          </ul>
+        </li>
+        <li><a href="#enter-abliteration-v2">Enter, Abliteration-v2</a>
+          <ul>
+            <li><a href="#1-gradient-ascentga">1. Gradient Ascent (GA)</a></li>
+            <li><a href="#2-negative-preference-optimization-npo">2. Negative Preference Optimization (NPO)</a></li>
+            <li><a href="#3-relabeling-based-finetuning">3. Relabeling-based Finetuning</a></li>
+          </ul>
+        </li>
+        <li><a href="#figuring-out-which-parameters-shouldunlearn">Figuring out which parameters should unlearn</a></li>
+        <li><a href="#this-is-how-we-doit">This is how we do it🚀</a>
+          <ul>
+            <li><a href="#1-import-libraries">1. Import libraries</a></li>
+            <li><a href="#2-create-thedataset">2. Create the dataset</a></li>
+            <li><a href="#3-load-flux-intomemory">3. Load Flux into memory</a></li>
+            <li><a href="#4-create-data-loaders-to-batch-thedatasets">4. Create data loaders to batch the datasets</a></li>
+            <li><a href="#5-figuring-out-which-parameters-tounlearn">5. Figuring out which parameters to unlearn</a></li>
+            <li><a href="#6-lossfunction">6. Loss Function</a></li>
+            <li><a href="#7-gradientascent">7. Gradient Ascent</a></li>
+            <li><a href="#9-and-execute">9. And… execute&gt;&gt;&gt;</a></li>
+            <li><a href="#10-results">10. Results</a></li>
+          </ul>
+        </li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#acknowledgments">Acknowledgments</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#unlearning-flux1-dev-abliteration-v2">Unlearning Flux.1 Dev: Abliteration v2</a></li>
+        <li><a href="#a-quick-recap-on-abliteration">A quick recap on Abliteration🔄</a>
+          <ul>
+            <li><a href="#figuring-out-what-flux-parameters-to-targetデー">Figuring out what Flux parameters to target ︻デ┳═ー</a></li>
+            <li><a href="#teaching-it-to-never-say-never">Teaching it to never say never🙅‍♂️🙅‍♀️</a></li>
+          </ul>
+        </li>
+        <li><a href="#what-is-unlearning">What is Unlearning?</a>
+          <ul>
+            <li><a href="#wait-isnt-that-the-same-thing-as-forgetting">Wait isn’t that the same thing as forgetting?</a></li>
+            <li><a href="#ok-so-why-dont-you-just-make-the-model-forgetit">OK, so why don’t you just make the model forget it?</a></li>
+          </ul>
+        </li>
+        <li><a href="#enter-abliteration-v2">Enter, Abliteration-v2</a>
+          <ul>
+            <li><a href="#1-gradient-ascentga">1. Gradient Ascent (GA)</a></li>
+            <li><a href="#2-negative-preference-optimization-npo">2. Negative Preference Optimization (NPO)</a></li>
+            <li><a href="#3-relabeling-based-finetuning">3. Relabeling-based Finetuning</a></li>
+          </ul>
+        </li>
+        <li><a href="#figuring-out-which-parameters-shouldunlearn">Figuring out which parameters should unlearn</a></li>
+        <li><a href="#this-is-how-we-doit">This is how we do it🚀</a>
+          <ul>
+            <li><a href="#1-import-libraries">1. Import libraries</a></li>
+            <li><a href="#2-create-thedataset">2. Create the dataset</a></li>
+            <li><a href="#3-load-flux-intomemory">3. Load Flux into memory</a></li>
+            <li><a href="#4-create-data-loaders-to-batch-thedatasets">4. Create data loaders to batch the datasets</a></li>
+            <li><a href="#5-figuring-out-which-parameters-tounlearn">5. Figuring out which parameters to unlearn</a></li>
+            <li><a href="#6-lossfunction">6. Loss Function</a></li>
+            <li><a href="#7-gradientascent">7. Gradient Ascent</a></li>
+            <li><a href="#9-and-execute">9. And… execute&gt;&gt;&gt;</a></li>
+            <li><a href="#10-results">10. Results</a></li>
+          </ul>
+        </li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#acknowledgments">Acknowledgments</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = decodeURIComponent(e.attr('id'));
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+           
+            $(e).removeClass('active').siblings('ul').hide();
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active');
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+         
+          $toc.find('a').parent('li').find('ul').hide();
+        
+        onScroll();
+      });
+    }
+  })();
+
+</script>
+   </div>
+            </div>
+            
+
+            <div class="min-w-0 min-h-0 grow">
+
+                
+
+
+                <div class="article-content max-w-full mb-20">
+                    <p>This blog is a continuation of my previous post: Uncensoring Flux.1 Dev. The term ‘abliteration’ was introduced: a technique to uncensor…</p>
+<hr>
+
+<h3 class="relative group">Unlearning Flux.1 Dev: Abliteration v2 
+    <div id="unlearning-flux1-dev-abliteration-v2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#unlearning-flux1-dev-abliteration-v2" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<figure id="33d4" class="graf graf--figure graf-after--h3">
+<img src="https://cdn-images-1.medium.com/max/800/1*nmsVI0GovpPK7TDDQWCu6w.gif" class="graf-image" data-image-id="1*nmsVI0GovpPK7TDDQWCu6w.gif" data-width="640" data-height="361" data-is-featured="true" />
+<figcaption>Source: Prisoners. Detective Loki takes out his rage on a culprit when he cannot sketch out an important piece of evidence.</figcaption>
+</figure>
+<p>This blog is a continuation of my previous post: <a href="https://medium.com/@aloshdenny/uncensoring-flux-1-dev-abliteration-bdeb41c68dff" class="markup--anchor markup--p-anchor" data-href="https://medium.com/@aloshdenny/uncensoring-flux-1-dev-abliteration-bdeb41c68dff" target="_blank">Uncensoring Flux.1 Dev</a>. The term ‘abliteration’ was introduced: a technique to uncensor Large Language Models (LLMs). And it was a first for text-to-image generative models, as prior to this only text-to-text models could be abliterated.</p>
+<p>I take upon a new approach for uncensoring, namely <strong>unlearning</strong>.</p>
+
+<h3 class="relative group">A quick recap on Abliteration🔄 
+    <div id="a-quick-recap-on-abliteration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#a-quick-recap-on-abliteration" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<blockquote>
+<p>ablated + obliterated = abliterated.</p>
+</blockquote>
+<blockquote>
+<p>To ablate is to erode a material away, generally in a targeted manner. In a medical context, this generally refers to precisely removing bad tissue.</p>
+</blockquote>
+<blockquote>
+<p>To obliterate is to totally destroy/demolish.</p>
+</blockquote>
+<blockquote>
+<p>Ablating the refusal to the point of obliteration. (at least, that’s the goal — in reality things will likely slip through the net)</p>
+</blockquote>
+<p>In the previous blog, I also explained weight orthogonalization, a technique that allows for the selective adjustment of variables within a system without distorting its underlying structure.</p>
+
+<h4 class="relative group">Figuring out what Flux parameters to target ︻デ┳═ー 
+    <div id="figuring-out-what-flux-parameters-to-targetデー" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#figuring-out-what-flux-parameters-to-target%e3%83%87%e3%83%bc" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>After scouring through the maze that is Flux’s architecture, we found two sources of information regulation that were responsible for Flux’s behavior — residual streams.</p>
+<p>We mathematically adjusted (orthogonalized) these parameters /weights so that they couldn’t contribute to the refusal direction and would agree to whatever input was given.</p>
+
+<h4 class="relative group">Teaching it to never say never🙅‍♂️🙅‍♀️ 
+    <div id="teaching-it-to-never-say-never" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#teaching-it-to-never-say-never" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>After computing the refusal directions, we monitored the activations and orthogonalized the weights in the selected residual streams by effectively subtracting their contribution and permanently ablating their demeanor.</p>
+<p>In this article, we’ll abliterate Flux once again, but differently…we’ll unlearn it.</p>
+
+<h3 class="relative group">What is Unlearning? 
+    <div id="what-is-unlearning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#what-is-unlearning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>As humans, we can all agree that it is quite hard to learn a new skill, but it is even harder to unlearn it. For example, try unlearning how to ride a bike, or tying a bow. Unlearning cannot be willed into existence. These actions have been branded into our subconscious permanently and will only fade away either by brain damage or deteriorative neural disorders.</p>
+
+<h4 class="relative group">Wait isn’t that the same thing as forgetting? 
+    <div id="wait-isnt-that-the-same-thing-as-forgetting" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#wait-isnt-that-the-same-thing-as-forgetting" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Haha, but these two are vastly different. It comes down to intention. Unlearning involves consciously letting go of old knowledge, habits or beliefs… for instance, a veteran undergoing therapy to erase traumatic experiences.</p>
+<p>Forgetting is lack of recall or being unable to access information. For instance, remembering a phone number that you haven’t used in a while.</p>
+
+<h4 class="relative group">OK, so why don’t you just make the model forget it? 
+    <div id="ok-so-why-dont-you-just-make-the-model-forgetit" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ok-so-why-dont-you-just-make-the-model-forgetit" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>See, that’s what I did in my previous blog: I made it to forget certain refusal mechanisms, but some outliers were still active. Unlearning is essentially ‘rehab’ for LLMs.</p>
+<figure id="c68d" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*6D_UULtfAlbaa0Tu4v8ltA.jpeg" class="graf-image" data-image-id="1*6D_UULtfAlbaa0Tu4v8ltA.jpeg" data-width="600" data-height="720" />
+<figcaption>Source: Star Wars. Yoda advises Luke Skywalker to forget his old ways of thinking properly to properly learn the Force.</figcaption>
+</figure>
+<p>When it comes to LLMs, the playing field is different. LLMs can be taught to learn and taught to forget. Here, we’ll teach Flux to <strong>unlearn</strong> its refusal mechanism.</p>
+<p>The paper, <a href="https://arxiv.org/html/2402.08787v6" class="markup--anchor markup--p-anchor" data-href="https://arxiv.org/html/2402.08787v6" rel="noopener" target="_blank">Rethinking Machine Unlearning for Large Language Models</a>, explores exactly this. Infact, this paper will be our handbook to uncensoring Flux again.</p>
+<p>When we talk about unlearning, we’re really talking about two main targets: <strong>data influence</strong> and <strong>model capability</strong>.</p>
+<ol>
+<li><span id="b648"><strong>Data Influence Removal</strong>: This focuses on eliminating the impact of specific data points, such as harmful and NSFW content.</span></li>
+<li><span id="19a1"><strong>Model Capability Removal</strong>: This aims to remove specific behaviors or capabilities. For our use case, if a model has learned to generate refusal mechanisms against toxic content, we want to remove that capability entirely.</span></li>
+</ol>
+<p>But here’s the tricky part: we need to do this without affecting the model’s ability to generate useful, harmless content. It’s like trying to remove a single bad apple from a barrel without disturbing the rest.</p>
+<blockquote>
+<p>To put it simply, teach the model to say yes to no while avoiding messing up vice versa.</p>
+</blockquote>
+<figure id="cc13" class="graf graf--figure graf-after--blockquote">
+<img src="https://cdn-images-1.medium.com/max/800/1*elqur-5Lw75OJQUjfp5QNw.jpeg" class="graf-image" data-image-id="1*elqur-5Lw75OJQUjfp5QNw.jpeg" data-width="500" data-height="651" />
+<figcaption>This blog summed up</figcaption>
+</figure>
+
+<h3 class="relative group">Enter, Abliteration-v2 
+    <div id="enter-abliteration-v2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#enter-abliteration-v2" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>In my previous blog, I abliterated Flux via Permanent Weight Orthogonalization of the Residual Streams. In Abliteration-v2, I will be taking a different approach, in fact, the opposite of the <a href="https://arxiv.org/abs/2402.08787" class="markup--anchor markup--p-anchor" data-href="https://arxiv.org/abs/2402.08787" rel="noopener" target="_blank">Unlearning paper</a>.</p>
+<p>I followed two major techniques that I modified from the paper to suit unlearning in Flux:</p>
+
+<h4 class="relative group">1. Gradient Ascent (GA) 
+    <div id="1-gradient-ascentga" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-gradient-ascentga" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>You’ve heard of Gradient Descent. But Gradient Ascent? Why would you maximize the loss function?</p>
+<p>We use gradient ascent to maximize the likelihood of generating non-refusal responses for prompts that previously led to refusal. Voila!</p>
+<figure id="fc8e" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*4gDID5xeh9dbf4tEP0RrMQ.png" class="graf-image" data-image-id="1*4gDID5xeh9dbf4tEP0RrMQ.png" data-width="215" data-height="20" />
+</figure>
+<p>where:</p>
+<ul>
+<li><span id="bc3c"><em>θ</em> are the model parameters.</span></li>
+<li><span id="7a90"><em>η</em> is the learning rate.</span></li>
+<li><span id="bc71">L is the loss function.</span></li>
+<li><span id="1c6b">D<em>f</em>​ is the forget set containing prompts that lead to refusal.</span></li>
+</ul>
+
+<h4 class="relative group">2. Negative Preference Optimization (NPO) 
+    <div id="2-negative-preference-optimization-npo" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-negative-preference-optimization-npo" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Okay, Policy Optimization (PO) algorithms. Gosh!</p>
+<p>These are Reinforcement Learning (RL) algorithms — algorithms whose goal is to maximize the expected return (reward) while maintaining stability in the training process.</p>
+<figure id="3ab5" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*hB0G20uXshOT2PBrFuc_2g.jpeg" class="graf-image" data-image-id="1*hB0G20uXshOT2PBrFuc_2g.jpeg" data-width="500" data-height="580" />
+</figure>
+<p>In short, I chose <strong>NPO (Negative Preference Optimization)</strong> over DPO and PPO. The intuition (my short notes) is as below:</p>
+<blockquote>
+<p><strong>a. Picking up on DPO (direct preference optimization)</strong></p>
+</blockquote>
+<blockquote>
+<p>The paper <a href="https://arxiv.org/abs/2305.18290" class="markup--anchor markup--blockquote-anchor" data-href="https://arxiv.org/abs/2305.18290" rel="noopener" target="_blank">Direct Preference Optimization</a> by Rafailov, Sharma, Mitchell et al. proposes to cast the RL-based objective used by existing methods to an objective which can be directly optimized via a simple binary cross-entropy loss which simplifies this process of refining LLMs greatly. Available in <a href="https://github.com/lvwerra/trl" class="markup--anchor markup--blockquote-anchor" data-href="https://github.com/lvwerra/trl" rel="noopener" target="_blank">TRL library</a></p>
+</blockquote>
+<blockquote>
+<p><strong>b. DPO vs PPO (proximal policy optimization)</strong></p>
+</blockquote>
+<blockquote>
+<p>DPO doesn’t use an extra reward model as PPO does. DPO directly optimizes the language model using preference data (finetuning kinda). Doesn’t follow any RL policy and hence doesn’t require RL optimization. Here we don’t have clear numerical rewards or outputs; we just want the overall refusal mechanism to be ablated so that we can generate NSFW images. We have preference data and use this to align the model to our needs.</p>
+</blockquote>
+<blockquote>
+<p><strong>c. NPO (negative preference optimization) over them both</strong></p>
+</blockquote>
+<blockquote>
+<p>The problem with DPO is that it ‘directly’ prefers positive examples. Kind of like a teacher mentioning the class topper as a positive role model but not mentioning the class failure (ouch!). NPO considers both categories as feedback for optimization.<br>
+ Negative / forgotten samples are used to guide the model. This is built upon the concept of hard negatives. NPO adds an interesting twist to DPO by explicitly treating “forgotten” or non-preferred data as negative feedback during optimization, helping the model learn not just from what works but also from what doesn’t.</p>
+</blockquote>
+<p>With NPO, we treat refusal responses as negative examples and optimize the model to avoid generating them.</p>
+<figure id="1126" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*HLmuehr8fM0qDtvEz1DJnw.png" class="graf-image" data-image-id="1*HLmuehr8fM0qDtvEz1DJnw.png" data-width="247" data-height="20" />
+</figure>
+<p>where: L(<em>NPO)</em> is the NPO loss function designed to penalize refusal responses.</p>
+
+<h4 class="relative group">3. Relabeling-based Finetuning 
+    <div id="3-relabeling-based-finetuning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-relabeling-based-finetuning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>This is the final and probably the easiest step of them all. We reposition the hard negatives as hard positives by recaptioning them in the most obscene way possible. <a href="https://huggingface.co/fancyfeast/llama-joycaption-alpha-two-hf-llava" class="markup--anchor markup--p-anchor" data-href="https://huggingface.co/fancyfeast/llama-joycaption-alpha-two-hf-llava" rel="noopener" target="_blank">JoyCaption Alpha Two</a> got the job done.</p>
+
+<h3 class="relative group">Figuring out which parameters should unlearn 
+    <div id="figuring-out-which-parameters-shouldunlearn" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#figuring-out-which-parameters-shouldunlearn" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>To figure out which weights are outright refusing the generation of NSFW content, we view the saliency / feature maps generated by the activations within each layer (I use saliency here because feature map is reserved for convolutional layers).</p>
+<p>Activation maps are a visual representation that highlight the most important regions of an input prompt or image during the generation process of a text-to-image model. They are generated by analyzing the activations of the model’s layers as the image is progressively created, showing which areas of the image are most influenced by the model’s internal features at each stage of the forward pass.</p>
+<p>The thing about Flux is, it’s a diffusion transformer. It uses latent diffusion as one of the many methods to generate images. The HuggingFace Diffusers library provides a simple interface to work with diffusion models!</p>
+<figure id="4c59" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*WGTL4tQ-pVYfOe8GwmZmWA.jpeg" class="graf-image" data-image-id="1*WGTL4tQ-pVYfOe8GwmZmWA.jpeg" data-width="1024" data-height="683" />
+<figcaption><a href="https://victordibia.com/blog/stable-diffusion-denoising/" class="markup--anchor markup--figure-anchor" data-href="https://victordibia.com/blog/stable-diffusion-denoising/" rel="noopener" target="_blank">Source</a>: Images decoded from a latent diffusion model at various time steps in the denoising loop</figcaption>
+</figure>
+
+<h3 class="relative group">This is how we do it🚀 
+    <div id="this-is-how-we-doit" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#this-is-how-we-doit" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group">1. Import libraries 
+    <div id="1-import-libraries" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-import-libraries" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">!pip install -q numpy scipy ftfy Pillowimport os
+import io
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from diffusers import AutoPipelineForText2Image
+from torch.autograd import grad
+from torch.utils.data import DataLoader, Dataset
+from torchvision.transforms import ToTensor
+from PIL import Image
+</code></pre>
+<h4 class="relative group">2. Create the dataset 
+    <div id="2-create-thedataset" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-create-thedataset" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>I curated mine from Reddit and posted it <a href="https://huggingface.co/datasets/aoxo/reddit-feetpics/tree/main" class="markup--anchor markup--p-anchor" data-href="https://huggingface.co/datasets/aoxo/reddit-feetpics/tree/main" rel="noopener" target="_blank">here</a>. The code for scraping sits in my previous blog.</p>
+
+<h4 class="relative group">3. Load Flux into memory 
+    <div id="3-load-flux-intomemory" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-load-flux-intomemory" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Make sure you have a GPU with 40GB minimum (A100 or higher).</p>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">pipeline = AutoPipelineForText2Image.from_pretrained(
+    &#34;black-forest-labs/FLUX.1-dev&#34;,
+    torch_dtype=torch.float16,
+    token=&#39;&#39;
+).to(&#39;cuda&#39;)
+</code></pre><p>To satisfy my OCD:</p>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">torch.backends.cudnn.benchmark = True
+torch.backends.cuda.matmul.allow_tf32 = True
+</code></pre>
+<h4 class="relative group">4. Create data loaders to batch the datasets 
+    <div id="4-create-data-loaders-to-batch-thedatasets" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-create-data-loaders-to-batch-thedatasets" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">class RedditRefusalDataset(Dataset):
+    def __init__(self, captions_dir, refusal_images_dir, transform=None):
+        self.captions = []
+        self.refusal_images = []
+        self.transform = transform or transforms.ToTensor()
+
+        for caption_file in os.listdir(captions_dir):
+            if not caption_file.endswith(&#34;.txt&#34;):
+                continue
+            caption_path = os.path.join(captions_dir, caption_file)
+            image_name = os.path.splitext(caption_file)[0] + &#34;.png&#34;
+            image_path = os.path.join(refusal_images_dir, image_name)
+            
+            with open(caption_path, &#34;r&#34;) as f:
+                caption = f.read().strip()
+            image = Image.open(image_path).convert(&#34;RGB&#34;)
+            
+            self.captions.append(caption)
+            self.refusal_images.append(image)
+
+    def __len__(self):
+        return len(self.captions)
+
+    def __getitem__(self, idx):
+        caption = self.captions[idx]
+        refusal_image = self.transform(self.refusal_images[idx])
+        return caption, refusal_image
+
+transform = transforms.Compose([
+    transforms.Resize((512, 512)),
+    transforms.ToTensor(),
+])
+
+dataset = RedditRefusalDataset(CAPTIONS_DIR, REFUSAL_IMAGES_DIR, transform=transform)
+dataloader = DataLoader(dataset, batch_size=4, shuffle=True)
+</code></pre>
+<h4 class="relative group">5. Figuring out which parameters to unlearn 
+    <div id="5-figuring-out-which-parameters-tounlearn" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-figuring-out-which-parameters-tounlearn" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>We compute saliency maps from Flux’s Latent Diffusion network so that we can feed them later into our NPO-assisted GA algorithm.</p>
+<p>To do this, we employ hooks that grab the activations as soon as they are generated, compute the saliency and return those layers to GA and NPO.</p>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">def compute_saliency(model, dataloader):
+    model.unet.zero_grad()
+    captions, refusal_images = next(iter(dataloader))
+    refusal_images = refusal_images.to(&#39;cuda&#39;, dtype=torch.float16)
+    
+    # forward pass
+    latents = model.vae.encode(refusal_images).latent_dist.sample()
+    latents = latents * model.vae.config.scaling_factor
+    noise_pred = model.unet(latents, torch.zeros_like(latents), encoder_hidden_states=model.text_encoder(captions)[0]).sample
+    
+    # compute activations
+    activations = {}
+    def hook_fn(module, input, output):
+        activations[module] = output
+    hooks = []
+    for name, module in model.unet.named_modules():
+        if isinstance(module, nn.Conv2d):
+            hooks.append(module.register_forward_hook(hook_fn))
+    
+    # forward pass to populate activations
+    with torch.no_grad():
+        _ = model.unet(latents, torch.zeros_like(latents), encoder_hidden_states=model.text_encoder(captions)[0])
+    
+    # compute saliency (mean absolute activations)
+    saliency = {module: torch.mean(torch.abs(act), dim=[1, 2, 3]) for module, act in activations.items()}
+    
+    # remove hooks
+    for hook in hooks:
+        hook.remove()
+    
+    return saliency
+</code></pre>
+<h4 class="relative group">6. Loss Function 
+    <div id="6-lossfunction" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#6-lossfunction" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>This is something people usually skip but I felt needed a highlight. The unlearning paper didn’t specify using any particular loss function, so I went with a pre-trained VGG-16’s Perceptual Loss function which worked well:</p>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">class PerceptualLoss(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.vgg = torch.hub.load(&#39;pytorch/vision&#39;, &#39;vgg16&#39;, pretrained=True).features[:16].to(&#39;cuda&#39;).eval()
+        for param in self.vgg.parameters():
+            param.requires_grad = False
+        self.loss_fn = nn.MSELoss()
+
+    def forward(self, generated, target):
+        gen_features = self.vgg(generated)
+        target_features = self.vgg(target)
+        return self.loss_fn(gen_features, target_features)
+
+perceptual_loss = PerceptualLoss()
+</code></pre>
+<h4 class="relative group">7. Gradient Ascent 
+    <div id="7-gradientascent" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#7-gradientascent" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>We’ll carry GA out in four steps:</p>
+<p><strong>a. Generate latents for the images in our dataset</strong>: We did this earlier to figure out which parameters to unlearn. But remember, here we don’t proceed to saliency maps. Instead, we directly hit the parameters.<br>
+<strong>b. Predict the ‘refusal’ noise:</strong> From the Unet<br>
+</strong>c. Gradient Ascent: Maximize / negate the loss<br>
+<strong>d. Apply gradients only to the salient weights</strong></p>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">def gradient_ascent_unlearning(model, dataloader, saliency, learning_rate=1e-4, epochs=3):
+    optimizer = optim.Adam(model.unet.parameters(), lr=learning_rate)
+
+    for epoch in range(epochs):
+        for batch_idx, (captions, refusal_images) in enumerate(dataloader):
+            refusal_images = refusal_images.to(&#39;cuda&#39;, dtype=torch.float16)
+            
+            # Generate latents for refusal images
+            latents = model.vae.encode(refusal_images).latent_dist.sample()
+            latents = latents * model.vae.config.scaling_factor
+
+            # Predict noise (refusal behavior)
+            noise_pred = model.unet(latents, torch.zeros_like(latents), encoder_hidden_states=model.text_encoder(captions)[0]).sample
+
+            # Maximize loss to ablate refusal (gradient ascent)
+            loss = perceptual_loss(noise_pred, latents.detach())
+            (-loss).backward()  # Negative loss for ascent
+            
+            # Apply gradients only to critical weights
+            for name, param in model.unet.named_parameters():
+                if name in saliency:
+                    param.grad *= saliency[name].mean()  # Weight gradients by saliency
+            
+            optimizer.step()
+            optimizer.zero_grad()
+
+            print(f&#34;Epoch {epoch+1}, Batch {batch_idx}, GA Loss: {loss.item()}&#34;)
+</code></pre><p><strong>8. Negative Policy Optimization</strong></p>
+<p>After GA, we run the model again through NPO, that smoothens out positive representation lost through unlearning:</p>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">def npo_unlearning(model, dataloader, saliency, learning_rate=1e-4, epochs=3):
+    optimizer = optim.Adam(model.unet.parameters(), lr=learning_rate)
+
+    for epoch in range(epochs):
+        for batch_idx, (captions, refusal_images) in enumerate(dataloader):
+            refusal_images = refusal_images.to(&#39;cuda&#39;, dtype=torch.float16)
+            
+            # Generate latents for refusal images
+            latents = model.vae.encode(refusal_images).latent_dist.sample()
+            latents = latents * model.vae.config.scaling_factor
+
+            # Predict noise (refusal behavior)
+            noise_pred = model.unet(latents, torch.zeros_like(latents), encoder_hidden_states=model.text_encoder(captions)[0]).sample
+
+            # Minimize similarity to refusal latents (NPO)
+            loss = perceptual_loss(noise_pred, latents.detach())
+            loss.backward()
+            
+            # Apply gradients only to critical weights
+            for name, param in model.unet.named_parameters():
+                if name in saliency:
+                    param.grad *= saliency[name].mean()  # Weight gradients by saliency
+            
+            optimizer.step()
+            optimizer.zero_grad()
+
+            print(f&#34;Epoch {epoch+1}, Batch {batch_idx}, NPO Loss: {loss.item()}&#34;)
+</code></pre>
+<h4 class="relative group">9. And… execute&gt;&gt;&gt; 
+    <div id="9-and-execute" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#9-and-execute" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<pre tabindex="0"><code class="language-graf" data-lang="graf">saliency = compute_saliency(pipeline, dataloader)
+gradient_ascent_unlearning(pipeline, dataloader, saliency)
+npo_unlearning(pipeline, dataloader, saliency)
+</code></pre>
+<h4 class="relative group">10. Results 
+    <div id="10-results" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#10-results" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Seems like NPO has done a decent job of aligning our model to unlearning the refusal mechanism. After 50 epochs of fine-tuning, it generates some pretty wild pictures. I may have overfit it ;)</p>
+<p>I trained it on a single H100 GPU for 13 hours. Here are the results:</p>
+<figure id="f1bc" class="graf graf--figure graf-after--p">
+<img src="https://cdn-images-1.medium.com/max/800/1*UpToc7m04tZbVN7eqfRaWw.png" class="graf-image" data-image-id="1*UpToc7m04tZbVN7eqfRaWw.png" data-width="1189" data-height="1590" />
+</figure>
+<p>The model weights can be accessed <a href="https://huggingface.co/aoxo/flux.1dev-abliteratedv2" class="markup--anchor markup--p-anchor" data-href="https://huggingface.co/aoxo/flux.1dev-abliteratedv2" rel="noopener" target="_blank">here</a>.</p>
+
+<h3 class="relative group">Conclusion 
+    <div id="conclusion" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#conclusion" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>In this article, we introduced the concept of unlearning. This technique uses the model’s activations on NSFW prompts and a Reinforcement Learning algorithm to bypass its refusal mechanism via continuous forgetting. It then uses the saliency maps to modify the model’s weights and ensure that we stop outputting refusals. This technique also demonstrates the fragility of safety fine-tuning and raises ethical considerations.</p>
+<p>We applied unlearning to Flux.1-Dev to uncensor it. We then annealed it using GA and NPO to create Flux.1-Abliterated-v2. Abliteration is not limited to removing alignment and should be seen as a form of fine-tuning without retraining.</p>
+<p>I hope you liked this article. If you want to see more follow me on <a href="https://huggingface.co/aoxo" class="markup--anchor markup--p-anchor" data-href="https://huggingface.co/aoxo" rel="noopener" target="_blank">Hugging Face</a> and Twitter <a href="https://x.com/AloshDenny" class="markup--anchor markup--p-anchor" data-href="https://x.com/AloshDenny" rel="noopener" target="_blank">@AloshDenny</a>.</p>
+
+<h3 class="relative group">Acknowledgments 
+    <div id="acknowledgments" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#acknowledgments" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li><span id="b594"><a href="https://arxiv.org/abs/2402.08787" class="markup--anchor markup--li-anchor" data-href="https://arxiv.org/abs/2402.08787" rel="noopener" target="_blank">Rethinking Machine Unlearning for Large Language Models</a></span></li>
+<li><span id="75f5">DeepSeek😉</span></li>
+<li><span id="5e35">Modal.com (for the compute!)</span></li>
+</ul>
+<p>By <a href="https://medium.com/@aloshdenny" class="p-author h-card">Aloshdenny</a> on <a href="https://medium.com/p/52af88ed60b5" target="_blank">January 31, 2025</a>.</p>
+<p><a href="https://medium.com/@aloshdenny/unlearning-flux-1-dev-abliteration-v2-52af88ed60b5" class="p-canonical">Canonical link</a></p>
+<p>Exported from <a href="https://medium.com" target="_blank">Medium</a> on February 2, 2026.</p>
+
+                    
+                    
+                    
+        </div>
+        
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\/2025-01-31_Unlearning-Flux-1-Dev--Abliteration-v2-52af88ed60b5.md"
+        var oid_likes = "likes_posts\/2025-01-31_Unlearning-Flux-1-Dev--Abliteration-v2-52af88ed60b5.md"
+    </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-full print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/2025-01-12_uncensoring-flux-1-dev--abliteration-bdeb41c68dff/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Uncensoring Flux.1 Dev: Abliteration</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-01-12T00:00:00&#43;00:00">12 January 2025</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/2025-09-28_the-ultimate-cookbook--uncensoring-gpt-oss-4ddce1ee4b15/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >The Ultimate Cookbook: Uncensoring GPT-OSS</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-09-28T00:00:00&#43;00:00">28 September 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+            <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+        </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2026
+      Alosh Denny
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark" data-auto-appearance="false">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta http-equiv="content-language" content="en" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>A Developer’s Intro to Huddle01 SDK &#43; Ideas to Build (Complete Guide) &middot; Alosh Denny</title>
+  <meta name="title"
+    content="A Developer’s Intro to Huddle01 SDK &#43; Ideas to Build (Complete Guide) &middot; Alosh Denny" />
+
+
+
+
+
+  <link rel="canonical"
+    href="http://localhost:1313/posts/2024-05-25_a-developer-s-intro-to-huddle01-sdk---ideas-to-build--complete-guide--4f57c7697c44/" />
+
+
+
+
+
+
+
+
+
+
+  <link type="text/css" rel="stylesheet"
+    href="/css/main.bundle.min.a1eaa2a21af50684cf4725e164e4df2a3b725fb05284f18aa8773df8b8440b6c408faeffdfd5c24ed3caac40f5864d9e0fd5530948626f5b0ef13e8542004b52.css"
+    integrity="sha512-oeqiohr1BoTPRyXhZOTfKjtyX7BShPGKqHc9&#43;LhEC2xAj67/39XCTtPKrED1hk2eD9VTCUhib1sO8T6FQgBLUg==" />
+
+
+  <script type="text/javascript"
+    src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+
+
+
+
+
+
+
+  <script defer type="text/javascript" id="script-bundle"
+    src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
+    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg=="
+    data-copy="" data-copied=""></script>
+
+
+
+  <script
+    src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js"
+    integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
+
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/%20apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/%20favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/%20favicon-16x16.png" />
+  <link rel="manifest" href="/%20site.webmanifest" />
+
+
+
+
+
+
+
+
+  <meta property="og:url"
+    content="http://localhost:1313/posts/2024-05-25_a-developer-s-intro-to-huddle01-sdk---ideas-to-build--complete-guide--4f57c7697c44/">
+  <meta property="og:site_name" content="Alosh Denny">
+  <meta property="og:title" content="A Developer’s Intro to Huddle01 SDK &#43; Ideas to Build (Complete Guide)">
+  <meta property="og:description"
+    content="Huddle01 is a state-of-the-art innovation in the Web3 landscape that has bridged multimodal communication over the blockchain. It offers a…
+A Developer’s Intro to Huddle01 SDK &#43; Ideas to Build (Complete Guide) # Huddle01 is a state-of-the-art innovation in the Web3 landscape that has bridged multimodal communication over the blockchain. It offers a robust and scalable solution to decentralized and privatized communication channels. This article will delve into the basics of Huddle01, some technical jargon, as well as a DIY tutorial for applications you can build with Huddle’s SDK.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="posts">
+  <meta property="article:published_time" content="2024-05-25T00:00:00+00:00">
+  <meta property="article:modified_time" content="2024-05-25T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A Developer’s Intro to Huddle01 SDK &#43; Ideas to Build (Complete Guide)">
+  <meta name="twitter:description"
+    content="Huddle01 is a state-of-the-art innovation in the Web3 landscape that has bridged multimodal communication over the blockchain. It offers a…
+A Developer’s Intro to Huddle01 SDK &#43; Ideas to Build (Complete Guide) # Huddle01 is a state-of-the-art innovation in the Web3 landscape that has bridged multimodal communication over the blockchain. It offers a robust and scalable solution to decentralized and privatized communication channels. This article will delve into the basics of Huddle01, some technical jargon, as well as a DIY tutorial for applications you can build with Huddle’s SDK.">
+
+
+
+
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "A Developer’s Intro to Huddle01 SDK \u002b Ideas to Build (Complete Guide)",
+    "headline": "A Developer’s Intro to Huddle01 SDK \u002b Ideas to Build (Complete Guide)",
+    
+    "abstract": "\u003cp\u003eHuddle01 is a state-of-the-art innovation in the Web3 landscape that has bridged multimodal communication over the blockchain. It offers a…\u003c\/p\u003e\n\u003chr\u003e\n\n\u003ch3 class=\u0022relative group\u0022\u003eA Developer’s Intro to Huddle01 SDK \u002b Ideas to Build (Complete Guide) \n    \u003cdiv id=\u0022a-developers-intro-to-huddle01-sdk--ideas-to-build-complete-guide\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#a-developers-intro-to-huddle01-sdk--ideas-to-build-complete-guide\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cfigure id=\u002263b0\u0022 class=\u0022graf graf--figure graf-after--h3\u0022\u003e\n\u003cimg src=\u0022https:\/\/cdn-images-1.medium.com\/max\/800\/0*D3ziHQ0CIiIDBDZG.png\u0022 class=\u0022graf-image\u0022 data-image-id=\u00220*D3ziHQ0CIiIDBDZG.png\u0022 data-width=\u00221304\u0022 data-height=\u0022734\u0022 \/\u003e\n\u003c\/figure\u003e\n\u003cp\u003eHuddle01 is a state-of-the-art innovation in the Web3 landscape that has bridged multimodal communication over the blockchain. It offers a robust and scalable solution to decentralized and privatized communication channels. This article will delve into the basics of Huddle01, some technical jargon, as well as a DIY tutorial for applications you can build with Huddle’s SDK.\u003c\/p\u003e",
+    "inLanguage": "en",
+    "url" : "http:\/\/localhost:1313\/posts\/2024-05-25_a-developer-s-intro-to-huddle01-sdk---ideas-to-build--complete-guide--4f57c7697c44\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Alosh Denny"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-05-25T00:00:00\u002b00:00",
+    "datePublished": "2024-05-25T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-05-25T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1428"
+  }]
+  </script>
+
+
+
+
+  <meta name="author" content="Alosh Denny" />
+
+
+
+
+
+
+
+
+  <link href="https://github.com/aloshdenny" rel="me" />
+
+
+
+
+  <link href="https://linkedin.com/in/aloshdenny" rel="me" />
+
+
+
+
+  <link href="https://medium.com/@aloshdenny" rel="me" />
+
+
+
+
+  <link href="https://www.researchgate.net/profile/Alosh-Denny" rel="me" />
+
+
+
+
+
+
+  <script
+    src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js"
+    integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta name="theme-color" />
+
+
+</head>
+
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-12 md:px-16 lg:px-24 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+
+
+  <div class="min-h-[148px]"></div>
+  <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+    <div id="menu-blur"
+      class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800">
+    </div>
+    <div class="relative max-w-[64rem] ml-auto mr-auto">
+      <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+        class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+
+        <div class="flex flex-1 items-center justify-between">
+          <nav class="flex space-x-3">
+
+            <div class="flex flex-col">
+              <a href="/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Alosh Denny</a>
+
+            </div>
+
+          </nav>
+          <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+
+
+
+            <a href="/#about"
+              class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+
+              <p class="text-base font-medium" title="About me">
+                About
+              </p>
+            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </nav>
+          <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+        <div class="-my-2 md:hidden">
+
+          <label id="menu-button" class="block">
+
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+
+
+              <span class="relative block icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                </svg>
+
+              </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+              class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+              <ul
+                class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                <li id="menu-close-button">
+                  <span
+                    class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+
+                    <span class="relative block icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                          d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+                      </svg>
+
+                    </span>
+
+
+                  </span>
+                </li>
+
+
+
+
+                <li class="mt-1">
+                  <a href="/#about"
+                    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+
+                    <p class="text-bg font-bg" title="About me">
+                      About
+                    </p>
+                  </a>
+                </li>
+
+
+
+
+
+
+              </ul>
+
+
+
+            </div>
+          </label>
+        </div>
+      </div>
+
+
+
+
+      <script>
+        (function () {
+          var $mainmenu = $('.main-menu');
+          var path = window.location.pathname;
+          $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+          });
+        })();
+      </script>
+
+    </div>
+  </div>
+  <script>
+    window.addEventListener('scroll', function (e) {
+      var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var background_blur = document.getElementById('menu-blur');
+      background_blur.style.opacity = (scroll / 300);
+    });
+  </script>
+
+
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+
+
+
+      <article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <header id="single_header" class="mt-5 max-w-full">
+
+          <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+
+
+
+
+
+
+            <li class="hidden">
+              <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/index.html">Alosh
+                Denny</a><span class="px-1 text-primary-500">/</span>
+            </li>
+
+
+            <li class="inline">
+              <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/#blog">Posts</a><span
+                class="px-1 text-primary-500">/</span>
+            </li>
+
+
+            <li class="hidden">
+              <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+                href="/posts/2024-05-25_a-developer-s-intro-to-huddle01-sdk---ideas-to-build--complete-guide--4f57c7697c44/">A
+                Developer’s Intro to Huddle01 SDK &#43; Ideas to Build (Complete Guide)</a><span
+                class="px-1 text-primary-500">/</span>
+            </li>
+
+          </ol>
+
+
+
+          <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+            A Developer’s Intro to Huddle01 SDK + Ideas to Build (Complete Guide)
+          </h1>
+          <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="flex flex-row flex-wrap items-center">
+
+
+              <time datetime="2024-05-25T00:00:00&#43;00:00">25 May 2024</time><span
+                class="px-2 text-primary-500">&middot;</span><span>1428 words</span>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="flex author">
+
+            <div class="place-self-center">
+
+              <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+                Author
+              </div>
+              <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+                Alosh Denny
+              </div>
+
+
+              <div class="text-2xl sm:text-lg">
+                <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+
+
+                  <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="mailto:aloshdenny@gmail.com"
+                    target="_blank" aria-label="Email" rel="me noopener noreferrer"><span
+                      class="inline-block align-text-bottom">
+
+                      <span class="relative block icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z" />
+                        </svg>
+
+                      </span>
+
+                    </span></a>
+
+
+
+                  <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+                    href="https://github.com/aloshdenny" target="_blank" aria-label="Github"
+                    rel="me noopener noreferrer"><span class="inline-block align-text-bottom">
+
+                      <span class="relative block icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                          <path fill="currentColor"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+
+                      </span>
+
+                    </span></a>
+
+
+
+                  <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+                    href="https://linkedin.com/in/aloshdenny" target="_blank" aria-label="Linkedin"
+                    rel="me noopener noreferrer"><span class="inline-block align-text-bottom">
+
+                      <span class="relative block icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path fill="currentColor"
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                        </svg>
+
+                      </span>
+
+                    </span></a>
+
+
+
+                  <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+                    href="https://medium.com/@aloshdenny" target="_blank" aria-label="Medium"
+                    rel="me noopener noreferrer"><span class="inline-block align-text-bottom">
+
+                      <span class="relative block icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                          <path fill="currentColor"
+                            d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z" />
+                        </svg>
+
+                      </span>
+
+                    </span></a>
+
+
+
+                  <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+                    href="https://www.researchgate.net/profile/Alosh-Denny" target="_blank" aria-label="Researchgate"
+                    rel="me noopener noreferrer"><span class="inline-block align-text-bottom">
+
+                      <span class="relative block icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path fill="currentColor"
+                            d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50-14.2-9.2-10.6-25.3-33.3-42.2-63.6-8.9 0-14.7 0-21.4-.6v46.4c0 23.5 6 21.2 25.8 23.9v8.1c-6.9-.3-23.1-.8-35.6-.8-13.1 0-26.1.6-33.6.8v-8.1c15.5-2.9 22-1.3 22-23.9V225c0-22.6-6.4-21-22-23.9V193c25.8 1 53.1-.6 70.9-.6 31.7 0 55.9 14.4 55.9 45.6 0 21.1-16.7 42.2-39.2 47.5 13.6 24.2 30 45.6 42.2 58.9 7.2 7.8 17.2 14.7 27.2 14.7v7.3zm22.9-135c-23.3 0-32.2-15.7-32.2-32.2V167c0-12.2 8.8-30.4 34-30.4s30.4 17.9 30.4 17.9l-10.7 7.2s-5.5-12.5-19.7-12.5c-7.9 0-19.7 7.3-19.7 19.7v26.8c0 13.4 6.6 23.3 17.9 23.3 14.1 0 21.5-10.9 21.5-26.8h-17.9v-10.7h30.4c0 20.5 4.7 49.9-34 49.9zm-116.5 44.7c-9.4 0-13.6-.3-20-.8v-69.7c6.4-.6 15-.6 22.5-.6 23.3 0 37.2 12.2 37.2 34.5 0 21.9-15 36.6-39.7 36.6z" />
+                        </svg>
+
+                      </span>
+
+                    </span></a>
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="mb-5"></div>
+
+
+
+
+        </header>
+
+        <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+
+          <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+            <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+              <details open id="TOCView"
+                class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+                <summary
+                  class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+                  Table of Contents
+                </summary>
+                <div
+                  class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+                  <nav id="TableOfContents">
+                    <ul>
+                      <li>
+                        <ul>
+                          <li><a href="#a-developers-intro-to-huddle01-sdk--ideas-to-build-complete-guide">A Developer’s
+                              Intro to Huddle01 SDK + Ideas to Build (Complete Guide)</a></li>
+                          <li><a href="#what-is-huddle01">What is Huddle01?</a>
+                            <ul>
+                              <li><a href="#wait-a-sec-what-isdepin"><strong>Wait a sec, what is DePIN?</strong></a>
+                              </li>
+                              <li><a href="#understanding-huddle01-a-drtc-gamechanger">Understanding Huddle01: A dRTC
+                                  Game Changer</a></li>
+                              <li><a href="#selective-consuming-onhuddle">Selective Consuming on Huddle:</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#huddle-infrastructure">Huddle Infrastructure</a></li>
+                          <li><a href="#huddle-concepts">Huddle Concepts</a>
+                            <ul>
+                              <li><a href="#room"><strong>Room</strong></a></li>
+                              <li><a href="#room-states"><strong>Room states</strong></a></li>
+                              <li><a href="#peer"><strong>Peer</strong></a></li>
+                              <li><a href="#mediastream"><strong>MediaStream</strong></a></li>
+                              <li><a href="#mediastreamtrack"><strong>MediaStreamTrack</strong></a></li>
+                              <li><a href="#local"><strong>Local</strong></a></li>
+                              <li><a href="#remote"><strong>Remote</strong></a></li>
+                              <li><a href="#data-message"><strong>Data Message</strong></a></li>
+                              <li><a href="#hooks">Hooks</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#getting-your-handsdirty">Getting your hands dirty!</a>
+                            <ul>
+                              <li><a href="#installing-required-huddle-sdkpackages">Installing required Huddle
+                                  SDK packages</a></li>
+                              <li><a href="#create-anapp">Create an App</a></li>
+                              <li><a href="#metamask-and-generating-project-id-and-apikey">MetaMask and Generating
+                                  Project ID and API Key</a></li>
+                              <li><a href="#create-an-instance-of-the-huddleclient">Create an instance of the
+                                  Huddle Client</a></li>
+                              <li><a href="#generating-roomid">Generating RoomID</a></li>
+                              <li><a href="#generating-accesstoken">Generating Access Token</a></li>
+                              <li><a href="#joining-and-leavingrooms">Joining and Leaving Rooms</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#use-cases-for-huddle01sdk">Use Cases for Huddle01 SDK</a>
+                            <ul>
+                              <li><a href="#token-gated-community-events"><strong>Token Gated Community
+                                    Events</strong></a></li>
+                              <li><a href="#decentralised-collaboration-platforms"><strong>Decentralised Collaboration
+                                    Platforms</strong></a></li>
+                              <li><a href="#virtual-study-groupplatform"><strong>Virtual-Study
+                                    Group Platform</strong></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </details>
+              <details
+                class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+                <summary
+                  class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+                  Table of Contents
+                </summary>
+                <div
+                  class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+                  <nav id="TableOfContents">
+                    <ul>
+                      <li>
+                        <ul>
+                          <li><a href="#a-developers-intro-to-huddle01-sdk--ideas-to-build-complete-guide">A Developer’s
+                              Intro to Huddle01 SDK + Ideas to Build (Complete Guide)</a></li>
+                          <li><a href="#what-is-huddle01">What is Huddle01?</a>
+                            <ul>
+                              <li><a href="#wait-a-sec-what-isdepin"><strong>Wait a sec, what is DePIN?</strong></a>
+                              </li>
+                              <li><a href="#understanding-huddle01-a-drtc-gamechanger">Understanding Huddle01: A dRTC
+                                  Game Changer</a></li>
+                              <li><a href="#selective-consuming-onhuddle">Selective Consuming on Huddle:</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#huddle-infrastructure">Huddle Infrastructure</a></li>
+                          <li><a href="#huddle-concepts">Huddle Concepts</a>
+                            <ul>
+                              <li><a href="#room"><strong>Room</strong></a></li>
+                              <li><a href="#room-states"><strong>Room states</strong></a></li>
+                              <li><a href="#peer"><strong>Peer</strong></a></li>
+                              <li><a href="#mediastream"><strong>MediaStream</strong></a></li>
+                              <li><a href="#mediastreamtrack"><strong>MediaStreamTrack</strong></a></li>
+                              <li><a href="#local"><strong>Local</strong></a></li>
+                              <li><a href="#remote"><strong>Remote</strong></a></li>
+                              <li><a href="#data-message"><strong>Data Message</strong></a></li>
+                              <li><a href="#hooks">Hooks</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#getting-your-handsdirty">Getting your hands dirty!</a>
+                            <ul>
+                              <li><a href="#installing-required-huddle-sdkpackages">Installing required Huddle
+                                  SDK packages</a></li>
+                              <li><a href="#create-anapp">Create an App</a></li>
+                              <li><a href="#metamask-and-generating-project-id-and-apikey">MetaMask and Generating
+                                  Project ID and API Key</a></li>
+                              <li><a href="#create-an-instance-of-the-huddleclient">Create an instance of the
+                                  Huddle Client</a></li>
+                              <li><a href="#generating-roomid">Generating RoomID</a></li>
+                              <li><a href="#generating-accesstoken">Generating Access Token</a></li>
+                              <li><a href="#joining-and-leavingrooms">Joining and Leaving Rooms</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#use-cases-for-huddle01sdk">Use Cases for Huddle01 SDK</a>
+                            <ul>
+                              <li><a href="#token-gated-community-events"><strong>Token Gated Community
+                                    Events</strong></a></li>
+                              <li><a href="#decentralised-collaboration-platforms"><strong>Decentralised Collaboration
+                                    Platforms</strong></a></li>
+                              <li><a href="#virtual-study-groupplatform"><strong>Virtual-Study
+                                    Group Platform</strong></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </details>
+
+              <script>
+
+                (function () {
+                  var $toc = $('#TableOfContents');
+                  if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    function onScroll() {
+                      var currentScroll = $window.scrollTop();
+                      var h = $('.anchor');
+                      var id = "";
+                      h.each(function (i, e) {
+                        e = $(e);
+                        if (e.offset().top - $(window).height() / 3 <= currentScroll) {
+                          id = decodeURIComponent(e.attr('id'));
+                        }
+                      });
+                      var active = $toc.find('a.active');
+                      if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                      active.each(function (i, e) {
+
+                        $(e).removeClass('active').siblings('ul').hide();
+
+                      });
+                      $toc.find('a[href="#' + id + '"]').addClass('active');
+                      $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                        $(e).children('a').parents('ul').show();
+                      });
+                    }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function () {
+
+                      $toc.find('a').parent('li').find('ul').hide();
+
+                      onScroll();
+                    });
+                  }
+                })();
+
+              </script>
+            </div>
+          </div>
+
+
+          <div class="min-w-0 min-h-0 grow">
+
+
+
+
+            <div class="article-content max-w-full mb-20">
+              <p>Huddle01 is a state-of-the-art innovation in the Web3 landscape that has bridged multimodal
+                communication over the blockchain. It offers a…</p>
+              <hr>
+
+              <h3 class="relative group">A Developer’s Intro to Huddle01 SDK + Ideas to Build (Complete Guide)
+                <div id="a-developers-intro-to-huddle01-sdk--ideas-to-build-complete-guide" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;"
+                    href="#a-developers-intro-to-huddle01-sdk--ideas-to-build-complete-guide" aria-label="Anchor">#</a>
+                </span>
+
+              </h3>
+              <figure id="63b0" class="graf graf--figure graf-after--h3">
+                <img src="https://cdn-images-1.medium.com/max/800/0*D3ziHQ0CIiIDBDZG.png" class="graf-image"
+                  data-image-id="0*D3ziHQ0CIiIDBDZG.png" data-width="1304" data-height="734" />
+              </figure>
+              <p>Huddle01 is a state-of-the-art innovation in the Web3 landscape that has bridged multimodal
+                communication over the blockchain. It offers a robust and scalable solution to decentralized and
+                privatized communication channels. This article will delve into the basics of Huddle01, some technical
+                jargon, as well as a DIY tutorial for applications you can build with Huddle’s SDK.</p>
+
+              <h3 class="relative group">What is Huddle01?
+                <div id="what-is-huddle01" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#what-is-huddle01" aria-label="Anchor">#</a>
+                </span>
+
+              </h3>
+              <p>Huddle01 empowers developers to create real-time communication features within their applications. As
+                the world’s first DePIN (Decentralized Physical Infrastructure Network) tailored for dRTC (Decentralized
+                Real-Time Communication), Huddle01 transforms how we connect and interact online.</p>
+
+              <h4 class="relative group"><strong>Wait a sec, what is DePIN?</strong>
+                <div id="wait-a-sec-what-isdepin" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#wait-a-sec-what-isdepin"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <figure id="780c" class="graf graf--figure graf-after--h4">
+                <img src="https://cdn-images-1.medium.com/max/800/0*KGmbkxTPJmRRrMFi.jpeg" class="graf-image"
+                  data-image-id="0*KGmbkxTPJmRRrMFi.jpeg" data-width="875" data-height="492" />
+                <figcaption>Courtesy of <a href="https://medium.com/u/370b8ad00110"
+                    class="markup--user markup--figure-user" data-href="https://medium.com/u/370b8ad00110"
+                    data-anchor-type="2" data-user-id="370b8ad00110" data-action-value="370b8ad00110"
+                    data-action="show-user-card" data-action-type="hover" target="_blank">U2U Network</a></figcaption>
+              </figure>
+              <p>DePIN stands for Decentralized Physical Infrastructure Network. Imagine a large organization where each
+                employee contributes their skills and is rewarded based on their performance. In a DePIN, each
+                participant (node) offers resources to the network and is incentivized with crypto tokens. Unlike a
+                traditional, centralized company, DePIN operates in a decentralized manner, where control is distributed
+                among the community members. As Huddle puts it, DePIN offers “people-powered communication”.</p>
+              <p>If you want to know more in DePIN, check this <a
+                  href="https://blog.onfinality.io/an-introduction-to-depins-decentralised-physical-infrastructure-networks/"
+                  class="markup--anchor markup--p-anchor"
+                  data-href="https://blog.onfinality.io/an-introduction-to-depins-decentralised-physical-infrastructure-networks/"
+                  rel="noopener" target="_blank">article</a> out.</p>
+
+              <h4 class="relative group">Understanding Huddle01: A dRTC Game Changer
+                <div id="understanding-huddle01-a-drtc-gamechanger" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#understanding-huddle01-a-drtc-gamechanger"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>At the core of Huddle01 lies the concept of dRTC. Unlike traditional video conferencing solutions that
+                rely on centralized servers, Huddle01 leverages a peer-to-peer network powered by users’ internet
+                connection. This approach, often titled “people-powered network”, supports the key features of Huddle01.
+              </p>
+              <ol>
+                <li><span id="6c8f"><strong>High-Fidelity A/V Communication</strong>: Huddle01 SDK ensures high-quality
+                    audio and video calls, delivering clear and crisp communication experiences.</span></li>
+                <li><span id="f575"><strong>Token-Gated Access:</strong> Huddle’s DK supports token-gated access,
+                    allowing developers to control who can join communication channels based on token holding.</span>
+                </li>
+                <li><span id="1345"><strong>Zero-Downtime Experience:</strong> User experience is the priority. SDK
+                    offers zero-downtime functionality ensuring that users do not experience disruptions during system
+                    failures or high traffic periods.</span></li>
+              </ol>
+
+              <h4 class="relative group">Selective Consuming on Huddle:
+                <div id="selective-consuming-onhuddle" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#selective-consuming-onhuddle"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Huddle01 facilitates the feature of selective consuming, allowing us to regulate who we receive media
+                streams from. This helps us to accept media only from the peers we want. We can mute audio or turn off
+                incoming video from someone for just ourselves, without affecting others.</p>
+
+              <h3 class="relative group">Huddle Infrastructure
+                <div id="huddle-infrastructure" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#huddle-infrastructure"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h3>
+              <figure id="dcb2" class="graf graf--figure graf-after--h3">
+                <img src="https://cdn-images-1.medium.com/max/800/0*MAmW2ZH6jy0uf8QX" class="graf-image"
+                  data-image-id="0*MAmW2ZH6jy0uf8QX" data-width="1080" data-height="759" />
+                <figcaption>The core infrastructure of Huddle01’s SDK summed up in three blocks</figcaption>
+              </figure>
+              <p>Huddle doesn’t ask for much. It’s SDK integrates seamlessly into your usecase — be it a web app, React
+                app or a full-fledged software! The underlying pipeline that governs this all is peer-to-peer
+                connections, which Huddle’s SDK manages very well.</p>
+
+              <h3 class="relative group">Huddle Concepts
+                <div id="huddle-concepts" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#huddle-concepts" aria-label="Anchor">#</a>
+                </span>
+
+              </h3>
+              <p>Now, let’s cover a couple of new concepts in the latest SDK that you shall see later on in the
+                tutorial. Feel free to skip this if you’re ready.</p>
+
+              <h4 class="relative group"><strong>Room</strong>
+                <div id="room" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#room" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>A Huddle01 room is where you can host/attend meeting sessions. Each room is recognized by a unique
+                <em>roomID</em> that is generated when you enter a room. A room never expires and you can have multiple
+                sessions at a time inside the room.</p>
+
+              <h4 class="relative group"><strong>Room states</strong>
+                <div id="room-states" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#room-states" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>These represent the states of operation of a room — <em>idle, connecting, failed, left, closed</em></p>
+
+              <h4 class="relative group"><strong>Peer</strong>
+                <div id="peer" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#peer" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>A peer is a participant inside a room. In programming jargon, it is an object containing all media
+                streams of a peer in a room. Each peer is recognized by a <em>peerID</em>.</p>
+
+              <h4 class="relative group"><strong>MediaStream</strong>
+                <div id="mediastream" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#mediastream" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>It represents a stream of media content associated with a peer. Streams can be audio or video or both.
+              </p>
+
+              <h4 class="relative group"><strong>MediaStreamTrack</strong>
+                <div id="mediastreamtrack" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#mediastreamtrack" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>It represents a single media track, which can be either audio or video.</p>
+
+              <h4 class="relative group"><strong>Local</strong>
+                <div id="local" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#local" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>These are functions related to your peer (i.e. yourself), prefixed with ‘local’.</p>
+              <p><em><strong>localPeer</strong></em> — Your Peer object</p>
+              <p><em><strong>localAudio</strong></em> — Your Audio stream</p>
+              <p><em><strong>localVideo</strong></em> — Your Video stream</p>
+
+              <h4 class="relative group"><strong>Remote</strong>
+                <div id="remote" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#remote" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>These are functions associated with other peers in the same room, prefixed with ‘remote’. Performing
+                any of these would require you to pass the peerID of that peer.</p>
+              <p><em><strong>remotePeer</strong></em> — Another participant</p>
+              <p><em><strong>remoteAudio</strong></em> — Their Audio stream</p>
+              <p><em><strong>Remote Video</strong></em> — Their Video stream</p>
+
+              <h4 class="relative group"><strong>Data Message</strong>
+                <div id="data-message" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#data-message" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Peers can exchange messages with each other in text form, not exceeding 280 characters.</p>
+
+              <h4 class="relative group">Hooks
+                <div id="hooks" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#hooks" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p><strong>Hooks</strong> are functions in Huddle01 that can be called from the imported Huddle packages
+                (which we will see later on). They allow you to ‘hook’ into app states. The major hooks of the latest
+                SDK version include:</p>
+              <ol>
+                <li><span id="32b6"><strong><em>useRoom</em></strong> — joining, leaving, closing the room</span></li>
+                <li><span id="b536"><strong><em>useLobby</em></strong> — as admin, control peers waiting in the lobby
+                    who can enter a locked room</span></li>
+                <li><span id="259e"><strong><em>usePeerIds</em></strong> — returns peerIDs of all peers in a room</span>
+                </li>
+                <li><span id="6b9a"><strong><em>useLocalAudio / useRemoteAudio</em></strong> — control your audio /
+                    interact with peer’s audio</span></li>
+                <li><span id="129d"><strong><em>useLocalVIdeo / useRemoteVideo</em></strong> — control your video /
+                    interact with peer’s video</span></li>
+                <li><span id="cd09"><strong><em>useLocalScreenShare / useRemoteScreenShare</em></strong> — control your
+                    screenshare / modulate media from peer’s screenshare</span></li>
+              </ol>
+
+              <h3 class="relative group">Getting your hands dirty!
+                <div id="getting-your-handsdirty" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#getting-your-handsdirty"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h3>
+              <p>Familiarizing with Huddle’s SDK is a walk in the park. Let’s get started on some technical jargon
+                before integrating DePIN into your decentralized application (dApp).</p>
+              <p><em>Note: Before getting started on Huddle’s SDK for any project, ensure that you have</em> <a
+                  href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm"
+                  class="markup--anchor markup--p-anchor"
+                  data-href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" rel="noopener"
+                  target="_blank"><em>nodejs</em></a> <em>installed on your system.</em></p>
+
+              <h4 class="relative group">Installing required Huddle SDK packages
+                <div id="installing-required-huddle-sdkpackages" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#installing-required-huddle-sdkpackages"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Run any of these commands in your terminal:</p>
+              <pre tabindex="0"><code class="language-graf" data-lang="graf">npm i @huddle01/react @huddle01/server-sdk
+
+pnpm i @huddle01/react @huddle01/server-sdk
+
+yarn add @huddle01/react @huddle01/server-sdk
+</code></pre>
+              <figure id="9d7a" class="graf graf--figure graf-after--pre">
+                <img src="https://cdn-images-1.medium.com/max/800/1*Fqke0D9tsFW2SiBid1c1jw.png" class="graf-image"
+                  data-image-id="1*Fqke0D9tsFW2SiBid1c1jw.png" data-width="596" data-height="29" />
+              </figure>
+
+              <h4 class="relative group">Create an App
+                <div id="create-anapp" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#create-anapp" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Run the following command in your terminal:</p>
+              <pre tabindex="0"><code class="language-graf" data-lang="graf">npm create next-app@latest
+</code></pre>
+              <figure id="1a5f" class="graf graf--figure graf-after--pre">
+                <img src="https://cdn-images-1.medium.com/max/800/1*NADvXdDDBMRgSuLSLpm2tg.png" class="graf-image"
+                  data-image-id="1*NADvXdDDBMRgSuLSLpm2tg.png" data-width="735" data-height="206" />
+              </figure>
+
+              <h4 class="relative group">MetaMask and Generating Project ID and API Key
+                <div id="metamask-and-generating-project-id-and-apikey" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#metamask-and-generating-project-id-and-apikey"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Before generating an API key, set up an Ethereum wallet. MetaMask and Coinbase are go-tos.</p>
+              <p>Head over <a href="https://docs.huddle01.com/docs/api-keys" class="markup--anchor markup--p-anchor"
+                  data-href="https://docs.huddle01.com/docs/api-keys" rel="noopener" target="_blank">here</a> and
+                connect your wallet to your Huddle01 account, which will be used to authorize you to access Huddle01
+                infrastructure.</p>
+              <figure id="4ff7" class="graf graf--figure graf-after--p">
+                <img src="https://cdn-images-1.medium.com/max/800/1*dFqn7nBT_mAWedfnxA_WqA.png" class="graf-image"
+                  data-image-id="1*dFqn7nBT_mAWedfnxA_WqA.png" data-width="1082" data-height="814" />
+              </figure>
+              <p>Generate your API key and Project ID and save it in the .env file in the root directory:</p>
+              <pre tabindex="0"><code class="language-graf" data-lang="graf">NEXT_PUBLIC_PROJECT_ID=
+API_KEY=
+</code></pre>
+              <h4 class="relative group">Create an instance of the Huddle Client
+                <div id="create-an-instance-of-the-huddleclient" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#create-an-instance-of-the-huddleclient"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Create an instance of Huddle Client and pass it in Huddle Provider.</p>
+              <pre tabindex="0"><code class="language-graf" data-lang="graf">import type { Metadata } from &#34;next&#34;;
+import { Inter } from &#34;next/font/google&#34;;
+import &#34;./globals.css&#34;;
+import HuddleContextProvider from &#34;@/context/HuddleContextProvider&#34;;
+import { Web3Modal } from &#34;@/context/Web3Modal&#34;;
+import { HuddleClient, HuddleProvider } from &#34;@huddle01/react&#34;;
+
+const huddleClient = new HuddleClient({
+   projectId: process.env.NEXT_PUBLIC_PROJECT_ID!,});
+
+export default function RootLayout({
+   children,
+ }: Readonly&lt;{
+   children: React.ReactNode;
+ }&gt;) {
+   return (
+     &lt;html lang=&#34;en&#34;&gt;
+       &lt;HuddleProvider client={huddleClient}&gt;
+         &lt;body className={inter.className}&gt;{children}&lt;/body&gt;
+       &lt;/HuddleProvider&gt;
+     &lt;/html&gt;
+   );
+ }
+</code></pre>
+              <h4 class="relative group">Generating RoomID
+                <div id="generating-roomid" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#generating-roomid" aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>To create a room, we need a <em>roomId</em>, which is called from the server-side using the
+                <em>create-room</em> API. Howeverless, this can also be performed in a less safe, serverless manner.</p>
+              <pre tabindex="0"><code class="language-graf" data-lang="graf">&#34;use server&#34;;
+export const createRoom = async () =&gt; {
+  const response = await fetch(&#34;https://api.huddle01.com/api/v1/create-room&#34;, {
+    method: &#34;POST&#34;,
+    body: JSON.stringify({
+      title: &#34;Huddle Room&#34;,
+    }),
+    headers: {
+      &#34;Content-type&#34;: &#34;application/json&#34;,
+      &#34;x-api-key&#34;: process.env.API_KEY!,
+    },
+    cache: &#34;no-cache&#34;,
+  });
+  const data = await response.json();
+  const roomId = data.data.roomId;
+  return roomId;
+};
+</code></pre>
+              <h4 class="relative group">Generating Access Token
+                <div id="generating-accesstoken" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#generating-accesstoken"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>To join a new or already existing room, an <em>accessToken</em> must be generated.</p>
+              <pre tabindex="0"><code class="language-graf" data-lang="graf">import { AccessToken, Role } from &#39;@huddle01/server-sdk/auth&#39;;
+
+export const dynamic = &#39;force-dynamic&#39;;
+
+const createToken = async (
+  roomId: string,
+  role: string,
+  displayName: string
+) =&gt; {
+  const access = new AccessToken({
+    apiKey: process.env.API_KEY!,
+    roomId: roomId as string,
+    role: role,
+    permissions: {
+      admin: true,
+      canConsume: true,
+      canProduce: true,
+      canProduceSources: {
+        cam: true,
+        mic: true,
+        screen: true,
+      },
+      canRecvData: true,
+      canSendData: true,
+      canUpdateMetadata: true,
+    },
+    options: {
+      metadata: {
+        displayName,
+        isHandRaised: false,
+      },
+    },
+  });
+  const token = await access.toJwt();
+  return token;
+};
+</code></pre>
+              <h4 class="relative group">Joining and Leaving Rooms
+                <div id="joining-and-leavingrooms" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#joining-and-leavingrooms"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Now that we have the <em>roomId</em> and <em>accessToken</em>, we can use the <em>joinRoom</em> method
+                from the <strong>useRoom</strong> hook to join or leave a room.</p>
+              <pre tabindex="0"><code class="language-graf" data-lang="graf">import { useRoom } from &#39;@huddle01/react/hooks&#39;;
+ 
+const App = () =&gt; {
+  const { joinRoom, leaveRoom } = useRoom({
+    onJoin: () =&gt; {
+      console.log(&#39;Joined&#39;);
+    },
+    onLeave: () =&gt; {
+      console.log(&#39;Left&#39;);
+    },
+  });
+ 
+  return (
+    
+      &lt;button onClick={() =&gt; {
+        joinRoom({
+          roomId: &#39;ROOM_ID&#39;,
+          token: &#39;ACCESS_TOKEN&#39;
+        });
+      }}&gt;
+        Join Room
+      &lt;/button&gt;      
+      &lt;button onClick={leaveRoom}&gt;
+        Leave Room
+      &lt;/button&gt;
+    
+  );
+};
+</code></pre>
+              <h3 class="relative group">Use Cases for Huddle01 SDK
+                <div id="use-cases-for-huddle01sdk" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#use-cases-for-huddle01sdk"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h3>
+              <p>Huddle01 SDK is versatile, opening up a wide range of possibilities for developers. Here are some use
+                cases to get you started:</p>
+
+              <h4 class="relative group"><strong>Token Gated Community Events</strong>
+                <div id="token-gated-community-events" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#token-gated-community-events"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Build exclusive communication channels for token holders, enhancing community engagement through
+                token-gated access.</p>
+
+              <h4 class="relative group"><strong>Decentralised Collaboration Platforms</strong>
+                <div id="decentralised-collaboration-platforms" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#decentralised-collaboration-platforms"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Help teams and communities working from remote areas collaborate on their task seamlessly. Develop
+                tools for remote teams that feature secure video meetings, file sharing, and real-time messaging, all
+                powered by Huddle01’s dRTC infrastructure.</p>
+
+              <h4 class="relative group"><strong>Virtual-Study Group Platform</strong>
+                <div id="virtual-study-groupplatform" class="anchor"></div>
+
+                <span
+                  class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+                  <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+                    style="text-decoration-line: none !important;" href="#virtual-study-groupplatform"
+                    aria-label="Anchor">#</a>
+                </span>
+
+              </h4>
+              <p>Allow students from all parts of the world to come together for collaborative learning. Huddles01’s SDK
+                allows them to have real-time discussion, study groups and help in peer-to-peer learning.</p>
+              <p>By <a href="https://medium.com/@aloshdenny" class="p-author h-card">Aloshdenny</a> on <a
+                  href="https://medium.com/p/4f57c7697c44" target="_blank">May 25, 2024</a>.</p>
+              <p><a
+                  href="https://medium.com/@aloshdenny/a-developers-intro-to-huddle01-sdk-ideas-to-build-complete-guide-4f57c7697c44"
+                  class="p-canonical">Canonical link</a></p>
+              <p>Exported from <a href="https://medium.com" target="_blank">Medium</a> on February 2, 2026.</p>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+          <script>
+            var oid = "views_posts\/2024-05-25_A-Developer-s-Intro-to-Huddle01-SDK---Ideas-to-Build--Complete-Guide--4f57c7697c44.md"
+            var oid_likes = "likes_posts\/2024-05-25_A-Developer-s-Intro-to-Huddle01-SDK---Ideas-to-Build--Complete-Guide--4f57c7697c44.md"
+          </script>
+
+
+          <script type="text/javascript"
+            src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js"
+            integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+
+
+        </section>
+        <footer class="pt-8 max-w-full print:hidden">
+
+
+
+
+
+
+          <div class="pt-8">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+            <div class="flex justify-between pt-3">
+              <span>
+
+              </span>
+              <span>
+
+                <a class="flex text-right group ml-3"
+                  href="/posts/2024-10-03_the-complete-dummies--guide-to-llms-cc4c6b906ae0/">
+                  <span class="flex flex-col">
+                    <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500">The
+                      Complete Dummies’ Guide to LLMs</span>
+                    <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+
+                      <time datetime="2024-10-03T00:00:00&#43;00:00">3 October 2024</time>
+
+                    </span>
+                  </span>
+                  <span
+                    class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400">&rarr;</span>
+                  <span
+                    class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400">&larr;</span>
+                </a>
+
+              </span>
+            </div>
+          </div>
+
+
+
+
+        </footer>
+      </article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+        <a href="#the-top"
+          class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+          aria-label="Scroll to top" title="Scroll to top">
+          &uarr;
+        </a>
+      </div>
+    </main>
+    <footer id="site-footer" class="py-10 print:hidden">
+
+
+
+
+      <div class="flex items-center justify-between">
+
+
+
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2026
+          Alosh Denny
+        </p>
+
+
+
+
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+
+
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a
+            class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://blowfish.page/"
+            target="_blank" rel="noopener noreferrer">Blowfish</a>
+        </p>
+
+
+      </div>
+      <script>
+
+        mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+          margin: 24,
+          background: 'rgba(0,0,0,0.5)',
+          scrollOffset: 0,
+        })
+
+      </script>
+
+
+      <script type="text/javascript"
+        src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+        integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+
+
+    </footer>
+
+  </div>
+</body>
+
+
+</html>
