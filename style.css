@@ -385,13 +385,6 @@ ul {
   border-color: var(--text-primary);
 }
 
-.btn-resume svg {
-  transition: transform 0.3s ease;
-}
-
-.btn-resume:hover svg {
-  transform: translateY(2px);
-}
 
 /* Magnetic Effect */
 [data-magnetic] {
@@ -735,11 +728,13 @@ ul {
 
 .contact-actions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 1.5rem;
   margin-bottom: 4rem;
 }
 
-#email-copy-btn {
+#email-copy-btn, #phone-contact-btn {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 2rem;
@@ -754,9 +749,10 @@ ul {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 
-#email-copy-btn:hover {
+#email-copy-btn:hover, #phone-contact-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--accent-color);
   transform: scale(1.02);
@@ -769,7 +765,7 @@ ul {
   transition: opacity 0.3s ease;
 }
 
-#email-copy-btn:hover .btn-icon {
+#email-copy-btn:hover .btn-icon, #phone-contact-btn:hover .btn-icon {
   opacity: 1;
 }
 

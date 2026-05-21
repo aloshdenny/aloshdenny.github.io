@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Policies | AOXO | Alosh Denny</title>
+  <meta name="description"
+    content="Official Terms & Conditions, Privacy Policy, and Refund Policy for AOXO, managed under the proprietorship of Alosh Denny Neelankavil.">
+  <meta property="og:title" content="Our Policies | AOXO | Alosh Denny">
+  <meta property="og:description" content="Official Terms & Conditions, Privacy Policy, and Refund Policy for AOXO.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aloshdenny.com/policies.html">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=8">
+
+  <style>
+    /* Policies Page Specific Theme Overrides */
+    .policies-hero {
+      padding: 10rem 0 3rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .policies-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #ffffff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .policies-hero-desc {
+      max-width: 600px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    .policies-container {
+      max-width: 900px;
+      margin: 0 auto 8rem;
+    }
+
+    /* Tab Controls */
+    .policies-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 0.5rem;
+      border-radius: 100px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      padding: 0.8rem 1.8rem;
+      border-radius: 100px;
+      cursor: none; /* Custom cursor */
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      letter-spacing: 0.02em;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+    }
+
+    .tab-btn.active {
+      background: var(--accent-color);
+      color: var(--bg-color);
+      font-weight: 500;
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    /* Policy Content Panels */
+    .policy-panel {
+      display: none;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 4rem 3.5rem;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    .policy-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .policy-content {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .policy-content h2 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: var(--text-primary);
+      margin: 2.5rem 0 1.25rem;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 0.75rem;
+    }
+
+    .policy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .policy-content h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--text-primary);
+      margin: 1.5rem 0 0.75rem;
+      font-weight: 500;
+    }
+
+    .policy-content p {
+      margin-bottom: 1.25rem;
+    }
+
+    .policy-content ul {
+      margin: 0 0 1.5rem 1.5rem;
+      list-style-type: square;
+    }
+
+    .policy-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .policy-content strong {
+      color: var(--text-primary);
+    }
+
+    .policy-content .policy-meta {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent-color);
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+    }
+
+    .contact-item a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .policies-tabs {
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 0.5rem;
+        gap: 0.5rem;
+      }
+      .tab-btn {
+        width: 100%;
+        text-align: center;
+      }
+      .policy-panel {
+        padding: 2.5rem 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="counter">0%</div>
+    <div class="curtain"></div>
+  </div>
+
+  <div id="noise-overlay"></div>
+  <div id="custom-cursor"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">aoxo<span class="logo-dot">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#about" data-magnetic>About</a></li>
+        <li><a href="index.html#work" data-magnetic>Work</a></li>
+        <li><a href="index.html#projects" data-magnetic>Projects</a></li>
+        <li><a href="services.html" data-magnetic>Services</a></li>
+        <li><a href="policies.html" class="active" data-magnetic>Policies</a></li>
+        <li><a href="index.html#skills" data-magnetic>Skills</a></li>
+        <li><a href="index.html#publications" data-magnetic>Publications</a></li>
+        <li><a href="index.html#blog" data-magnetic>Blogs</a></li>
+        <li><a href="index.html#contact" data-magnetic>Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle theme" data-magnetic>
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <path
+            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="main-wrapper">
+    <!-- Hero Section -->
+    <header class="policies-hero">
+      <div class="container hero-content">
+        <div class="reveal-text">
+          <h1>Our Policies</h1>
+          <p class="policies-hero-desc">
+            Official business documentation, privacy frameworks, and refund rules for AOXO.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container policies-container">
+      <!-- Tabs Control Menu -->
+      <div class="policies-tabs reveal-up" style="animation-delay: 0.1s;">
+        <button class="tab-btn active" data-tab="terms" data-magnetic>Terms & Conditions</button>
+        <button class="tab-btn" data-tab="privacy" data-magnetic>Privacy Policy</button>
+        <button class="tab-btn" data-tab="refund" data-magnetic>Refund Policy</button>
+      </div>
+
+      <!-- Tab Content Panels -->
+
+      <!-- 1. Terms & Conditions -->
+      <article id="terms-panel" class="policy-panel active">
+        <div class="policy-content">
+          <div class="policy-meta">Terms & Conditions &bull; Last Updated: May 2026</div>
+          
+          <p>This document is an electronic record in accordance with the Information Technology Act, 2000 and applicable rules thereunder. This electronic record does not require any physical or digital signature.</p>
+          <p>These Terms & Conditions govern your use of <a href="https://aloshdenny.com/">https://aloshdenny.com/</a> (“Website”) and the services offered by <strong>AOXO</strong>, managed under the proprietorship of Alosh Denny Neelankavil (“we”, “our”, “us”).</p>
+          <p>By accessing or using our Website or availing our services, you agree to be bound by these Terms.</p>
+
+          <h2>1. Business Information</h2>
+          <ul>
+            <li><strong>Business Name:</strong> AOXO</li>
+            <li><strong>Managed By:</strong> Alosh Denny Neelankavil</li>
+            <li class="contact-item">📞 <strong>Phone:</strong> <a href="tel:+918891484107">+91 8891484107</a></li>
+            <li class="contact-item">📧 <strong>Email:</strong> <a href="mailto:aloshdenny@gmail.com">aloshdenny@gmail.com</a></li>
+            <li class="contact-item">🌐 <strong>Website:</strong> <a href="https://aloshdenny.com/">https://aloshdenny.com/</a></li>
+          </ul>
+
+          <h2>2. Eligibility</h2>
+          <p>By using this Website or availing our services, you confirm that:</p>
+          <ul>
+            <li>You are at least 18 years old</li>
+            <li>You are legally capable of entering into a binding contract</li>
+            <li>All information provided by you is accurate and complete</li>
+          </ul>
+
+          <h2>3. Services Offered</h2>
+          <p>We provide advanced artificial intelligence, machine learning, and digital engineering services including:</p>
+          <ul>
+            <li>LLMOps & High-Throughput Model Serving</li>
+            <li>Agentic AI & Multi-Agent Cognitive Architectures</li>
+            <li>Multi-Cloud AI Infrastructure & Deployments (AWS/Azure/GCP)</li>
+            <li>LLM Pretraining, Finetuning, & Human Alignment (LoRA, DPO, RLHF)</li>
+            <li>Deep Learning Modeling & Custom Neural Architectures</li>
+            <li>Data Science, Analytics, & Interactive Visualizations</li>
+            <li>Consultation & Technical Audits on Artificial Intelligence</li>
+          </ul>
+
+          <h2>4. Service Disclaimer</h2>
+          <ul>
+            <li>Project timelines may vary depending on project scope, revisions, approvals, and client responsiveness.</li>
+            <li>Customers are responsible for providing accurate content, images, credentials, and project requirements.</li>
+            <li>We are not responsible for delays caused by incomplete information or delayed approvals from clients.</li>
+            <li>Third-party platform limitations, hosting issues, plugin issues, or external integrations may affect functionality or timelines.</li>
+          </ul>
+
+          <h2>5. Intellectual Property</h2>
+          <ul>
+            <li>All custom-developed designs, code, graphics, and content remain the intellectual property of AOXO unless otherwise agreed in writing.</li>
+            <li>Final ownership transfer of project files or source code may be subject to completion of full payment.</li>
+            <li>Unauthorized copying, resale, or reproduction of our work is prohibited.</li>
+            <li>Client-provided content remains the responsibility and property of the client.</li>
+          </ul>
+
+          <h2>6. Payments</h2>
+          <ul>
+            <li>Payments must be made as per agreed project milestones or invoices.</li>
+            <li>Projects may require advance payment before work begins.</li>
+            <li>Delayed payments may result in project hold, delayed delivery, or suspension of services.</li>
+            <li>Payments are processed through secure third-party payment gateways where applicable.</li>
+            <li>We do not store debit/credit card details, CVV, UPI PIN, or banking credentials.</li>
+          </ul>
+
+          <h2>7. Revisions & Changes</h2>
+          <ul>
+            <li>Revisions are limited to the scope agreed upon at the start of the project.</li>
+            <li>Additional features, pages, integrations, or major modifications may incur additional charges.</li>
+            <li>Change requests may affect delivery timelines.</li>
+          </ul>
+
+          <h2>8. Third-Party Services</h2>
+          <p>Projects may involve third-party services including:</p>
+          <ul>
+            <li>Domain providers</li>
+            <li>Hosting services</li>
+            <li>Plugins or APIs</li>
+            <li>Payment gateways</li>
+            <li>Analytics or marketing tools</li>
+          </ul>
+          <p>We are not responsible for downtime, pricing changes, service interruptions, or policies of third-party providers.</p>
+
+          <h2>9. Refunds & Cancellations</h2>
+          <p>Refunds and cancellations are governed by our separate Refund Policy.</p>
+
+          <h2>10. User Conduct</h2>
+          <p>Users agree not to:</p>
+          <ul>
+            <li>Use our services for unlawful activities.</li>
+            <li>Share malicious or harmful content.</li>
+            <li>Attempt unauthorized access to systems or services.</li>
+            <li>Misuse delivered digital assets or software.</li>
+          </ul>
+
+          <h2>11. Limitation of Liability</h2>
+          <p>AOXO shall not be liable for:</p>
+          <ul>
+            <li>Business losses or revenue loss.</li>
+            <li>Downtime caused by third-party providers.</li>
+            <li>Delays due to incomplete client inputs.</li>
+            <li>Indirect or consequential damages.</li>
+          </ul>
+          <p>Our total liability shall not exceed the amount paid for the concerned service.</p>
+
+          <h2>12. Governing Law & Jurisdiction</h2>
+          <p>These Terms shall be governed by the laws of India.</p>
+          <p>All disputes shall be subject to the jurisdiction of the competent courts in India.</p>
+
+          <h2>13. Changes to Terms</h2>
+          <p>We reserve the right to update these Terms at any time without prior notice.</p>
+
+          <h2>14. Contact Information</h2>
+          <ul>
+            <li class="contact-item">📞 <strong>Phone:</strong> <a href="tel:+918891484107">+91 8891484107</a></li>
+            <li class="contact-item">📧 <strong>Email:</strong> <a href="mailto:aloshdenny@gmail.com">aloshdenny@gmail.com</a></li>
+          </ul>
+          <p>For any queries or concerns, please contact us using the above details.</p>
+        </div>
+      </article>
+
+      <!-- 2. Privacy Policy -->
+      <article id="privacy-panel" class="policy-panel">
+        <div class="policy-content">
+          <div class="policy-meta">Privacy Policy &bull; Last Updated: May 2026</div>
+
+          <p>This Privacy Policy explains how AOXO, managed under the proprietorship of Alosh Denny Neelankavil (“we”, “our”, “us”), collects, uses, stores, and protects your information when you visit <a href="https://aloshdenny.com/">https://aloshdenny.com/</a> (“Website”) or use our services.</p>
+          <p>By accessing our Website or availing our services, you agree to this Privacy Policy.</p>
+
+          <h2>1. Business Information</h2>
+          <ul>
+            <li><strong>Business Name:</strong> AOXO</li>
+            <li><strong>Managed By:</strong> Alosh Denny Neelankavil</li>
+            <li class="contact-item">📞 <strong>Phone:</strong> <a href="tel:+918891484107">+91 8891484107</a></li>
+            <li class="contact-item">📧 <strong>Email:</strong> <a href="mailto:aloshdenny@gmail.com">aloshdenny@gmail.com</a></li>
+            <li class="contact-item">🌐 <strong>Website:</strong> <a href="https://aloshdenny.com/">https://aloshdenny.com/</a></li>
+          </ul>
+
+          <h2>2. Information We Collect</h2>
+          <h3>a) Personal Information</h3>
+          <p>We may collect:</p>
+          <ul>
+            <li>Full Name</li>
+            <li>Phone Number</li>
+            <li>Email Address</li>
+            <li>Business information</li>
+            <li>Billing information</li>
+            <li>Project requirements and communication details</li>
+          </ul>
+          <h3>b) Payment Information</h3>
+          <ul>
+            <li>Payments are processed through secure third-party payment gateways.</li>
+            <li>We do not store debit/credit card numbers, CVV, UPI PIN, or banking credentials.</li>
+          </ul>
+          <h3>c) Technical Information</h3>
+          <p>When you use our Website, we may collect:</p>
+          <ul>
+            <li>IP address</li>
+            <li>Device information</li>
+            <li>Browser type</li>
+            <li>Pages visited</li>
+            <li>Cookies and analytics data</li>
+          </ul>
+
+          <h2>3. How We Use Your Information</h2>
+          <p>We use your information to:</p>
+          <ul>
+            <li>Provide advanced AI engineering, LLMOps, Agentic AI, Cloud infrastructure, Deep Learning modeling, and data science services</li>
+            <li>Communicate regarding projects and support</li>
+            <li>Process invoices and payments</li>
+            <li>Improve our Website and services</li>
+            <li>Prevent fraud or misuse</li>
+            <li>Maintain records and comply with legal obligations</li>
+          </ul>
+
+          <h2>4. Client Content & Project Data</h2>
+          <ul>
+            <li>Clients may voluntarily provide content, credentials, media files, business information, or project-related materials for development purposes.</li>
+            <li>We use such information only for project execution and support.</li>
+            <li>Clients are responsible for ensuring that provided content does not violate any laws or third-party rights.</li>
+          </ul>
+
+          <h2>5. Sharing of Information</h2>
+          <p>We do not sell or rent your personal information.</p>
+          <p>We may share information with:</p>
+          <ul>
+            <li>Hosting providers</li>
+            <li>Domain registrars</li>
+            <li>Payment gateway providers</li>
+            <li>IT service providers</li>
+            <li>Legal or government authorities when required by law</li>
+          </ul>
+          <p>Only necessary information is shared for operational purposes.</p>
+
+          <h2>6. Cookies Policy</h2>
+          <p>Our Website may use cookies to:</p>
+          <ul>
+            <li>Improve user experience</li>
+            <li>Analyze Website traffic</li>
+            <li>Store preferences</li>
+            <li>Enhance functionality</li>
+          </ul>
+          <p>Users may disable cookies through browser settings.</p>
+
+          <h2>7. Data Security</h2>
+          <p>We implement reasonable technical and administrative safeguards to protect personal information and project data. However, no online platform can guarantee complete security.</p>
+
+          <h2>8. Data Retention</h2>
+          <p>We retain information as necessary for:</p>
+          <ul>
+            <li>Project execution and support</li>
+            <li>Billing and accounting</li>
+            <li>Legal compliance</li>
+            <li>Internal records</li>
+          </ul>
+          <p>Project-related files and communications may be retained for maintenance or support purposes.</p>
+
+          <h2>9. Your Rights</h2>
+          <p>You may request:</p>
+          <ul>
+            <li>Access to your personal data</li>
+            <li>Correction of inaccurate information</li>
+            <li>Deletion of data (subject to legal obligations)</li>
+          </ul>
+          <p>Requests can be made via <a href="mailto:aloshdenny@gmail.com">aloshdenny@gmail.com</a>.</p>
+
+          <h2>10. Third-Party Services</h2>
+          <p>Our Website or projects may use third-party tools, plugins, APIs, hosting services, or external platforms. We are not responsible for the privacy practices of third-party providers.</p>
+
+          <h2>11. Changes to This Policy</h2>
+          <p>We reserve the right to update this Privacy Policy at any time without prior notice.</p>
+
+          <h2>12. Contact Us</h2>
+          <ul>
+            <li class="contact-item">📞 <strong>Phone:</strong> <a href="tel:+918891484107">+91 8891484107</a></li>
+            <li class="contact-item">📧 <strong>Email:</strong> <a href="mailto:aloshdenny@gmail.com">aloshdenny@gmail.com</a></li>
+          </ul>
+          <p>For any privacy-related concerns, please contact us using the above details.</p>
+        </div>
+      </article>
+
+      <!-- 3. Refund Policy -->
+      <article id="refund-panel" class="policy-panel">
+        <div class="policy-content">
+          <div class="policy-meta">Refund Policy &bull; Last Updated: May 2026</div>
+
+          <p>This Refund Policy applies to all services provided through <a href="https://aloshdenny.com/">https://aloshdenny.com/</a> (“Website”) and operated by <strong>AOXO</strong>, managed under the proprietorship of Alosh Denny Neelankavil (“we”, “our”, “us”).</p>
+          <p>Please read this policy carefully before making any payment.</p>
+
+          <h2>1. Nature of Services</h2>
+          <p>AOXO provides advanced artificial intelligence, machine learning, and digital engineering services including:</p>
+          <ul>
+            <li>LLMOps & High-Throughput Model Serving</li>
+            <li>Agentic AI & Multi-Agent Cognitive Architectures</li>
+            <li>Multi-Cloud AI Infrastructure & Deployments (AWS/Azure/GCP)</li>
+            <li>LLM Pretraining, Finetuning, & Human Alignment (LoRA, DPO, RLHF)</li>
+            <li>Deep Learning Modeling & Custom Neural Architectures</li>
+            <li>Data Science, Analytics, & Interactive Visualizations</li>
+            <li>Consultation & Technical Audits on Artificial Intelligence</li>
+          </ul>
+          <p>As these services involve customized work, development effort, consultation, and digital deliverables, payments are subject to the terms below.</p>
+
+          <h2>2. No Refund Policy</h2>
+          <p>All payments made towards:</p>
+          <ul>
+            <li>Advance payments</li>
+            <li>Project booking amounts</li>
+            <li>Finetuning & Alignment services</li>
+            <li>Engineering & Development services</li>
+            <li>Maintenance & support services</li>
+            <li>Consultation fees</li>
+            <li>Custom deep learning models or computational runs</li>
+          </ul>
+          <p>are non-refundable once the project work has started.</p>
+
+          <h2>3. Project Cancellation</h2>
+          <p>We allow the cancellation but no refunds at any cost.</p>
+
+          <h2>4. Client Delay or Non-Response</h2>
+          <ul>
+            <li>Delays caused due to lack of communication, missing content, delayed approvals, or non-responsiveness from the client shall not qualify for refunds.</li>
+            <li>Projects inactive for extended periods may be placed on hold or closed at our discretion.</li>
+          </ul>
+
+          <h2>5. Third-Party Costs</h2>
+          <p>Payments made for third-party services including but not limited to:</p>
+          <ul>
+            <li>Domain registration</li>
+            <li>Hosting services (e.g. Lambda Labs, RunPod, AWS, GCP, Azure)</li>
+            <li>Plugins or computational API keys (e.g. OpenAI, Anthropic)</li>
+            <li>Software licenses</li>
+            <li>Advertising platforms</li>
+          </ul>
+          <p>are non-refundable and subject to the policies of respective third-party providers.</p>
+
+          <h2>6. Duplicate Transaction Refund</h2>
+          <p>Refunds will be processed only in the following case:</p>
+          <p>✅ <strong>Duplicate Payment</strong></p>
+          <p>If a customer is charged more than once for the same transaction due to a technical or payment gateway issue:</p>
+          <ul>
+            <li>The duplicate transaction will be verified.</li>
+            <li>The excess amount will be processed and credited back to the original payment method within 7–10 business days.</li>
+          </ul>
+
+          <h2>7. Limitation of Liability</h2>
+          <p>AOXO shall not be liable for:</p>
+          <ul>
+            <li>Business losses or revenue loss.</li>
+            <li>Delays caused by third-party services or computational downtime.</li>
+            <li>Client-side technical issues or missing credential flows.</li>
+            <li>Indirect or consequential damages.</li>
+          </ul>
+          <p>Our total liability shall not exceed the amount paid for the concerned service.</p>
+
+          <h2>8. Contact Information</h2>
+          <p>For billing or duplicate transaction queries:</p>
+          <ul>
+            <li class="contact-item">📞 <strong>Phone:</strong> <a href="tel:+918891484107">+91 8891484107</a></li>
+            <li class="contact-item">📧 <strong>Email:</strong> <a href="mailto:aloshdenny@gmail.com">aloshdenny@gmail.com</a></li>
+          </ul>
+          <p>Please include:</p>
+          <ul>
+            <li>Invoice or Order ID</li>
+            <li>Transaction ID</li>
+            <li>Payment proof</li>
+            <li>Contact details</li>
+          </ul>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer class="sticky-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Alosh Denny. Made with <span class="heart">♥</span> & Code.</p>
+        <div class="footer-links">
+          <a href="policies.html" class="active" data-magnetic>Our Policies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Tab Toggling Logic for Policies
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const panels = document.querySelectorAll('.policy-panel');
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tabTarget = btn.getAttribute('data-tab');
+
+          // Toggle button states
+          tabButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          // Toggle panel active states
+          panels.forEach(panel => {
+            if (panel.id === `${tabTarget}-panel`) {
+              panel.classList.add('active');
+            } else {
+              panel.classList.remove('active');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
