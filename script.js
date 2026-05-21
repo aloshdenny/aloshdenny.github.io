@@ -246,7 +246,7 @@ if (!config.isMobile) {
   });
 
   // Hover States
-  const interactables = document.querySelectorAll('a, button, .project-card, .timeline-item');
+  const interactables = document.querySelectorAll('a, button, .project-card, .timeline-item, .service-card');
   interactables.forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
     el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
@@ -266,15 +266,19 @@ if (!config.isMobile) {
   animateCursor();
 }
 
-// --- Tilt Effect for Cards ---
+// --- Tilt Effect & Glow for Cards ---
 if (!config.isMobile && !config.liteMode && !config.reduceMotion) {
-  const cards = document.querySelectorAll('.project-card, .stat-card');
+  const cards = document.querySelectorAll('.project-card, .stat-card, .service-card');
 
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
+
+      // Dynamic mouse coordinates for CSS glow hover gradient
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
 
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
